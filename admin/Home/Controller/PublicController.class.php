@@ -13,6 +13,8 @@ namespace Home\Controller;
 
 use Think\Controller;
 
+use Think\Request;
+
 class PublicController extends Controller
 {
     /**
@@ -23,9 +25,16 @@ class PublicController extends Controller
     {
         parent::__construct();//优先调用父函数
 
+        //调用请求类
+        $Request = Request::instance();
+
         //登录验证
         if(!$_SESSION['uid']){
-            $this->redirect('login/login');
+            if( $Request->contentType() == null && $Request->type()!= null ) {
+                //跳转到登录页面
+                $this->redirect('login/login');
+            }
+
         }
 
         //用户信息

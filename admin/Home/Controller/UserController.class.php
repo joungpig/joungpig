@@ -63,6 +63,8 @@ class userController extends PublicController {
                 $user->username=I('post.name');
                 $user->password=$pass['password'];
                 $user->encrypt=$pass['encrypt'];
+                $user->ip=0;
+                $user->logintime=date('Y-m-d H:i:s',time());
                 $user->state=1;//用户状态，1代表启用
                 $result=$user->add();
             if($result){

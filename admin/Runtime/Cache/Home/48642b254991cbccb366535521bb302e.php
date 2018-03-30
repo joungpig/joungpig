@@ -230,6 +230,7 @@
                 <!--<li><a href="<?php echo U('columu/add');?>">增加栏目</a></li>-->
             <!--</ul>-->
         <!--</li>-->
+        <li><a href="<?php echo U('wx/wxController');?>" ><i class="icon-comment"></i>小程序用户</a></li>
         <li><a href="<?php echo U('columu/index');?>" ><i class="icon-book"></i> 栏目</a></li>
         <li><a href="<?php echo U('nav/index');?>" ><i class="icon-search"></i> 导航</a></li>
         <li><a href="<?php echo U('article/index');?>" ><i class="icon-calendar"></i>文章</a></li>

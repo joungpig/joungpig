@@ -13,7 +13,7 @@ class IndexController extends PublicController {
             if($m<10){
                 $m='0'.$m;
             }
-            $last=cal_days_in_month(CAL_GREGORIAN,$m, $year);//获取每月天数
+            $last=date("t",strtotime("$year-$m"));//获取每月天数
             $btime=strtotime($year.'-'.$m.'-'.'01 00:00:00');//开始时间
             $etime=strtotime($year.'-'.$m.'-'."$last 23:59:59");//结束时间
             $where['date']=array(array('BETWEEN',array($btime,$etime)));

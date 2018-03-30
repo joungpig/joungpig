@@ -89,7 +89,8 @@
                       <thead>
                         <tr>
                           <th>#</th>
-                          <th>栏目名称</th>
+                          <th>手机号码</th>
+                          <th>用户名称</th>
                           <th>登录次数</th>
                           <th>登录IP</th>
                           <th>上次登录时间</th>
@@ -100,6 +101,7 @@
                       <volist name="list" id="vo">
                         <tr id="{$vo.id}">
                           <td>{$vo.id}</td>
+                          <td>{$vo.mobilephone}</td>
                           <td><a style="color:#ff9f00;" class="openRecord" url="{:U('user/edit',array('id'=>'accountId'))}">{$vo.username}</a></td>
                           <td>{$vo.count}</td>
                           <td>{$vo.ip}</td>

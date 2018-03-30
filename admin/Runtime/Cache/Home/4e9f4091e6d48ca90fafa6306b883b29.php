@@ -62,7 +62,7 @@
 
 					<!-- Start Sign In Form -->
 					<form class="fh5co-form animate-box" data-animate-effect="fadeInLeft" method="post" action="<?php echo U('login/login');?>" id="form">
-						<h2>joungpig后台登陆</h2>
+						<h2>圣云后台登陆</h2>
 						<div class="form-group">
 							<label for="username" class="sr-only">用户名</label>
 							<input type="text" class="form-control" id="username" name="username" placeholder="用户名" autocomplete="off">
@@ -86,7 +86,9 @@
 				</div>
 			</div>
 			<div class="row" style="padding-top: 60px; clear: both;">
-				<div class="col-md-12 text-center"><p><small>&copy; All Rights Reserved. joungpig <a href="http://www.joungpig.com/" target="_blank" title="joungpig">joungpig</a> - Collect from <a href="http://www.joungpig.com/" title="joungpig" target="_blank">joungpig</a></small></p></div>
+				<div class="col-md-12 text-center">
+					<!--<p><small>&copy; All Rights Reserved. joungpig <a href="http://www.joungpig.com/" target="_blank" title="joungpig">joungpig</a> - Collect from <a href="http://www.joungpig.com/" title="joungpig" target="_blank">joungpig</a></small></p>-->
+				</div>
 			</div>
 		</div>
 	<input type="hidden" value="<?php echo U('index/index');?>" id="url">

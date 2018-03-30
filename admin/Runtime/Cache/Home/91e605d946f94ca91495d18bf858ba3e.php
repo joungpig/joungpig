@@ -1,406 +1,174 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
+<style>
+    a{text-decoration: none!important;color:#f0c040!important;cursor:default;!important;}
+    label{
+        text-align: right;padding-right: 9px;padding-left: 0px;font-weight: normal;color: #666;margin-top: 0px;margin-bottom: 0px;padding-top: 7px;font-family: Arial,sans-serif,"Microsoft YaHei","黑体";font-size: 12px;line-height: 1.42857143;
+    }
+    input{
+        border-radius: 3px;height: 28px!important;
+    }
+</style>
+<!--引入 head-->
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta charset="utf-8">
-  <!-- Title and other stuffs -->
-  <title>表单页面 Bootstrap响应式后台管理系统模版Mac - 代码家园-www.daimajiayuan.com</title> 
-  <meta name="keywords" content="Bootstrap模版,Bootstrap模版下载,Bootstrap教程,Bootstrap中文,后台管理系统模版,后台模版下载,后台管理系统,后台管理模版" />
-  <meta name="description" content="代码家园-www.daimajiayuan.com提供Bootstrap模版,后台管理系统模版,后台管理界面,Bootstrap教程,Bootstrap中文翻译等相关Bootstrap插件下载" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="">
-  <!--样式-->
-  <!-- Stylesheets -->
-<link href="/Public/monkey/style/bootstrap.css" rel="stylesheet">
-<!-- Font awesome icon -->
-<link rel="stylesheet" href="/Public/monkey/style/font-awesome.css">
-<!-- jQuery UI -->
-<link rel="stylesheet" href="/Public/monkey/style/jquery-ui.css">
-<!-- Calendar -->
-<link rel="stylesheet" href="/Public/monkey/style/fullcalendar.css">
-<!-- prettyPhoto -->
-<link rel="stylesheet" href="/Public/monkey/style/prettyPhoto.css">
-<!-- Star rating -->
-<link rel="stylesheet" href="/Public/monkey/style/rateit.css">
-<!-- Date picker -->
-<link rel="stylesheet" href="/Public/monkey/style/bootstrap-datetimepicker.min.css">
-<!-- CLEditor -->
-<link rel="stylesheet" href="/Public/monkey/style/jquery.cleditor.css">
-<!-- Bootstrap toggle -->
-<link rel="stylesheet" href="/Public/monkey/style/bootstrap-switch.css">
-<!-- Main stylesheet -->
-<link href="/Public/monkey/style/style.css" rel="stylesheet">
-<!-- Widgets stylesheet -->
-<link href="/Public/monkey/style/widgets.css" rel="stylesheet">
-  <!--样式end-->
-  
-  <!-- HTML5 Support for IE -->
-  <!--[if lt IE 9]>
-  <script src="js/html5shim.js"></script>
-  <![endif]-->
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="img/favicon/favicon.png">
+    <meta charset="utf-8" />
+    <title>joungpig后台</title>
+    <meta name="description" content="Dashboard" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="Public/Admin/add/img/icon9.png" type="image/x-icon">
+    <link href="Public/Admin/add/css/bootstrap.min.css" rel="stylesheet" />
+    <link id="bootstrap-rtl-link" href="" rel="stylesheet" />
+    <!--<link id="beyond-link" href="/Public/add/css/beyond.min.css" rel="stylesheet" type="text/css" />-->
+    <link href="Public/Admin/add/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="Public/Admin/add/css/weather-icons.min.css" rel="stylesheet" />
+    <!--引入 Js-->
+    <script src="Public/Admin/add/js/jquery-1.7.2.min.js"></script>
+    <script src="Public/Admin/add/js/bootstrap.min.js"></script>
+    <script src="Public/Admin/add/js/layoutManager.js"></script>
+    <!--layer-->
+    <script src="Public/common/layer/layer.js"></script>
+    <!--layer END-->
+    <!--layerdate-->
+    <script src="Public/common/laydate/laydate.js"></script>
+    <!--layerdate END-->
+    <style>
+        /* added by xhliu end */
+        /**新建更新实体底部浮动保存栏*/
+        .bottomBar{
+            position:fixed;
+            bottom:0px;
+            padding:8px 15px 8px 15px;
+            width:100%;
+            background:rgb(255, 255, 255);
+            border-top:1px solid rgb(229,229,229);
+        }
+        /*select{height: 30px;font-size: 14px;!important;}*/
+        ul{border-radius: 4px;height: 30px;}
+    </style>
 </head>
-
-<body>
-<!--导航-->
-<div class="navbar navbar-fixed-top bs-docs-nav" role="banner">
-
-    <div class="conjtainer">
-        <!-- Menu button for smallar screens -->
-        <div class="navbar-header">
-            <button class="navbar-toggle btn-navbar" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-                <span>菜单</span>
-            </button>
-            <!-- Site name for smallar screens -->
-            <a href="index.html" class="navbar-brand hidden-lg">首页</a>
-        </div>
-        <!-- Navigation starts -->
-        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-
-            <ul class="nav navbar-nav">
-
-                <!-- Upload to server link. Class "dropdown-big" creates big dropdown -->
-                <li class="dropdown dropdown-big">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="label label-success"><i class="icon-cloud-upload"></i></span> 数据库备份</a>
-                    <!-- Dropdown -->
-                    <ul class="dropdown-menu">
-                        <li>
-                            <!-- Using "icon-spin" class to rotate icon. -->
-                            <p><span class="label label-info"><i class="icon-cloud"></i></span> 目前版本2016-12-27</p>
-                            <!-- Dropdown menu footer -->
-                        </li>
-                    </ul>
-                </li>
-
-                <!-- Sync to server link -->
-                <li class="dropdown dropdown-big">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="label label-danger"><i class="icon-refresh"></i></span> 数据库还原</a>
-                    <!-- Dropdown -->
-                    <ul class="dropdown-menu">
-                        <li>
-                            <!-- Using "icon-spin" class to rotate icon. -->
-                            <p><span class="label label-info"><i class="icon-cloud"></i></span> 还原版本2016-12-27</p>
-                            <!-- Dropdown menu footer -->
-                        </li>
-                    </ul>
-                </li>
-
-            </ul>
-
-            <!-- Search form -->
-            <form class="navbar-form navbar-left" role="search">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="搜索关键字">
-                </div>
-                <button type="button" class="btn btn-default">提交</button>
-            </form>
-            <!-- Links -->
-            <ul class="nav navbar-nav pull-right">
-                <li class="dropdown pull-right">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                        <i class="icon-user"></i> 管理员 <b class="caret"></b>
-                    </a>
-                    <!-- Dropdown menu -->
-                    <ul class="dropdown-menu">
-                        <li><a href="#"><i class="icon-user"></i> 修改密码</a></li>
-                        <li><a href="login.html"><i class="icon-off"></i> 退出</a></li>
-                    </ul>
-                </li>
-
-            </ul>
-        </nav>
-
-    </div>
-</div>
-<!--导航end-->
-
-
-<!--头部-->
-<!-- Header starts -->
-<header>
-    <div class="container">
-        <div class="row">
-
-            <!-- Logo section -->
-            <div class="col-md-4">
-                <!-- Logo. -->
-                <div class="logo">
-                    <h1><a href="#">joungpig<span class="bold"></span></a></h1>
-                </div>
-                <!-- Logo ends -->
-            </div>
-
-            <!-- Button section -->
-
-
-            <!-- Data section -->
-
-            <div class="col-md-8" style="text-align: right">
-                <div class="header-data">
-
-                    <!-- Traffic data -->
-                    <div class="hdata">
-                        <div class="mcol-left">
-                            <!-- Icon with red background -->
-                            <i class="icon-signal bred"></i>
+<!--引入 head END-->
+<body style="overflow-y: auto;padding-top: 0%;outline: none">
+<div class="scrollbar mCustomScrollbar _mCS_1 mCS_no_scrollbar" style="height: 100%; width: 100%; position: relative; overflow: visible;background-color: #fff" >
+    <div id="mCSB_1" class="mCustomScrollBox mCS-3d mCSB_vertical mCSB_outside" style="max-height: none;border: none;outline: none" tabindex="0">
+        <div id="mCSB_1_container" class="mCSB_container mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
+    <input type="hidden" value="Account" id="entityName">
+    <input type="hidden" value="canCreate" id="action">
+    <input type="hidden" id="owningUserChange" value="true">
+    <form class="form-group" style="border: none" id="form">
+        <div id="intro-create-customer" class="container">
+            <input type="hidden" id="havaSetLayoutPrivileges" style="border-radius: 3px;">
+            <input hidden="hidden" id="type" value="1" style="border-radius: 3px;">
+            <div class="form-horizontal" style="clear:both;">
+                <a onclick="LM.toggleAreaTitle($(this),&#39;1416981460149&#39;)">
+                    <i class="fa fa-lg fa-caret-down"></i>
+                    用户信息</a>
+                <div name="under_line" class="under_line"></div>
+                <br>
+                <div id="1416981460149" style="display:block">
+                    <div class="form-group">
+                        <label class="control-label col-xs-2">
+                            <font color="#EE7942">※</font>
+                            手机号码
+                        </label>
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control" placeholder="请输入手机号码" name="mobilephone" label="手机号码" id="mobilephone">
                         </div>
-                        <div class="mcol-right">
-                            <!-- Number of visitors -->
-                            <p><a href="#"><?php echo ($vcount); ?>次</a> <em>访问</em></p>
-                        </div>
-                        <div class="clearfix"></div>
                     </div>
-
-                    <!-- Members data -->
-                    <div class="hdata">
-                        <div class="mcol-left">
-                            <!-- Icon with blue background -->
-                            <i class="icon-user bblue"></i>
+                    <div class="form-group">
+                        <label class="control-label col-xs-2">
+                            <font color="#EE7942">※</font>
+                            用户名称
+                        </label>
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control" placeholder="请输入用户名称" name="name" label="用户名称" id="name">
                         </div>
-                        <div class="mcol-right">
-                            <!-- Number of visitors -->
-                            <p><a href="#"><?php echo ($ucount); ?>位</a> <em>用户</em></p>
-                        </div>
-                        <div class="clearfix"></div>
                     </div>
-
-                    <!-- revenue data -->
-                    <div class="hdata">
-                        <div class="mcol-left">
-                            <!-- Icon with green background -->
-                            <i class="icon-money bgreen"></i>
+                    <div class="form-group">
+                        <label class="control-label col-xs-2">
+                            <font color="#EE7942">※</font>
+                           用户密码
+                        </label>
+                        <div class="col-xs-10">
+                            <input type="password" class="form-control" placeholder="请输入用户密码" name="password" label="用户密码" id="password">
                         </div>
-                        <div class="mcol-right">
-                            <!-- Number of visitors -->
-                            <p><a href="#"><?php echo ($wcount); ?>篇</a><em>文章</em></p>
-                        </div>
-                        <div class="clearfix"></div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</header>
+    </form>
 
-<!-- Header ends -->
-<!--头部end-->
+        </div></div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-3d mCSB_scrollTools_vertical"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 70px; display: none; height: 731px; max-height: 721px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 70px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div>
+<div style="display:none;" id="container"> </div>
+<br><br><br>
 
-<!-- Main content starts -->
-
-<div class="content">
-
-      <!--菜单-->
-  <!-- Sidebar -->
-<div class="sidebar">
-    <div class="sidebar-dropdown"><a href="#">导航</a></div>
-    <!--- Sidebar navigation -->
-    <!-- If the main navigation has sub navigation, then add the class "has_sub" to "li" of main navigation. -->
-    <ul id="nav">
-        <!-- Main menu with font awesome icon -->
-        <li class="has_sub"><a href="#"><i class="icon-list-alt"></i>网页数据<span class="pull-right"><i class="icon-chevron-right"></i></span></a>
-            <ul>
-                <li><a href="<?php echo U('Data/invoice');?>">基础信息</a></li>
-                <li><a href="<?php echo U('Data/data');?>">访问数据</a></li>
-            </ul>
-        </li>
-        <li class="has_sub"><a href="#"><i class=" icon-share-alt"></i>引导页<span class="pull-right"><i class="icon-chevron-right"></i></span></a>
-            <ul>
-              <li><a href="<?php echo U('Start/index');?>">管理</a></li>
-              <li><a href="<?php echo U('Start/add');?>">添加</a></li>
-            </ul>
-        </li>
-        <li class="has_sub"><a href="#"><i class="icon-book"></i>栏目<span class="pull-right"><i class="icon-chevron-right"></i></span></a>
-            <ul>
-                <li><a href="<?php echo U('columu/index');?>">管理栏目</a></li>
-                <li><a href="<?php echo U('columu/add');?>">增加栏目</a></li>
-            </ul>
-        </li>
-        <li class="has_sub"><a href="#"><i class="icon-home"></i>首页<span class="pull-right"><i class="icon-chevron-right"></i></span></a>
-            <ul>
-                <li><a href="<?php echo U('fuli/index');?>">福利</a></li>
-                <li><a href="<?php echo U('columu/index');?>">联系方式</a></li>
-                <li><a href="<?php echo U('columu/index');?>">微信公众号图片</a></li>
-            </ul>
-        </li>
-        <li class="has_sub"><a href="#"><i class="icon-circle-arrow-down"></i> 脚部 <span class="pull-right"><i class="icon-chevron-right"></i></span></a>
-            <ul>
-                <li><a href="media.html">友情链接</a></li>
-                <li><a href="statement.html">网站备案</a></li>
-            </ul>
-        </li>
-        <li class="has_sub"><a href="#"><i class="icon-calendar"></i> 文章管理  <span class="pull-right"><i class="icon-chevron-right"></i></span></a>
-            <ul>
-                <li><a href="<?php echo U('article/index');?>">文章管理</a></li>
-                <li><a href="<?php echo U('article/add');?>">增加文章</a></li>
-                <li><a href="<?php echo U('article/type');?>">文章类型</a></li>
-                <li><a href="<?php echo U('article/tag');?>">文章标签</a></li>
-            </ul>
-        </li>
-        <li class="has_sub"><a href="#"><i class="icon-user"></i> 用户 <span class="pull-right"><i class="icon-chevron-right"></i></span></a>
-            <ul>
-                <li><a href="<?php echo U('user/index');?>">用户管理</a></li>
-                <li><a href="<?php echo U('user/add');?>">增加用户</a></li>
-            </ul>
-        </li>
-        <li class="has_sub"><a href="#"><i class="icon-wrench"></i> 网站SEO<span class="pull-right"><i class="icon-chevron-right"></i></span></a>
-            <ul>
-                <li><a href="media.html">用户管理</a></li>
-                <li><a href="media.html">增加用户</a></li>
-            </ul>
-        </li>
-    </ul>
-</div>
-
-<!-- Sidebar ends -->
-  <!--菜单end-->
-
-  	<!-- Main bar -->
-  	<div class="mainbar">
-
-      <!--面包屑导航-->
-
-      <div class="page-head">
-    <h2 class="pull-left"><i class="icon-home"></i> 首页</h2>
-
-    <!-- Breadcrumb -->
-    <div class="bread-crumb pull-right">
-        <a href="index.html"><i class="icon-home"></i> 首页</a>
-        <!-- Divider -->
-        <span class="divider">/</span>
-        <a href="#" class="bread-current">控制台</a>
-    </div>
-
-    <div class="clearfix"></div>
-
-</div>
-
-      <!--面包屑导航end-->
-
-
-
-	    <!-- Matter -->
-
-	    <div class="matter">
-        <div class="container">
-
-          <div class="row">
-
-            <div class="col-md-12">
-
-
-              <div class="widget wgreen">
-                
-                <div class="widget-head">
-                  <div class="pull-left">增加用户</div>
-                  <div class="widget-icons pull-right">
-                    <a href="#" class="wminimize"><i class="icon-chevron-up"></i></a> 
-                    <a href="#" class="wclose"><i class="icon-remove"></i></a>
-                  </div>
-                  <div class="clearfix"></div>
-                </div>
-
-                <div class="widget-content">
-                  <div class="padd">
-                    <hr />
-                    <!-- Form starts.  -->
-                     <form class="form-horizontal" role="form" action="<?php echo U('User/add');?>" method="post">
-                                <div class="form-group">
-                                  <label class="col-lg-4 control-label">用户名称</label>
-                                  <div class="col-lg-8">
-                                    <input type="text" class="form-control" placeholder="用户名称" name="name">
-                                  </div>
-                                </div>
-                                
-                                <div class="form-group">
-                                  <label class="col-lg-4 control-label">用户密码</label>
-                                  <div class="col-lg-8">
-                                    <input type="password" class="form-control" placeholder="用户密码" name="password">
-                                  </div>
-                                </div>
-                                    <hr />
-                                <div class="form-group">
-                                  <div class="col-lg-offset-1 col-lg-9">
-                                    <button  class="btn btn-primary">提交</button>
-                                  </div>
-                                </div>
-                              </form>
-                  </div>
-                </div>
-                  <div class="widget-foot">
-                    <!-- Footer goes here -->
-                  </div>
-              </div>  
-
-            </div>
-
-          </div>
-
-        </div>
-		  </div>
-
-		<!-- Matter ends -->
-
-    </div>
-
-   <!-- Mainbar ends -->	    	
-   <div class="clearfix"></div>
-
-</div>
-<!-- Content ends -->
-
-<!--foot-->
-<!-- Footer starts -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <!-- Copyright info -->
-                <p class="copy">Copyright &copy; 2012 | <a href="#">Your Site</a> </p>
+<div class="bottomBar" id="intro-save-customer">
+    <div class="row">
+        <!-- <div class="col-xs-12" id="intro-save-customer">	 -->
+        <div class="col-xs-12">
+            <div class="pull-right">
+                <!--<button class="btn-link" type="button" onclick="check(this)" id="btn_saveAndOpen"><i class="fa fa-fw fa-save"></i>保存并打开</button>-->
+                <!--&nbsp;-->
+                <button class="btn btn-warning" type="button" id="btn_save"><i class="fa fa-fw fa-save"></i>保存</button>
+                &nbsp;
+                <button class="btn btn-default" id="returnBtn" type="button"><i class="fa fa-fw fa-mail-reply"></i>取消</button>
             </div>
         </div>
     </div>
-</footer>
-<!--foot end-->
+</div>
+<!--
+<input type="button" class="btn btn-success" value="保存" onclick="check()" id="btn_save" />
+-->
+<script type="text/javascript">
+    $('#btn_save').on('click', function(){
 
-<!-- Scroll to top -->
-<span class="totop"><a href="#"><i class="icon-chevron-up"></i></a></span>
+        //点击后封禁提交按钮
+        $('#btn_save').attr('disabled',"true");
 
-<!--js-->
-<!-- JS -->
-<script src="/Public/monkey/js/jquery.js"></script> <!-- jQuery -->
-<script src="/Public/monkey/js/bootstrap.js"></script> <!-- Bootstrap -->
-<script src="/Public/monkey/js/jquery-ui-1.9.2.custom.min.js"></script> <!-- jQuery UI -->
-<script src="/Public/monkey/js/fullcalendar.min.js"></script> <!-- Full Google Calendar - Calendar -->
-<script src="/Public/monkey/js/jquery.rateit.min.js"></script> <!-- RateIt - Star rating -->
-<script src="/Public/monkey/js/jquery.prettyPhoto.js"></script> <!-- prettyPhoto -->
+        var data =  $('#form').serialize();
+        $.ajax({
+            cache: false,
+            type: "POST",
+            url: "<?php echo U('user/add');?>",
+            data: data,
+            async: false,
+            success: function(msg){
+                if (msg.error) {
+                    layer.msg(msg.info);
+                    $('#btn_save').removeAttr('disabled');
+                } else if (msg.success) {
+                    layer.msg(msg.info);
+                    setTimeout(function(){
+                        window.parent.location.reload();
+                    },2000);
+                }
+            },
+            error: function(msg){
+            layer.msg('系统异常,请稍后再试!');
+            $('#btn_save').removeAttr('disabled');
+            }
+        });
+    });
 
-<!-- jQuery Flot -->
-<script src="/Public/monkey/js/excanvas.min.js"></script>
-<script src="/Public/monkey/js/jquery.flot.js"></script>
-<script src="/Public/monkey/js/jquery.flot.resize.js"></script>
-<script src="/Public/monkey/js/jquery.flot.pie.js"></script>
-<script src="/Public/monkey/js/jquery.flot.stack.js"></script>
+    $(document).ready(function(){
 
-<!-- jQuery Notification - Noty -->
-<script src="/Public/monkey/js/jquery.noty.js"></script> <!-- jQuery Notify -->
-<script src="/Public/monkey/js/themes/default.js"></script> <!-- jQuery Notify -->
-<script src="/Public/monkey/js/layouts/bottom.js"></script> <!-- jQuery Notify -->
-<script src="/Public/monkey/js/layouts/topRight.js"></script> <!-- jQuery Notify -->
-<script src="/Public/monkey/js/layouts/top.js"></script> <!-- jQuery Notify -->
-<!-- jQuery Notification ends -->
+        $('.close, #returnBtn').click(function(event){
+            parent.layer.closeAll();
+//            if (!!window.parent && !!window.parent.popDialog) {
+//                window.parent.popDialog.modal('hide');
+//            }
+        });
 
-<script src="/Public/monkey/js/sparklines.js"></script> <!-- Sparklines -->
-<script src="/Public/monkey/js/jquery.cleditor.min.js"></script> <!-- CLEditor -->
-<script src="/Public/monkey/js/bootstrap-datetimepicker.min.js"></script> <!-- Date picker -->
-<script src="/Public/monkey/js/bootstrap-switch.min.js"></script> <!-- Bootstrap Toggle -->
-<script src="/Public/monkey/js/filter.js"></script> <!-- Filter for support page -->
-<script src="/Public/monkey/js/custom.js"></script> <!-- Custom codes -->
-<script src="/Public/monkey/js/charts.js"></script> <!-- Charts & Graphs -->
+        if (parent.window.addTab) {
+            // 在呼叫中心界面打开新建客户
+            $(".event-iframe:visible", parent.document).attr("src", "/event/createEvent?typeCode=1");
+            $("#btn_saveAndOpen, #returnBtn").remove();
+        }
 
-<!-- Script for this page -->
-<!--js end-->
+    });
 
+</script>
+<div class="token-input-dropdown-facebook" style="display: none;"></div><div class="token-input-dropdown-facebook" style="display: none;"></div><div class="token-input-dropdown-facebook" style="display: none;"></div>
 </body>
+
 </html>

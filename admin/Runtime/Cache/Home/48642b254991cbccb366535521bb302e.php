@@ -1,41 +1,77 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
   <!-- Title and other stuffs -->
-  <title>表格页面 Bootstrap响应式后台管理系统模版Mac - 代码家园-www.daimajiayuan.com</title> 
-  <meta name="keywords" content="Bootstrap模版,Bootstrap模版下载,Bootstrap教程,Bootstrap中文,后台管理系统模版,后台模版下载,后台管理系统,后台管理模版" />
-  <meta name="description" content="代码家园-www.daimajiayuan.com提供Bootstrap模版,后台管理系统模版,后台管理界面,Bootstrap教程,Bootstrap中文翻译等相关Bootstrap插件下载" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>www.joungpig.com后台管理系统</title> 
   <meta name="author" content="">
+
   <!--样式-->
   <!-- Stylesheets -->
-<link href="/Public/monkey/style/bootstrap.css" rel="stylesheet">
+<link href="Public/Admin/style/bootstrap.css" rel="stylesheet">
 <!-- Font awesome icon -->
-<link rel="stylesheet" href="/Public/monkey/style/font-awesome.css">
+<link rel="stylesheet" href="Public/Admin/style/font-awesome.css">
 <!-- jQuery UI -->
-<link rel="stylesheet" href="/Public/monkey/style/jquery-ui.css">
+<link rel="stylesheet" href="Public/Admin/style/jquery-ui.css">
 <!-- Calendar -->
-<link rel="stylesheet" href="/Public/monkey/style/fullcalendar.css">
+<link rel="stylesheet" href="Public/Admin/style/fullcalendar.css">
 <!-- prettyPhoto -->
-<link rel="stylesheet" href="/Public/monkey/style/prettyPhoto.css">
+<link rel="stylesheet" href="Public/Admin/style/prettyPhoto.css">
 <!-- Star rating -->
-<link rel="stylesheet" href="/Public/monkey/style/rateit.css">
+<link rel="stylesheet" href="Public/Admin/style/rateit.css">
 <!-- Date picker -->
-<link rel="stylesheet" href="/Public/monkey/style/bootstrap-datetimepicker.min.css">
+<link rel="stylesheet" href="Public/Admin/style/bootstrap-datetimepicker.min.css">
 <!-- CLEditor -->
-<link rel="stylesheet" href="/Public/monkey/style/jquery.cleditor.css">
+<link rel="stylesheet" href="Public/Admin/style/jquery.cleditor.css">
 <!-- Bootstrap toggle -->
-<link rel="stylesheet" href="/Public/monkey/style/bootstrap-switch.css">
+<link rel="stylesheet" href="Public/Admin/style/bootstrap-switch.css">
 <!-- Main stylesheet -->
-<link href="/Public/monkey/style/style.css" rel="stylesheet">
+<link href="Public/Admin/style/style.css" rel="stylesheet">
 <!-- Widgets stylesheet -->
-<link href="/Public/monkey/style/widgets.css" rel="stylesheet">
+<link href="Public/Admin/style/widgets.css" rel="stylesheet">
 
 <link rel="shortcut icon " type="images/x-icon" href="/Public/monkey/img/icons/timg.jpg">
-<link href="/Public/monkey/style/bootstrap-multiselect.css" rel="stylesheet">
+<link href="Public/Admin/style/bootstrap-multiselect.css" rel="stylesheet">
+<style>
+    th{text-align: center;}
+    td{text-align: center;}
+    #editor_panel {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 1001;
+        border-left: 1px solid #ccc;
+        background-color: #fff;
+        box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+    }
 
+    #editor_panel {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 1001;
+        border-left: 1px solid #ccc;
+        background-color: #fff;
+        box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+    }
+
+    #editor_panel_body {
+        width: 900px;
+        height: 100%;
+        margin-right: -1000px;
+        margin-top: 67px;
+    }
+
+    #editor_panel_body iframe {
+        width: 100%;
+        height: 100%;
+    }
+</style>
   <!--样式end-->
   
   <!-- HTML5 Support for IE -->
@@ -103,7 +139,7 @@
             <div class="col-md-4">
                 <!-- Logo. -->
                 <div class="logo">
-                    <h1><a href="#">joungpig<span class="bold"></span></a></h1>
+                    <h1><a href="#"><span class="bold" style="margin-right: 2%;"><img src="Public/Admin/logo.png" width="60" height="60"></span>圣云后台</a></h1>
                 </div>
                 <!-- Logo ends -->
             </div>
@@ -137,23 +173,23 @@
                         </div>
                         <div class="mcol-right">
                             <!-- Number of visitors -->
-                            <p><em>上传登录时间</em><a href="#"><?php echo ($logintime); ?></a> </p>
+                            <p><em>上次登录时间</em><a href="#"><?php echo ($logintime); ?></a> </p>
                         </div>
                         <div class="clearfix"></div>
                     </div>
 
                     <!-- revenue data -->
-                    <div class="hdata">
-                        <div class="mcol-left">
-                            <!-- Icon with green background -->
-                            <i class="icon-money bgreen"></i>
-                        </div>
-                        <div class="mcol-right">
-                            <!-- Number of visitors -->
-                            <p><em>发表文章</em><a href="#"><?php echo ($wcount); ?>篇</a></p>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
+                    <!--<div class="hdata">-->
+                        <!--<div class="mcol-left">-->
+                            <!--&lt;!&ndash; Icon with green background &ndash;&gt;-->
+                            <!--<i class="icon-money bgreen"></i>-->
+                        <!--</div>-->
+                        <!--<div class="mcol-right">-->
+                            <!--&lt;!&ndash; Number of visitors &ndash;&gt;-->
+                            <!--<p><em>发表文章</em><a href="#"><?php echo ($wcount); ?>篇</a></p>-->
+                        <!--</div>-->
+                        <!--<div class="clearfix"></div>-->
+                    <!--</div>-->
                 </div>
             </div>
         </div>
@@ -180,7 +216,8 @@
                 <!--<li><a href="<?php echo U('Data/data');?>">访问数据</a></li>-->
             <!--</ul>-->
         <!--</li>-->
-        <li><a href="<?php echo U('Data/data');?>"><i class="icon-home"></i> 网页数据</a></li>
+        <li><a href="<?php echo U('Data/data');?>" ><i class="icon-home"></i> 网页数据</a></li>
+        <li><a href="<?php echo U('user/index');?>" ><i class="icon-user"></i>用户</a></li>
         <!--<li class="has_sub"><a href="#"><i class=" icon-share-alt"></i>引导页<span class="pull-right"><i class="icon-chevron-right"></i></span></a>-->
             <!--<ul>-->
               <!--<li><a href="<?php echo U('Start/index');?>">管理</a></li>-->
@@ -194,21 +231,16 @@
             <!--</ul>-->
         <!--</li>-->
         <li><a href="<?php echo U('columu/index');?>" ><i class="icon-book"></i> 栏目</a></li>
-        <li class="has_sub"><a href="#"><i class="icon-home"></i>联系方式<span class="pull-right"><i class="icon-chevron-right"></i></span></a>
-            <ul>
-                <li><a href="<?php echo U('fuli/index');?>">福利</a></li>
-                <li><a href="<?php echo U('link/index');?>">联系方式</a></li>
-                <li><a href="<?php echo U('weixing/index');?>">微信公众号图片</a></li>
-            </ul>
-        </li>
-
+        <li><a href="<?php echo U('nav/index');?>" ><i class="icon-search"></i> 导航</a></li>
+        <li><a href="<?php echo U('article/index');?>" ><i class="icon-calendar"></i>文章</a></li>
+        <li><a href="<?php echo U('fuli/index');?>"><i class="icon-home"></i>福利</a></li>
         <!--<li class="has_sub"><a href="#"><i class="icon-circle-arrow-down"></i> 脚部 <span class="pull-right"><i class="icon-chevron-right"></i></span></a>-->
             <!--<ul>-->
                 <!--<li><a href="<?php echo U('foot/index');?>">友情管理</a></li>-->
                 <!--<li><a href="statement.html">网站备案</a></li>-->
             <!--</ul>-->
         <!--</li>-->
-        <li><a href="<?php echo U('foot/index');?>" ><i class="icon-circle-arrow-down"></i>脚部</a></li>
+        <li><a href="<?php echo U('foot/index');?>" ><i class="icon-circle-arrow-down"></i>友情连接</a></li>
         <!--<li class="has_sub"><a href="#"><i class="icon-calendar"></i> 文章管理  <span class="pull-right"><i class="icon-chevron-right"></i></span></a>-->
             <!--<ul>-->
                 <!--<li><a href="<?php echo U('article/index');?>">文章管理</a></li>-->
@@ -217,21 +249,23 @@
                 <!--<li><a href="<?php echo U('article/tag');?>">文章标签</a></li>-->
             <!--</ul>-->
         <!--</li>-->
-        <li><a href="<?php echo U('article/index');?>" ><i class="icon-calendar"></i>文章</a></li>
+
         <!--<li class="has_sub"><a href="#"><i class="icon-user"></i> 用户 <span class="pull-right"><i class="icon-chevron-right"></i></span></a>-->
             <!--<ul>-->
                 <!--<li><a href="<?php echo U('user/index');?>">用户管理</a></li>-->
                 <!--<li><a href="<?php echo U('user/add');?>">增加用户</a></li>-->
             <!--</ul>-->
         <!--</li>-->
-        <li><a href="<?php echo U('user/index');?>" ><i class="icon-user"></i>用户</a></li>
         <!--<li class="has_sub"><a href="#"><i class="icon-wrench"></i> 网站SEO<span class="pull-right"><i class="icon-chevron-right"></i></span></a>-->
             <!--<ul>-->
                 <!--<li><a href="media.html">用户管理</a></li>-->
                 <!--<li><a href="media.html">增加用户</a></li>-->
             <!--</ul>-->
         <!--</li>-->
-        <li><a href="<?php echo U('columu/index');?>" ><i class="icon-wrench"></i>网站SEO</a></li>
+        <!--<li><a href="<?php echo U('columu/index');?>" ><i class="icon-wrench"></i>网站SEO</a></li>-->
+        <li><a href="<?php echo U('wx/wxController');?>" ><i class="icon-comment"></i>微信公众号</a></li>
+        <li><a href="<?php echo U('Alipay/index');?>" ><i class="icon-shopping-cart"></i>支付宝支付</a></li>
+        <!--<li><a href="<?php echo U('WxAay/index');?>" ><i class="icon-shopping-cart"></i>微信支付</a></li>-->
     </ul>
 </div>
 
@@ -272,8 +306,27 @@
 
                 <div class="widget">
 
+                  <div class="widget-head">
+                    <div class="pull-left">
+                      <a  class="btn btn-default" id="add">新增用户</a>
+                    </div>
+                    <div class="widget-icons pull-right">
+                      <a href="#" class="wminimize"><i class="icon-chevron-up"></i></a>
+                      <a href="#" class="wclose"><i class="icon-remove"></i></a>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+
+                  <div class="widget-content">
+
+                  </div>
+
+                </div>
+
+                <div class="widget">
+
                 <div class="widget-head">
-                  <div class="pull-left">栏目</div>
+                  <div class="pull-left">用户（<?php echo ($count); ?>）</div>
                   <div class="widget-icons pull-right">
                     <a href="#" class="wminimize"><i class="icon-chevron-up"></i></a> 
                     <a href="#" class="wclose"><i class="icon-remove"></i></a>
@@ -286,34 +339,27 @@
                     <table class="table table-striped table-bordered table-hover">
                       <thead>
                         <tr>
-                          <th>id</th>
-                          <th>栏目名称</th>
+                          <th>#</th>
+                          <th>手机号码</th>
+                          <th>用户名称</th>
                           <th>登录次数</th>
                           <th>登录IP</th>
                           <th>上次登录时间</th>
                           <th>状态</th>
-                          <th>操作</th>
                         </tr>
                       </thead>
                       <tbody>
-                      <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+                      <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr id="<?php echo ($vo["id"]); ?>">
                           <td><?php echo ($vo["id"]); ?></td>
-                          <td><?php echo ($vo["username"]); ?></td>
+                          <td><?php echo ($vo["mobilephone"]); ?></td>
+                          <td><a style="color:#ff9f00;" class="openRecord" url="<?php echo U('user/edit',array('id'=>'accountId'));?>"><?php echo ($vo["username"]); ?></a></td>
                           <td><?php echo ($vo["count"]); ?></td>
                           <td><?php echo ($vo["ip"]); ?></td>
                           <td><?php echo ($_SESSION['logintime']); ?></td>
                           <td>
-                            <?php if($vo['state'] == 1): ?><span class="label label-success">启用</span><?php endif; ?>
-                          <?php if($vo['state'] == 0): ?><span class="label label-warning">未启用</span><?php endif; ?>
-                          <?php if($vo['state'] == 2): ?><span class="label label-danger">删除</span><?php endif; ?>
-                          <td>
-
-                              <a  href="<?php echo U('user/put', array('id'=>$vo['id']));?>"  class="btn btn-xs btn-success"><i class="icon-ok"></i> </a>
-                              <a  href="<?php echo U('user/down', array('id'=>$vo['id']));?>" class="btn btn-xs btn-info"><i class="icon-arrow-down"></i> </a>
-                              <a  href="<?php echo U('user/del', array('id'=>$vo['id']));?>"  class="btn btn-xs btn-danger"><i class="icon-remove"></i> </a>
-                              <a  href="<?php echo U('user/edit', array('id'=>$vo['id']));?>" class="btn btn-xs btn-warning"><i class="icon-pencil"></i> </a>
-                          
-                          </td>
+                            <?php if($vo['state'] == 1): ?><span>启用</span><?php endif; ?>
+                          <?php if($vo['state'] == 0): ?><span>未启用</span><?php endif; ?>
+                          <?php if($vo['state'] == 2): ?><span>删除</span><?php endif; ?>
                         </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                       </tbody>
                     </table>
@@ -324,7 +370,6 @@
                         <ul class="pagination pull-right">
                           <?php echo ($page); ?>
                         </ul>
-                      <a href="<?php echo U('article/add');?>" class="btn btn-default">添加用户</a>
                       <div class="clearfix"></div> 
 
                     </div>
@@ -373,43 +418,110 @@
 
 <!--js-->
 <!-- JS -->
-<script src="/Public/monkey/js/jquery.js"></script> <!-- jQuery -->
-<script src="/Public/monkey/js/bootstrap.js"></script> <!-- Bootstrap -->
-<script src="/Public/monkey/js/jquery-ui-1.9.2.custom.min.js"></script> <!-- jQuery UI -->
-<script src="/Public/monkey/js/fullcalendar.min.js"></script> <!-- Full Google Calendar - Calendar -->
-<script src="/Public/monkey/js/jquery.rateit.min.js"></script> <!-- RateIt - Star rating -->
-<script src="/Public/monkey/js/jquery.prettyPhoto.js"></script> <!-- prettyPhoto -->
+<script src="Public/Admin/js/jquery.js"></script> <!-- jQuery -->
+<script src="Public/Admin/js/bootstrap.js"></script> <!-- Bootstrap -->
+<script src="Public/Admin/js/jquery-ui-1.9.2.custom.min.js"></script> <!-- jQuery UI -->
+<script src="Public/Admin/js/fullcalendar.min.js"></script> <!-- Full Google Calendar - Calendar -->
+<script src="Public/Admin/js/jquery.rateit.min.js"></script> <!-- RateIt - Star rating -->
+<script src="Public/Admin/js/jquery.prettyPhoto.js"></script> <!-- prettyPhoto -->
 
 <!-- jQuery Flot -->
-<script src="/Public/monkey/js/excanvas.min.js"></script>
-<script src="/Public/monkey/js/jquery.flot.js"></script>
-<script src="/Public/monkey/js/jquery.flot.resize.js"></script>
-<script src="/Public/monkey/js/jquery.flot.pie.js"></script>
-<script src="/Public/monkey/js/jquery.flot.stack.js"></script>
+<script src="Public/Admin/js/excanvas.min.js"></script>
+<script src="Public/Admin/js/jquery.flot.js"></script>
+<script src="Public/Admin/js/jquery.flot.resize.js"></script>
+<script src="Public/Admin/js/jquery.flot.pie.js"></script>
+<script src="Public/Admin/js/jquery.flot.stack.js"></script>
 
 <!-- jQuery Notification - Noty -->
-<script src="/Public/monkey/js/jquery.noty.js"></script> <!-- jQuery Notify -->
-<script src="/Public/monkey/js/themes/default.js"></script> <!-- jQuery Notify -->
-<script src="/Public/monkey/js/layouts/bottom.js"></script> <!-- jQuery Notify -->
-<script src="/Public/monkey/js/layouts/topRight.js"></script> <!-- jQuery Notify -->
-<script src="/Public/monkey/js/layouts/top.js"></script> <!-- jQuery Notify -->
+<script src="Public/Admin/js/jquery.noty.js"></script> <!-- jQuery Notify -->
+<script src="Public/Admin/js/themes/default.js"></script> <!-- jQuery Notify -->
+<script src="Public/Admin/js/layouts/bottom.js"></script> <!-- jQuery Notify -->
+<script src="Public/Admin/js/layouts/topRight.js"></script> <!-- jQuery Notify -->
+<script src="Public/Admin/js/layouts/top.js"></script> <!-- jQuery Notify -->
 <!-- jQuery Notification ends -->
 
-<script src="/Public/monkey/js/sparklines.js"></script> <!-- Sparklines -->
-<script src="/Public/monkey/js/jquery.cleditor.min.js"></script> <!-- CLEditor -->
-<script src="/Public/monkey/js/bootstrap-datetimepicker.min.js"></script> <!-- Date picker -->
-<script src="/Public/monkey/js/bootstrap-switch.min.js"></script> <!-- Bootstrap Toggle -->
-<script src="/Public/monkey/js/filter.js"></script> <!-- Filter for support page -->
-<script src="/Public/monkey/js/custom.js"></script> <!-- Custom codes -->
-<script src="/Public/monkey/js/charts.js"></script> <!-- Charts & Graphs -->
-<script src="/Public/monkey/js/bootstrap-multiselect.js"></script>
+<script src="Public/Admin/js/sparklines.js"></script> <!-- Sparklines -->
+<script src="Public/Admin/js/jquery.cleditor.min.js"></script> <!-- CLEditor -->
+<script src="Public/Admin/js/bootstrap-datetimepicker.min.js"></script> <!-- Date picker -->
+<script src="Public/Admin/js/bootstrap-switch.min.js"></script> <!-- Bootstrap Toggle -->
+<script src="Public/Admin/js/filter.js"></script> <!-- Filter for support page -->
+<script src="Public/Admin/js/custom.js"></script> <!-- Custom codes -->
+<script src="Public/Admin/js/charts.js"></script> <!-- Charts & Graphs -->
+<script src="Public/Admin/js/bootstrap-multiselect.js"></script>
 
-
+<script src="Public/common/layer/layer.js"></script>
 
 
 <!-- Script for this page -->
 <!--js end-->
 
-
+<div id="editor_panel">
+  <div id="editor_panel_body" style="margin-right: -1000px;">
+    <iframe src="" frameborder="0" id="account-iframe"></iframe>
+  </div>
+</div>
 </body>
+
+<script>
+  $("#add").click(function(){
+    var url = "<?php echo U('user/add');?>";
+    layer.open({
+      type: 2,
+      title: '添加用户',
+      closeBtn: 0, //不显示关闭按钮
+      shadeClose: true,
+      shade: [0],
+      area: ['700px', '400px'],
+      //offset: 'rb', //右下角弹出
+      //time: 2000, //2秒后自动关闭
+      anim: 2,
+      content: [url], //iframe的url，no代表不显示滚动条
+    });
+  });
+</script>
+<script>
+  $('.openRecord').click(function(event){
+    var index = layer.load(2, {
+      content: '数据加载中',
+      shade: [0.4, '#393D49'],
+      // time: 10 * 1000,
+      success: function(layero) {
+        layero.css('padding-left', '30px');
+        layero.find('.layui-layer-content').css({
+          'padding-top': '40px',
+          'width': '70px',
+          'background-position-x': '16px'
+        });
+      }
+    })
+    var _iframe = $('#editor_panel_body iframe');
+    //获取这个职工的id
+    accountId = $(this).parents('tr').attr('id');
+    //生成url链接
+    var url=$(this ).attr('url');
+    //替换参数
+    str1 =  url.replace("accountId",accountId);
+    openEditorPanel(_iframe, str1, event);
+    layer.close(index);
+  });
+
+  function openEditorPanel(iframe, iframeSrc, event) {
+    $('#editor_panel_body').animate({'margin-right':0});
+    $(document.body).addClass('modal-open'); // 禁止显示垂直滚动条
+    iframe.attr('src', iframeSrc);
+    event.stopPropagation();
+  }
+
+  function closeEditorPanel() {
+    $('#editor_panel_body').animate({'margin-right':-1000});
+    $(document.body).removeClass('modal-open'); // 取消禁止显示垂直滚动条
+  }
+
+  $(document).click(function(event){
+    var _con = $('#editor_panel_body iframe');   // 设置目标区域
+    if(!_con.is(event.target) && _con.has(event.target).length === 0){ // Mark 1
+      closeEditorPanel();         //淡出消失
+    }
+  });
+</script>
 </html>

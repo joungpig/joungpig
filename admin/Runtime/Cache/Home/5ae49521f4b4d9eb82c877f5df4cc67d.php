@@ -10,30 +10,30 @@
 
     <!--样式-->
     <!-- Stylesheets -->
-<link href="/Public/Admin/style/bootstrap.css" rel="stylesheet">
+<link href="Public/Admin/style/bootstrap.css" rel="stylesheet">
 <!-- Font awesome icon -->
-<link rel="stylesheet" href="/Public/Admin/style/font-awesome.css">
+<link rel="stylesheet" href="Public/Admin/style/font-awesome.css">
 <!-- jQuery UI -->
-<link rel="stylesheet" href="/Public/Admin/style/jquery-ui.css">
+<link rel="stylesheet" href="Public/Admin/style/jquery-ui.css">
 <!-- Calendar -->
-<link rel="stylesheet" href="/Public/Admin/style/fullcalendar.css">
+<link rel="stylesheet" href="Public/Admin/style/fullcalendar.css">
 <!-- prettyPhoto -->
-<link rel="stylesheet" href="/Public/Admin/style/prettyPhoto.css">
+<link rel="stylesheet" href="Public/Admin/style/prettyPhoto.css">
 <!-- Star rating -->
-<link rel="stylesheet" href="/Public/Admin/style/rateit.css">
+<link rel="stylesheet" href="Public/Admin/style/rateit.css">
 <!-- Date picker -->
-<link rel="stylesheet" href="/Public/Admin/style/bootstrap-datetimepicker.min.css">
+<link rel="stylesheet" href="Public/Admin/style/bootstrap-datetimepicker.min.css">
 <!-- CLEditor -->
-<link rel="stylesheet" href="/Public/Admin/style/jquery.cleditor.css">
+<link rel="stylesheet" href="Public/Admin/style/jquery.cleditor.css">
 <!-- Bootstrap toggle -->
-<link rel="stylesheet" href="/Public/Admin/style/bootstrap-switch.css">
+<link rel="stylesheet" href="Public/Admin/style/bootstrap-switch.css">
 <!-- Main stylesheet -->
-<link href="/Public/Admin/style/style.css" rel="stylesheet">
+<link href="Public/Admin/style/style.css" rel="stylesheet">
 <!-- Widgets stylesheet -->
-<link href="/Public/Admin/style/widgets.css" rel="stylesheet">
+<link href="Public/Admin/style/widgets.css" rel="stylesheet">
 
 <link rel="shortcut icon " type="images/x-icon" href="/Public/monkey/img/icons/timg.jpg">
-<link href="/Public/Admin/style/bootstrap-multiselect.css" rel="stylesheet">
+<link href="Public/Admin/style/bootstrap-multiselect.css" rel="stylesheet">
 <style>
     th{text-align: center;}
     td{text-align: center;}
@@ -77,7 +77,7 @@
 
   <!-- HTML5 Support for IE -->
   <!--[if lt IE 9]>
-  <script src="/Public/Admin/js/html5shim.js"></script>
+  <script src="Public/Admin/js/html5shim.js"></script>
   <![endif]-->
 </head>
 
@@ -139,7 +139,7 @@
             <div class="col-md-4">
                 <!-- Logo. -->
                 <div class="logo">
-                    <h1><a href="#"><span class="bold" style="margin-right: 2%;"><img src="/Public/Admin/logo.png" width="60" height="60"></span>joungpig</a></h1>
+                    <h1><a href="#"><span class="bold" style="margin-right: 2%;"><img src="Public/Admin/logo.png" width="60" height="60"></span>圣云后台</a></h1>
                 </div>
                 <!-- Logo ends -->
             </div>
@@ -173,23 +173,23 @@
                         </div>
                         <div class="mcol-right">
                             <!-- Number of visitors -->
-                            <p><em>上传登录时间</em><a href="#"><?php echo ($logintime); ?></a> </p>
+                            <p><em>上次登录时间</em><a href="#"><?php echo ($logintime); ?></a> </p>
                         </div>
                         <div class="clearfix"></div>
                     </div>
 
                     <!-- revenue data -->
-                    <div class="hdata">
-                        <div class="mcol-left">
-                            <!-- Icon with green background -->
-                            <i class="icon-money bgreen"></i>
-                        </div>
-                        <div class="mcol-right">
-                            <!-- Number of visitors -->
-                            <p><em>发表文章</em><a href="#"><?php echo ($wcount); ?>篇</a></p>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
+                    <!--<div class="hdata">-->
+                        <!--<div class="mcol-left">-->
+                            <!--&lt;!&ndash; Icon with green background &ndash;&gt;-->
+                            <!--<i class="icon-money bgreen"></i>-->
+                        <!--</div>-->
+                        <!--<div class="mcol-right">-->
+                            <!--&lt;!&ndash; Number of visitors &ndash;&gt;-->
+                            <!--<p><em>发表文章</em><a href="#"><?php echo ($wcount); ?>篇</a></p>-->
+                        <!--</div>-->
+                        <!--<div class="clearfix"></div>-->
+                    <!--</div>-->
                 </div>
             </div>
         </div>
@@ -336,38 +336,38 @@
 <span class="totop"><a href="#"><i class="icon-chevron-up"></i></a></span>
     <!--js-->
     <!-- JS -->
-<script src="/Public/Admin/js/jquery.js"></script> <!-- jQuery -->
-<script src="/Public/Admin/js/bootstrap.js"></script> <!-- Bootstrap -->
-<script src="/Public/Admin/js/jquery-ui-1.9.2.custom.min.js"></script> <!-- jQuery UI -->
-<script src="/Public/Admin/js/fullcalendar.min.js"></script> <!-- Full Google Calendar - Calendar -->
-<script src="/Public/Admin/js/jquery.rateit.min.js"></script> <!-- RateIt - Star rating -->
-<script src="/Public/Admin/js/jquery.prettyPhoto.js"></script> <!-- prettyPhoto -->
+<script src="Public/Admin/js/jquery.js"></script> <!-- jQuery -->
+<script src="Public/Admin/js/bootstrap.js"></script> <!-- Bootstrap -->
+<script src="Public/Admin/js/jquery-ui-1.9.2.custom.min.js"></script> <!-- jQuery UI -->
+<script src="Public/Admin/js/fullcalendar.min.js"></script> <!-- Full Google Calendar - Calendar -->
+<script src="Public/Admin/js/jquery.rateit.min.js"></script> <!-- RateIt - Star rating -->
+<script src="Public/Admin/js/jquery.prettyPhoto.js"></script> <!-- prettyPhoto -->
 
 <!-- jQuery Flot -->
-<script src="/Public/Admin/js/excanvas.min.js"></script>
-<script src="/Public/Admin/js/jquery.flot.js"></script>
-<script src="/Public/Admin/js/jquery.flot.resize.js"></script>
-<script src="/Public/Admin/js/jquery.flot.pie.js"></script>
-<script src="/Public/Admin/js/jquery.flot.stack.js"></script>
+<script src="Public/Admin/js/excanvas.min.js"></script>
+<script src="Public/Admin/js/jquery.flot.js"></script>
+<script src="Public/Admin/js/jquery.flot.resize.js"></script>
+<script src="Public/Admin/js/jquery.flot.pie.js"></script>
+<script src="Public/Admin/js/jquery.flot.stack.js"></script>
 
 <!-- jQuery Notification - Noty -->
-<script src="/Public/Admin/js/jquery.noty.js"></script> <!-- jQuery Notify -->
-<script src="/Public/Admin/js/themes/default.js"></script> <!-- jQuery Notify -->
-<script src="/Public/Admin/js/layouts/bottom.js"></script> <!-- jQuery Notify -->
-<script src="/Public/Admin/js/layouts/topRight.js"></script> <!-- jQuery Notify -->
-<script src="/Public/Admin/js/layouts/top.js"></script> <!-- jQuery Notify -->
+<script src="Public/Admin/js/jquery.noty.js"></script> <!-- jQuery Notify -->
+<script src="Public/Admin/js/themes/default.js"></script> <!-- jQuery Notify -->
+<script src="Public/Admin/js/layouts/bottom.js"></script> <!-- jQuery Notify -->
+<script src="Public/Admin/js/layouts/topRight.js"></script> <!-- jQuery Notify -->
+<script src="Public/Admin/js/layouts/top.js"></script> <!-- jQuery Notify -->
 <!-- jQuery Notification ends -->
 
-<script src="/Public/Admin/js/sparklines.js"></script> <!-- Sparklines -->
-<script src="/Public/Admin/js/jquery.cleditor.min.js"></script> <!-- CLEditor -->
-<script src="/Public/Admin/js/bootstrap-datetimepicker.min.js"></script> <!-- Date picker -->
-<script src="/Public/Admin/js/bootstrap-switch.min.js"></script> <!-- Bootstrap Toggle -->
-<script src="/Public/Admin/js/filter.js"></script> <!-- Filter for support page -->
-<script src="/Public/Admin/js/custom.js"></script> <!-- Custom codes -->
-<script src="/Public/Admin/js/charts.js"></script> <!-- Charts & Graphs -->
-<script src="/Public/Admin/js/bootstrap-multiselect.js"></script>
+<script src="Public/Admin/js/sparklines.js"></script> <!-- Sparklines -->
+<script src="Public/Admin/js/jquery.cleditor.min.js"></script> <!-- CLEditor -->
+<script src="Public/Admin/js/bootstrap-datetimepicker.min.js"></script> <!-- Date picker -->
+<script src="Public/Admin/js/bootstrap-switch.min.js"></script> <!-- Bootstrap Toggle -->
+<script src="Public/Admin/js/filter.js"></script> <!-- Filter for support page -->
+<script src="Public/Admin/js/custom.js"></script> <!-- Custom codes -->
+<script src="Public/Admin/js/charts.js"></script> <!-- Charts & Graphs -->
+<script src="Public/Admin/js/bootstrap-multiselect.js"></script>
 
-<script src="/Public/common/layer/layer.js"></script>
+<script src="Public/common/layer/layer.js"></script>
 
 
 <!-- Script for this page -->
@@ -470,7 +470,7 @@
     });
 </script>
 <!--文章类型比例END-->
-<script src="/Public/Admin/highcharts/code/highcharts.js"></script>
-<script src="/Public/Admin/highcharts/code/modules/exporting.js"></script>
+<script src="Public/Admin/highcharts/code/highcharts.js"></script>
+<script src="Public/Admin/highcharts/code/modules/exporting.js"></script>
 </body>
 </html>

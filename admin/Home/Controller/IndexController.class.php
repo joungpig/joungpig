@@ -7,15 +7,13 @@ class IndexController extends PublicController {
      * 首页
      */
     public function index(){
-      //dump($_SESSION);die;
       $mview=array();//自定义空数组存放每月数据
       $year=$this->getYears();//获取当前年份
         for ($m=1; $m<=12; $m++) {
             if($m<10){
                 $m='0'.$m;
             }
-            $last = date("t",strtotime("$year-$m"));
-//            $last=cal_days_in_month(CAL_GREGORIAN,$m, $year);//获取每月天数
+            $last=cal_days_in_month(CAL_GREGORIAN,$m, $year);//获取每月天数
             $btime=strtotime($year.'-'.$m.'-'.'01 00:00:00');//开始时间
             $etime=strtotime($year.'-'.$m.'-'."$last 23:59:59");//结束时间
             $where['date']=array(array('BETWEEN',array($btime,$etime)));

@@ -59,6 +59,7 @@ class userController extends PublicController {
         if(IS_AJAX){
                 $pass=get_login($_POST['password']);
                 $user=M("User");
+                $user->mobilephone=I('post.mobilephone');
                 $user->username=I('post.name');
                 $user->password=$pass['password'];
                 $user->encrypt=$pass['encrypt'];

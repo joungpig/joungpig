@@ -8,6 +8,7 @@
   <meta name="author" content="">
 
   <!--样式-->
+
   <!-- Stylesheets -->
 <link href="Public/Admin/style/bootstrap.css" rel="stylesheet">
 <!-- Font awesome icon -->
@@ -78,7 +79,6 @@
   <!--[if lt IE 9]>
   <script src="js/html5shim.js"></script>
   <![endif]-->
-
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="img/favicon/favicon.png">
@@ -309,7 +309,7 @@
 
                   <div class="widget-head">
                     <div class="pull-left">
-                      <a  class="btn btn-default" id="add">新增福利</a>
+                      <a  class="btn btn-default" id="add">新增友情链接</a>
                     </div>
                     <div class="widget-icons pull-right">
                       <a href="#" class="wminimize"><i class="icon-chevron-up"></i></a>
@@ -327,7 +327,7 @@
                 <div class="widget">
 
                 <div class="widget-head">
-                  <div class="pull-left">福利（<?php echo ($count); ?>）</div>
+                  <div class="pull-left">友情链接（<?php echo ($count); ?>）</div>
                   <div class="widget-icons pull-right">
                     <a href="#" class="wminimize"><i class="icon-chevron-up"></i></a> 
                     <a href="#" class="wclose"><i class="icon-remove"></i></a>
@@ -341,19 +341,17 @@
                       <thead>
                         <tr>
                           <th>#</th>
+                          <th>网址</th>
                           <th>名称</th>
-                          <th>磁力</th>
-                          <th>点击</th>
                           <th>状态</th>
                         </tr>
                       </thead>
                       <tbody>
                       <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr id="<?php echo ($vo["id"]); ?>">
-                          <td width="45"><?php echo ($vo["id"]); ?></td>
-                          <td width="90"><a style="color:#ff9f00;" class="openRecord" url="<?php echo U('fuli/edit',array('id'=>'accountId'));?>"><?php echo ($vo["name"]); ?></a></td>
-                          <td width="290"><?php echo ($vo["content"]); ?></td>
-                          <td width="90"><?php echo ($vo["count"]); ?></td>
-                          <td width="90">
+                          <td><?php echo ($vo["id"]); ?></td>
+                          <td><a style="color:#ff9f00;" class="openRecord" url="<?php echo U('foot/edit',array('id'=>'accountId'));?>"><?php echo ($vo["web"]); ?></a></td>
+                          <td><?php echo ($vo["name"]); ?></td>
+                          <td>
                             <?php if($vo['state'] == 1): ?><span>启用</span><?php endif; ?>
                           <?php if($vo['state'] == 0): ?><span>未启用</span><?php endif; ?>
                           <?php if($vo['state'] == 2): ?><span>删除</span><?php endif; ?>
@@ -378,6 +376,9 @@
               </div>
 
             </div>
+
+
+
 
         </div>
 		  </div>
@@ -456,10 +457,10 @@
 </body>
 <script>
   $("#add").click(function(){
-    var url = "<?php echo U('fuli/add');?>";
+    var url = "<?php echo U('foot/add');?>";
     layer.open({
       type: 2,
-      title: '添加福利',
+      title: '添加友情链接',
       closeBtn: 0, //不显示关闭按钮
       shadeClose: true,
       shade: [0],
@@ -471,6 +472,7 @@
     });
   });
 </script>
+
 <script>
   $('.openRecord').click(function(event){
     var index = layer.load(2, {

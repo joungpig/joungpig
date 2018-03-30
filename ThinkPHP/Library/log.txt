@@ -1,0 +1,687 @@
+2018-02-15 17:19:23  {"product_code":"FAST_INSTANT_TRADE_PAY","body":"","subject":"测试","total_amount":"0.01","out_trade_no":"201821516401375"}
+2018-02-15 17:19:44  {"product_code":"FAST_INSTANT_TRADE_PAY","body":"","subject":"测试","total_amount":"0.01","out_trade_no":"201821516401375"}
+2018-02-15 17:37:35  {"product_code":"FAST_INSTANT_TRADE_PAY","body":"","subject":"测试","total_amount":"0.01","out_trade_no":"201821516401375"}
+2018-02-15 17:37:45  {"product_code":"FAST_INSTANT_TRADE_PAY","body":"","subject":"测试","total_amount":"0.01","out_trade_no":"201821516401375"}
+2018-02-15 17:39:42  {"product_code":"FAST_INSTANT_TRADE_PAY","body":"","subject":"测试","total_amount":"0.01","out_trade_no":"201821516401375"}
+2018-02-15 17:43:53  {"product_code":"FAST_INSTANT_TRADE_PAY","body":"","subject":"测试","total_amount":"0.01","out_trade_no":"201821516401375"}
+2018-02-15 17:44:19  {"product_code":"FAST_INSTANT_TRADE_PAY","body":"","subject":"测试","total_amount":"0.01","out_trade_no":"201821516401375"}
+2018-02-15 17:49:24  {"product_code":"FAST_INSTANT_TRADE_PAY","body":"","subject":"测试","total_amount":"0.01","out_trade_no":"201821516401375"}
+2018-02-15 17:50:52  {"product_code":"FAST_INSTANT_TRADE_PAY","body":"","subject":"测试","total_amount":"0.01","out_trade_no":"201821516401375"}
+2018-02-15 17:53:54  {"product_code":"FAST_INSTANT_TRADE_PAY","body":"","subject":"测试","total_amount":"0.01","out_trade_no":"201821516401375"}
+2018-02-15 17:53:57  {"product_code":"FAST_INSTANT_TRADE_PAY","body":"","subject":"测试","total_amount":"0.01","out_trade_no":"201821516401375"}
+2018-02-15 17:54:13  {"product_code":"FAST_INSTANT_TRADE_PAY","body":"","subject":"测试","total_amount":"0.01","out_trade_no":"201821516401375"}
+2018-02-15 17:54:21  {"product_code":"FAST_INSTANT_TRADE_PAY","body":"","subject":"测试","total_amount":"0.01","out_trade_no":"201821516401375"}
+2018-02-15 17:57:38  {"product_code":"FAST_INSTANT_TRADE_PAY","body":"","subject":"测试","total_amount":"0.01","out_trade_no":"201821516401375"}
+2018-02-15 18:00:39  {"product_code":"FAST_INSTANT_TRADE_PAY","body":"","subject":"测试","total_amount":"0.01","out_trade_no":"201821516401375"}
+2018-02-15 18:09:14  {"product_code":"FAST_INSTANT_TRADE_PAY","body":"","subject":"测试","total_amount":"0.01","out_trade_no":"201821516401375"}
+2018-02-15 18:09:15  response: '<form id=\'alipaysubmit\' name=\'alipaysubmit\' action=\'https://openapi.alipaydev.com/gateway.do?charset=UTF-8\' method=\'POST\'><input type=\'hidden\' name=\'biz_content\' value=\'{"product_code":"FAST_INSTANT_TRADE_PAY","body":"","subject":"测试","total_amount":"0.01","out_trade_no":"201821516401375"}\'/><input type=\'hidden\' name=\'app_id\' value=\'2016091200496342\'/><input type=\'hidden\' name=\'version\' value=\'1.0\'/><input type=\'hidden\' name=\'format\' value=\'json\'/><input type=\'hidden\' name=\'sign_type\' value=\'RSA2\'/><input type=\'hidden\' name=\'method\' value=\'alipay.trade.page.pay\'/><input type=\'hidden\' name=\'timestamp\' value=\'2018-02-15 18:09:14\'/><input type=\'hidden\' name=\'alipay_sdk\' value=\'alipay-sdk-php-20161101\'/><input type=\'hidden\' name=\'notify_url\' value=\'http://www.joungpig.com/ComAlipay/alipay.trade.page.pay-PHP-UTF-8/notify_url.php\'/><input type=\'hidden\' name=\'return_url\' value=\'http://www.joungpig.com/ComAlipay/alipay.trade.page.pay-PHP-UTF-8/return_url.php\'/><input type=\'hidden\' name=\'charset\' value=\'UTF-8\'/><input type=\'hidden\' name=\'sign\' value=\'HsMkHYiP2bffZb9Eq85z5QQ4zSMWaiZklPn/7iRQJABwEL27BSvGRZQxINqjl1Neu5HV+CGLCS38Y0NI4Ht/MiFR5wvD6U4onFyKpTE78pfhMET3PaqQ+frr07GsSIwNWy2dzCHyi4sUgjEctQi2T+cS/llWJiRPgpub+HV1/hH0vz50kvD68d05lGklPhXOi6ihCgyJGJ3kXzha8h6tQfkXclFNuCeOoCzJr2E2YXw15JonqCxNTSX1cRxOsWZQ7ZgS3eJp61UdfIdUWjooIf6fCmo4LrEqX4C0/tXxMH+tAEeYDFkDroWEJqD4oQFs4fodUfoplyT7EvEiYe5cHQ==\'/><input type=\'submit\' value=\'ok\' style=\'display:none;\'\'></form><script>document.forms[\'alipaysubmit\'].submit();</script>'
+2018-02-15 18:11:22  {"product_code":"FAST_INSTANT_TRADE_PAY","body":"","subject":"测试","total_amount":"10","out_trade_no":"201821516401376"}
+2018-02-15 18:11:22  response: '<form id=\'alipaysubmit\' name=\'alipaysubmit\' action=\'https://openapi.alipaydev.com/gateway.do?charset=UTF-8\' method=\'POST\'><input type=\'hidden\' name=\'biz_content\' value=\'{"product_code":"FAST_INSTANT_TRADE_PAY","body":"","subject":"测试","total_amount":"10","out_trade_no":"201821516401376"}\'/><input type=\'hidden\' name=\'app_id\' value=\'2016091200496342\'/><input type=\'hidden\' name=\'version\' value=\'1.0\'/><input type=\'hidden\' name=\'format\' value=\'json\'/><input type=\'hidden\' name=\'sign_type\' value=\'RSA2\'/><input type=\'hidden\' name=\'method\' value=\'alipay.trade.page.pay\'/><input type=\'hidden\' name=\'timestamp\' value=\'2018-02-15 18:11:22\'/><input type=\'hidden\' name=\'alipay_sdk\' value=\'alipay-sdk-php-20161101\'/><input type=\'hidden\' name=\'notify_url\' value=\'http://www.joungpig.com/ComAlipay/alipay.trade.page.pay-PHP-UTF-8/notify_url.php\'/><input type=\'hidden\' name=\'return_url\' value=\'http://www.joungpig.com/ComAlipay/alipay.trade.page.pay-PHP-UTF-8/return_url.php\'/><input type=\'hidden\' name=\'charset\' value=\'UTF-8\'/><input type=\'hidden\' name=\'sign\' value=\'clKoGH0rEnCtohcpzpQvgFOCUQsbDS//Hf6E41ZgKJNMICM8/qySo2/epe2WiPYSbZ6FuubtrWkDWv4KTIwOWxIH0CSYsBuDl09veYlQyaxLRVBeQ2i8HPmVGm3P2dbU8CvsdwFnmvH34VCgiNdbttyb/WRtmF4mdvnYcW/GcdUE4bfJS+zPLtNU7AaF7B2ATMW5fvM8WZ9k3WVfiy3BAdeesdiEkvVCF2BGQRiAFlZsVK1Kxei0KzEGpq4p4wlNubmwKQcZ6E3JK97egPN9UbI317BK1Kd2Jz9LQY5awHNN/4alIdOUmv8Bjo7AlHY7paN7qR/PuOcr/1OIksZlJA==\'/><input type=\'submit\' value=\'ok\' style=\'display:none;\'\'></form><script>document.forms[\'alipaysubmit\'].submit();</script>'
+2018-02-17 11:15:43  {"product_code":"FAST_INSTANT_TRADE_PAY","body":"大型商品","subject":"测试02","total_amount":"100","out_trade_no":"1518837326"}
+2018-02-17 11:15:44  response: '<form id=\'alipaysubmit\' name=\'alipaysubmit\' action=\'https://openapi.alipaydev.com/gateway.do?charset=UTF-8\' method=\'POST\'><input type=\'hidden\' name=\'biz_content\' value=\'{"product_code":"FAST_INSTANT_TRADE_PAY","body":"大型商品","subject":"测试02","total_amount":"100","out_trade_no":"1518837326"}\'/><input type=\'hidden\' name=\'app_id\' value=\'2016091200496342\'/><input type=\'hidden\' name=\'version\' value=\'1.0\'/><input type=\'hidden\' name=\'format\' value=\'json\'/><input type=\'hidden\' name=\'sign_type\' value=\'RSA2\'/><input type=\'hidden\' name=\'method\' value=\'alipay.trade.page.pay\'/><input type=\'hidden\' name=\'timestamp\' value=\'2018-02-17 11:15:43\'/><input type=\'hidden\' name=\'alipay_sdk\' value=\'alipay-sdk-php-20161101\'/><input type=\'hidden\' name=\'notify_url\' value=\'http://www.joungpig.com/ComAlipay/alipay.trade.page.pay-PHP-UTF-8/notify_url.php\'/><input type=\'hidden\' name=\'return_url\' value=\'http://www.joungpig.com/ComAlipay/alipay.trade.page.pay-PHP-UTF-8/return_url.php\'/><input type=\'hidden\' name=\'charset\' value=\'UTF-8\'/><input type=\'hidden\' name=\'sign\' value=\'rRCEFDU5GxspjkG2BS4jk80Epz03bjM+OPcKlBEg40mHxGtNWVUcfIwLrwoRyTtJytcny1T17SkC5mER52uZgYzHnN5hNub+YvkG5Hd5mQwsuQQtC1nvw1vyMgEpZBAI/PdWE87Hj7eqFUaG/Xe1JUa6yKZXJWNdLVnXwio4RiQ/OfQRQqVGOpeK4WekE/QKJgRQ/uT9nj2HiFQd8qjJUzk0Lc8pctiXULtI65O4J2QRZwg+RV7JbvoPXnAPOWDnNeTDE73o+41/xlYpWNnpjmBiCYK1K5l/ii+bVl6YmIQBi/Dxt28QLqdlqiKsBgL+TZ82G+WBQTwHT8RW2pzLLw==\'/><input type=\'submit\' value=\'ok\' style=\'display:none;\'\'></form><script>document.forms[\'alipaysubmit\'].submit();</script>'
+2018-02-17 14:38:36  {"product_code":"FAST_INSTANT_TRADE_PAY","body":"","subject":"测试订单","total_amount":"500","out_trade_no":"1518849495"}
+2018-02-17 14:38:37  response: '<form id=\'alipaysubmit\' name=\'alipaysubmit\' action=\'https://openapi.alipaydev.com/gateway.do?charset=UTF-8\' method=\'POST\'><input type=\'hidden\' name=\'biz_content\' value=\'{"product_code":"FAST_INSTANT_TRADE_PAY","body":"","subject":"测试订单","total_amount":"500","out_trade_no":"1518849495"}\'/><input type=\'hidden\' name=\'app_id\' value=\'2016091200496342\'/><input type=\'hidden\' name=\'version\' value=\'1.0\'/><input type=\'hidden\' name=\'format\' value=\'json\'/><input type=\'hidden\' name=\'sign_type\' value=\'RSA2\'/><input type=\'hidden\' name=\'method\' value=\'alipay.trade.page.pay\'/><input type=\'hidden\' name=\'timestamp\' value=\'2018-02-17 14:38:36\'/><input type=\'hidden\' name=\'alipay_sdk\' value=\'alipay-sdk-php-20161101\'/><input type=\'hidden\' name=\'notify_url\' value=\'http://www.joungpig.com/ComAlipay/alipay.trade.page.pay-PHP-UTF-8/notify_url.php\'/><input type=\'hidden\' name=\'return_url\' value=\'http://www.joungpig.com/ComAlipay/alipay.trade.page.pay-PHP-UTF-8/return_url.php\'/><input type=\'hidden\' name=\'charset\' value=\'UTF-8\'/><input type=\'hidden\' name=\'sign\' value=\'BQnHre3GgLvFpiVPm/BJjzTZl1oRMBYyq2ROapZnuXzsI83QxtrrKmiUp5pUb8RdRZzxD6pahPY5mnx3wEVnn2Kcj0jC/Fj1qbw9ctYGkvbpkAjQ3NcuSw0nCJw1EmxqUSuD+Zr5ezLSxFQ9hrB2uPDJxKajJjphYYQqQfMhQtPdXcCuU2ccEKbrQPOWVktRJXp2K7zbWD284+H7q5cYExMvsWG2QbkRVbqof7e06xuWOVgtSxB7Pt4j9ZKHKWfSKLlmOQ1mVb2uf9GChO4cx5BvJC2kXCqewRFVqS+QayW1G9eU/ACTdmWStzsMF9lqg8t2HjpOWomcz69QgUni+Q==\'/><input type=\'submit\' value=\'ok\' style=\'display:none;\'\'></form><script>document.forms[\'alipaysubmit\'].submit();</script>'
+2018-02-17 14:48:33  {"out_trade_no":"","trade_no":""}
+2018-02-17 14:49:27  {"out_trade_no":"","trade_no":""}
+2018-02-17 14:53:04  {"out_trade_no":"","trade_no":""}
+2018-02-17 14:55:48  {"out_trade_no":"","trade_no":""}
+2018-02-17 14:57:51  {"out_trade_no":"","trade_no":""}
+2018-02-17 15:09:10  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '10000',
+     'msg' => 'Success',
+     'buyer_logon_id' => 'eea***@sandbox.com',
+     'buyer_pay_amount' => '0.00',
+     'buyer_user_id' => '2088102175658362',
+     'buyer_user_type' => 'PRIVATE',
+     'invoice_amount' => '0.00',
+     'out_trade_no' => '1518849495',
+     'point_amount' => '0.00',
+     'receipt_amount' => '0.00',
+     'send_pay_date' => '2018-02-17 14:39:21',
+     'total_amount' => '500.00',
+     'trade_no' => '2018021721001004360200228261',
+     'trade_status' => 'TRADE_SUCCESS',
+  )),
+   'sign' => '0ZnF/MPEEjU4Lmm9uw80B3z6WgqAxUtMqzRNIH6tpjNw4EqWfK/OGp+j0tQNzcXujHEzM3XjsPjec+FkHRVV7EOcYxg0TT16Qepzpz3xVZt3gk04uCUlfEatMGmkKg4NHEfs3C6diwl3RFOVXsGjsdNWm3UAajCpZ4MvQax4waWSmI0h0p4vMkOu0uJjRFUiNAPkYnQcC8n4UrO3vd3h4TPoGVbc+Ros0TkeLhlHa2af90WZK9gIegfPavv1Bttm0xxnAEi6povEOV07GqxgNPyRAyNOw/rn8F2cBl3UNhnLS84JqoSB6I3gEtsJIVn2ebF724n2B/UVqFDoloHsLQ==',
+))
+2018-02-17 16:44:52  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '40002',
+     'msg' => 'Invalid Arguments',
+     'sub_code' => 'isv.invalid-signature',
+     'sub_msg' => '验签出错，建议检查签名字符串或签名私钥与应用公钥是否匹配，网关生成的验签字符串为：alipay_sdk=alipay-sdk-php-20161101&amp;app_id=2016091200496342&amp;biz_content={&quot;out_trade_no&quot;:&quot;&quot;,&quot;trade_no&quot;:&quot;&quot;}&amp;charset=UTF-8&amp;format=json&amp;method=alipay.trade.query&amp;sign_type=RSA2&amp;timestamp=2018-02-17 16:44:50&amp;version=1.0',
+  )),
+   'sign' => 'Lsa7GZR0nFbDBraZuKLgUcETjlJEE6F7+4F2fLFG8fKLZFv7cfJmrbL3eqy4ZCuWc5eixgtoAn9Hc7Wp0ygnoIljkrnvQIf6rsFCica2JDug69JOJH/kYyp1Wb8UzxVrIFfmP7+vlefib6PukKd4HKuFHddo2rgAMXG/+NXiBVjOGjQhg7oHfEfca/Z4Ou5n//OpiKvqtUDomd9Ru9LtZ2UUlbuSUn9X3hcWObfpzoBG7gj4KZPsGxx20NnQQiZU3cJ3gDHViEJyDuDpQUxVhy8L+rJ0SbLaI6VLHNLncq7eiEGvPkeKyeUJH4zvdM2BzGClq7qZEQ5wY9DAdqtq9A==',
+))
+2018-02-17 16:46:10  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '40002',
+     'msg' => 'Invalid Arguments',
+     'sub_code' => 'isv.invalid-signature',
+     'sub_msg' => '验签出错，建议检查签名字符串或签名私钥与应用公钥是否匹配，网关生成的验签字符串为：alipay_sdk=alipay-sdk-php-20161101&amp;app_id=2016091200496342&amp;biz_content={&quot;out_trade_no&quot;:&quot;&quot;,&quot;trade_no&quot;:&quot;&quot;}&amp;charset=UTF-8&amp;format=json&amp;method=alipay.trade.query&amp;sign_type=RSA2&amp;timestamp=2018-02-17 16:46:10&amp;version=1.0',
+  )),
+   'sign' => 'hVjYOovpKqFq3jcSrFG7a6LoVUVl9ZMVoEnqQd3sLBXssRqUS7uopUw7m+s5acH6hladYmccqVhhvsCZBzbDS4zLUC62Mp2TezTWTKYE9zBlgwV7Fms25dDkMjuKWyrizMtcIw8MtxJIyAWHCuCkGZsEluHWptYutN2Tzw6JWIMIHkYcNX5+iNmSitYXOmuWhzqq14CtUvIFBAy90kefzSSWytO41wzBT9yX8YqcSavzJ7aGCKTz/avOSekuKCbjQJE1Escs4VYuzliR9dPTstMTG9UZFWQejHUYLouG7yEEDe8Onw863AosakL+QMGUpjxuEn3w5DXfC5rYRDRfDQ==',
+))
+2018-02-17 17:08:08  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '40002',
+     'msg' => 'Invalid Arguments',
+     'sub_code' => 'isv.invalid-signature',
+     'sub_msg' => '验签出错，建议检查签名字符串或签名私钥与应用公钥是否匹配，网关生成的验签字符串为：alipay_sdk=alipay-sdk-php-20161101&amp;app_id=2016091200496342&amp;biz_content={&quot;out_trade_no&quot;:&quot;&quot;,&quot;trade_no&quot;:&quot;&quot;}&amp;charset=UTF-8&amp;format=json&amp;method=alipay.trade.query&amp;sign_type=RSA2&amp;timestamp=2018-02-17 17:08:06&amp;version=1.0',
+  )),
+   'sign' => 'p6eSi7x5oCNvC7SWW4FvAy/yOvqVQzDax1tXWFzkDHEyAuswKXBOYWIN3ro3W36E13nnJUFpeUjQBq7BkVAO0C9tXlzUSPTaDkGIltq8WfhDJ3bcdYnkUPcyZPzfqhhB/9ZSs6hFlv8qRKJs7mYUdjIw7+nTFqE9jvZd/kl1jfy5KtikgS04urZ0LIz2WCxN1zgiUkjktU2APm3WN1X++4e48ovwq2gKFEsgGwVAVj2f2dRMmG3vuIRsQfRvsbgsAqDn9rYrgeJFMJEjxoT/L6FXLwiCoNyVbNlKTbBp0vUXIvWkZA+nQ5I0qp/lOvl2ebHYMVEE9hukBklZIicVcg==',
+))
+2018-02-17 17:09:29  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '40002',
+     'msg' => 'Invalid Arguments',
+     'sub_code' => 'isv.invalid-signature',
+     'sub_msg' => '验签出错，建议检查签名字符串或签名私钥与应用公钥是否匹配，网关生成的验签字符串为：alipay_sdk=alipay-sdk-php-20161101&amp;app_id=2016091200496342&amp;biz_content={&quot;out_trade_no&quot;:&quot;&quot;,&quot;trade_no&quot;:&quot;&quot;}&amp;charset=UTF-8&amp;format=json&amp;method=alipay.trade.query&amp;sign_type=RSA2&amp;timestamp=2018-02-17 17:09:29&amp;version=1.0',
+  )),
+   'sign' => 'H76BsyQk/tng5zTTNI1nU+EcfEj5Xmfz7T+3I0L0im+QEHVIoOSezsyGU6j7LvAiOgKntQUTOx3iIkHRogx23cJPYopikRGurcsYBcdaS2c53kmiXk6abBDJ1odLUd97W4zDGx8ibH+I9CauDSFZv11Vu81QpKGtgYb8FHWsZLZ9iM5wPYz6ziUc2M5YrW1mJ/CeAfjATiqWpHWN83mngVjhTfJ+gzxOFbp5KULPcKwuLY0SXhbTrmv33RWphbZmBEec34tq2gQ+uHGWC7ih+1EmKqEca9CrjUT6uA5BSXLmJeDuj8Gq77iDTJJsDv3KD5HxcX9nZJFTFxuR9wt1Og==',
+))
+2018-02-17 17:09:56  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '40002',
+     'msg' => 'Invalid Arguments',
+     'sub_code' => 'isv.invalid-signature',
+     'sub_msg' => '验签出错，建议检查签名字符串或签名私钥与应用公钥是否匹配，网关生成的验签字符串为：alipay_sdk=alipay-sdk-php-20161101&amp;app_id=2016091200496342&amp;biz_content={&quot;out_trade_no&quot;:&quot;&quot;,&quot;trade_no&quot;:&quot;&quot;}&amp;charset=UTF-8&amp;format=json&amp;method=alipay.trade.query&amp;sign_type=RSA2&amp;timestamp=2018-02-17 17:09:55&amp;version=1.0',
+  )),
+   'sign' => 'k2/xZTX4ms9CHPEBHSTKKLQPJNCr0yYP1auH0uzHcKALGJf3hd0TI6w2IQ9pr/0dFjeP2U5TL2jw6nFgFhfSjdDTmg5PbvfBa7Y58lvSV536juUq1Xf4w3bhLSyjVv7paMb/yBkAk/tipitmHxf97cT9YkJVyYx589uzbkm7GUymQFPHXYbxUIsvpH5fb7PPCpLeJUSTUEZWAUXkozW/B9E2aQ9PkyJ3qHkBIHhrPWg+VHe52D3ooOXSg837s3vc2PzvOI8UeM0/MVmLH5/HpZWaGYxtTrQtjYOI9annzX+3Pv2qeJU9K8X+aBa+vanotDDysmaQqXPSeN9slbuGAw==',
+))
+2018-02-17 17:10:46  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '40002',
+     'msg' => 'Invalid Arguments',
+     'sub_code' => 'isv.invalid-signature',
+     'sub_msg' => '验签出错，建议检查签名字符串或签名私钥与应用公钥是否匹配，网关生成的验签字符串为：alipay_sdk=alipay-sdk-php-20161101&amp;app_id=2016091200496342&amp;biz_content={&quot;out_trade_no&quot;:&quot;&quot;,&quot;trade_no&quot;:&quot;&quot;}&amp;charset=UTF-8&amp;format=json&amp;method=alipay.trade.query&amp;sign_type=RSA2&amp;timestamp=2018-02-17 17:10:46&amp;version=1.0',
+  )),
+   'sign' => 'sLIuxkMEBCprlo71LuRxPY5QGaLud7QScDXa5MZ6lNP1oDV9hq2NpCXczyAISgOBm/qiBcpgIffUV1g/i3NoG7AP2mRVfgHO7odKpJ7SnWToWH7fEUxzuec0Ngc9HqDtGty1iXXf+mTcwnnG+omCXRluzKpOTilN0GdEUvOEX8u924eNeLgqFJInsbatKlExBWL2Rps+ZP7YhVPar4tCIbCHUu4VfDi5SUhni3QUlOaci6H/N0dR/26vnwj8RcSe5Bj6Vz74LzL3UW2Oz0AAuti5R7UYoDX7pLDJ20swmsqwvjQ6tqzAXrEO3uM6UsvbSCeTGrKJwa5qCHwfxYol5g==',
+))
+2018-02-17 17:24:12  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '40002',
+     'msg' => 'Invalid Arguments',
+     'sub_code' => 'isv.invalid-signature',
+     'sub_msg' => '验签出错，建议检查签名字符串或签名私钥与应用公钥是否匹配，网关生成的验签字符串为：alipay_sdk=alipay-sdk-php-20161101&amp;app_id=2016091200496342&amp;biz_content={&quot;out_trade_no&quot;:&quot;&quot;,&quot;trade_no&quot;:&quot;&quot;}&amp;charset=UTF-8&amp;format=json&amp;method=alipay.trade.query&amp;sign_type=RSA2&amp;timestamp=2018-02-17 17:24:10&amp;version=1.0',
+  )),
+   'sign' => 'FDFbeOkEEC1JjsIkLWR4L9fmDInIbpKI0FkxzeweYSVeC3i4pTyy/dopWXtHkQNyJBbfUNghf97eAdOalPbTTH+OSUTB8gZvgaLMH77bW76Q1tobM1bvK+IebNUnY8IJfErnmNIKPChUc7KSf8Qvmt5SoKlMnITsnuSpmBPtjCHY365h2MwMlMFqZj9UGq3nqpkhVDUdw7YbRiGZVnoueR/lXIhFtsi+JpP+SHfvCJVND1ghLsHB2zk9YxecEfm75q95VSz+BB09ct6Nsl0+2NirZyS6JPm4vPN0iPNbp7edTUpNdTjSqN11uvTt3vjbbkF0CvN6s4tDIphVoZMnJA==',
+))
+2018-02-17 17:24:44  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '40002',
+     'msg' => 'Invalid Arguments',
+     'sub_code' => 'isv.invalid-signature',
+     'sub_msg' => '验签出错，建议检查签名字符串或签名私钥与应用公钥是否匹配，网关生成的验签字符串为：alipay_sdk=alipay-sdk-php-20161101&amp;app_id=2016091200496342&amp;biz_content={&quot;out_trade_no&quot;:&quot;&quot;,&quot;trade_no&quot;:&quot;&quot;}&amp;charset=UTF-8&amp;format=json&amp;method=alipay.trade.query&amp;sign_type=RSA2&amp;timestamp=2018-02-17 17:24:44&amp;version=1.0',
+  )),
+   'sign' => 'wb9FG5CybHCf38TitiuQVgS8W4t+wrYc6pApNb+HaEq0iCGG/d85Ch0awIMl0NQVxIfpzY9z7pB5twhzL2zoV8cC59Sk0m2lhQdazc8E0RxZkHo3nlybf8w7WCvmzIDaZKSYMGRbsyVF5227qy5GbHSKa7nc5pigmTb/5Ag0uweGTPOXOum+8Su32jMQ+pltao+a3SBUG5gYQ1O+k1uM6SBcSrpxwXJ5a28++WeIqLfr7B7u88pSpGOUgKgJhONz9KrOqK9IuzCV4cQzO4NHTZfjqFXYtHW9RchWcG51D1JHbtCFsOdQ5PnHQzrHrT9kmCmC8wWtpIJa/+nhXLo+EQ==',
+))
+2018-02-17 17:26:30  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '40002',
+     'msg' => 'Invalid Arguments',
+     'sub_code' => 'isv.invalid-signature',
+     'sub_msg' => '验签出错，建议检查签名字符串或签名私钥与应用公钥是否匹配，网关生成的验签字符串为：alipay_sdk=alipay-sdk-php-20161101&amp;app_id=2016091200496342&amp;biz_content={&quot;out_trade_no&quot;:&quot;&quot;,&quot;trade_no&quot;:&quot;&quot;}&amp;charset=UTF-8&amp;format=json&amp;method=alipay.trade.query&amp;sign_type=RSA2&amp;timestamp=2018-02-17 17:26:29&amp;version=1.0',
+  )),
+   'sign' => '4GkvBnUxTGDJuoSXZYQVDRyLBYy7aLT9Zet0dOkBH6AdCR9t+3DDgl126W4y6E0lgUw6QYAHIKZKSQ+fjN7my6uBNxcsuNsjytSdmW97+z8YHEV803phkpiyxfxyI/W+VAXt1XWtPeDAxidtOEYc+Z/5bD831rDqgkY+k6gtN3hsM0gqoQjvZDBPPT4En4mVSsTTyTlo6+pZ0MIAtJ0K5Yxb08wF7AzHQ2Xe7dKfw7mCoXwu/+KkVNpg6gdSzKJTx3ilHS+yFr3OpoX+ihV5xVJSgKG7OTJ1AaV1t+wZ7RyWA8KelZupqKSYecJeCXBWoiDSnw/s5mkln5P4dWFAvQ==',
+))
+2018-02-17 17:28:25  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '40002',
+     'msg' => 'Invalid Arguments',
+     'sub_code' => 'isv.invalid-signature',
+     'sub_msg' => '验签出错，建议检查签名字符串或签名私钥与应用公钥是否匹配，网关生成的验签字符串为：alipay_sdk=alipay-sdk-php-20161101&amp;app_id=2016091200496342&amp;biz_content={&quot;out_trade_no&quot;:&quot;&quot;,&quot;trade_no&quot;:&quot;&quot;}&amp;charset=UTF-8&amp;format=json&amp;method=alipay.trade.query&amp;sign_type=RSA2&amp;timestamp=2018-02-17 17:28:25&amp;version=1.0',
+  )),
+   'sign' => 'geccYAmYDgIR81VZAxHRTQ2N4pNao57e1J69YqFTM6eGSEWamuGoyv1uG8WGCbnEkNUZvkV0yG9VSfgALOIhG+z4Ydvfz9FKspO1OV5kYy+IPwvxyKvO6+4wF21HM5kj91GqMUz7OoDdTsDI98wyBj3HRk++zok+D8kX6M3c4UJCaqNbqWo4A+kIK5TMFeGurJ/3S320DBim7D3hOBoB4+BQzZ1WNMdx3S+q8hSWcbxGFPrQAfeFOK3X5ZiPyRDZrTNT+PLVs2RGlPlLYUAmIj7936JD+1ssiaaOaadXYuMfyAoJi/xFGOvvyZU6adBblIkDDCYaQJuJOkJ1jitWrw==',
+))
+2018-02-17 17:29:02  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '40002',
+     'msg' => 'Invalid Arguments',
+     'sub_code' => 'isv.invalid-signature',
+     'sub_msg' => '验签出错，建议检查签名字符串或签名私钥与应用公钥是否匹配，网关生成的验签字符串为：alipay_sdk=alipay-sdk-php-20161101&amp;app_id=2016091200496342&amp;biz_content={&quot;out_trade_no&quot;:&quot;&quot;,&quot;trade_no&quot;:&quot;&quot;}&amp;charset=UTF-8&amp;format=json&amp;method=alipay.trade.query&amp;sign_type=RSA2&amp;timestamp=2018-02-17 17:29:02&amp;version=1.0',
+  )),
+   'sign' => 'e1F7ZVEZsH9plDg5nk826V3ODxg6QsY74p9iQzFv4i6zkHDjgtcC3GAFvmroOftI6QMXh6/uKWaCR1OqtPzjpw3WX40mb+AKRL84GqCPyKTU8fHUE5ZnsXjEIIE8Teblp7bnLJbF9DgPzSN8O7dO8horkM5GPx1CSDn4MiEu/yzEnDxn5nJWElKWpOka+6LpsLioPsUU1o98Snl+XyVPIVWX+oiTuJBEMHhKpfEZkqxv5icMtXhexMYDAX2+hGr95aI7Mqvu4WBmopqS5m5TW2lQq6T40RDoTxWc+HhpEvrXZ97U0770aGfzK9G2h7ounUPc/BTd9Lf2JlhCGubTHg==',
+))
+2018-02-17 17:29:17  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '40002',
+     'msg' => 'Invalid Arguments',
+     'sub_code' => 'isv.invalid-signature',
+     'sub_msg' => '验签出错，建议检查签名字符串或签名私钥与应用公钥是否匹配，网关生成的验签字符串为：alipay_sdk=alipay-sdk-php-20161101&amp;app_id=2016091200496342&amp;biz_content={&quot;out_trade_no&quot;:&quot;&quot;,&quot;trade_no&quot;:&quot;&quot;}&amp;charset=UTF-8&amp;format=json&amp;method=alipay.trade.query&amp;sign_type=RSA2&amp;timestamp=2018-02-17 17:29:17&amp;version=1.0',
+  )),
+   'sign' => 'y567PqHx4jxwF+tpdGe1RdsAjE0rp2gwYmVeAq6whzkVOUt0pUTzCd2n5wKz4mZm3odhWQgtDbz6KWwPFFYxkIMipHJ/prPzgJDsHCpsPgot6CY7nR8c7kk7+oMPYpezRwW60Z3oyfmSSsuojq4ah/v2DExbmd9MpkYMSAMskl98fsPnkQO80d/rG8lUWPLODT/PzRFwQg6fuQ2Ap+5GWkw+xStlbMUL0GKW2fgYIu3wMwHIHuKX0FrUMjyRrWwZ75bVyQjDpzSn3KSyP4E5Hc37q/oU1cWOO+wLE927KxPdJQPsvueKIAxW1YqNxIwDfRseKdg7WFAxWe4sOo4IBA==',
+))
+2018-02-17 17:30:48  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '40002',
+     'msg' => 'Invalid Arguments',
+     'sub_code' => 'isv.invalid-signature',
+     'sub_msg' => '验签出错，建议检查签名字符串或签名私钥与应用公钥是否匹配，网关生成的验签字符串为：alipay_sdk=alipay-sdk-php-20161101&amp;app_id=2016091200496342&amp;biz_content={&quot;out_trade_no&quot;:&quot;&quot;,&quot;trade_no&quot;:&quot;&quot;}&amp;charset=UTF-8&amp;format=json&amp;method=alipay.trade.query&amp;sign_type=RSA2&amp;timestamp=2018-02-17 17:30:48&amp;version=1.0',
+  )),
+   'sign' => 'zCCl74X58XZrkAHVrrew6+Y94QsBXJAfQqdRWG9rhDiCugF17apHYVUqiCzfliZSg1XZ4q2gHL5MOGHuETtHVQDCtEeKbDqiILkF4z0eHX04VhnHx4ZhaUsEDz9J7MJapSy1STtjox+ECvAXuOdU7S2rTmtAViosrHsH87T4g+DSjg19wlyRXk5g8J4uv9pIxKFYfzj9BMO0YqMWkEnNgJiJ9lfuyc9XtLlgrOonS/Gg8Eo5AwAJL7PQW2s9OVam/+JsBhtepZIxln6ZeEgYauU2OwGgnnr3x/2fNdgH1ZGfUFLz2fxKtdhOBD0cOljFINJbNfBXpGsQ9W3YM+YFkQ==',
+))
+2018-02-17 17:31:38  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '40002',
+     'msg' => 'Invalid Arguments',
+     'sub_code' => 'isv.invalid-signature',
+     'sub_msg' => '验签出错，建议检查签名字符串或签名私钥与应用公钥是否匹配，网关生成的验签字符串为：alipay_sdk=alipay-sdk-php-20161101&amp;app_id=2016091200496342&amp;biz_content={&quot;out_trade_no&quot;:&quot;&quot;,&quot;trade_no&quot;:&quot;&quot;}&amp;charset=UTF-8&amp;format=json&amp;method=alipay.trade.query&amp;sign_type=RSA2&amp;timestamp=2018-02-17 17:31:38&amp;version=1.0',
+  )),
+   'sign' => 'HwxJcMOonvI/5dqHmS4gkkdLxhTYRPZqvkmJN2L642Bof7LX/PefradnWYMa4s1fosxijBTW470ZRfjekc3f3Mol7ibfsXSKZJdQNHLNeXedAib9ZY7bwgZ+/hG/5DDby++sGIGaoFsK/oOAFmnaXMuqVao52prplibUM3fcIg7n6Qzpiqpye0jlsPidtf9oWCXwOi64wp49SjdIa29ZglPtY1F69RQyQNE5W6Q2Q7ovks2TyA7bTtTJwEXMNfZieUZX5pe1ykKVmxm82AneOi7zgICol6OAyyZ6MkXOCC3OQ+DTzMJ6GxdIRgC1H7VCK4hQVw3ujJ6MncLN4COkww==',
+))
+2018-02-17 17:32:30  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '40002',
+     'msg' => 'Invalid Arguments',
+     'sub_code' => 'isv.invalid-signature',
+     'sub_msg' => '验签出错，建议检查签名字符串或签名私钥与应用公钥是否匹配，网关生成的验签字符串为：alipay_sdk=alipay-sdk-php-20161101&amp;app_id=2016091200496342&amp;biz_content={&quot;out_trade_no&quot;:&quot;1518849495&quot;,&quot;trade_no&quot;:&quot;&quot;}&amp;charset=UTF-8&amp;format=json&amp;method=alipay.trade.query&amp;sign_type=RSA2&amp;timestamp=2018-02-17 17:32:29&amp;version=1.0',
+  )),
+   'sign' => '1A/+twpZLus/wBzPK8uWHM53dXJUWk3fJ+Mf4ga+lL62wjTBpigEf4IMa/Z7gR3aclx3blC6Df5X2IAlnJoW1LkIBtoYhBgCQaCRzSPaDYkmDydYddvbpwaTpUL7vW598oGvE2hsu4PCv26AytY6zs4ABZqfYzxLt2cIzWQXQ6oWuoZZxloun/DsSoAAJYZbL72rgR8cL/ZXgMIv8D8DyskspYHAkNjWv7GSwbSEvMvZ16R2MdDuM0dktUhKpOqKBVLXmM/yy/Na9HfpzxeHrz0seR+PXMCXEDeVqWXd+FModcPTtS2VxC5SNFIH2+ia604AqWUFgVjpFj71939FCA==',
+))
+2018-02-17 17:32:58  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '40002',
+     'msg' => 'Invalid Arguments',
+     'sub_code' => 'isv.invalid-signature',
+     'sub_msg' => '验签出错，建议检查签名字符串或签名私钥与应用公钥是否匹配，网关生成的验签字符串为：alipay_sdk=alipay-sdk-php-20161101&amp;app_id=2016091200496342&amp;biz_content={&quot;out_trade_no&quot;:&quot;1518849495&quot;,&quot;trade_no&quot;:&quot;&quot;}&amp;charset=UTF-8&amp;format=json&amp;method=alipay.trade.query&amp;sign_type=RSA2&amp;timestamp=2018-02-17 17:32:58&amp;version=1.0',
+  )),
+   'sign' => 'N0mXaiECe2KHZgh61VLqPR4Ophz/p/mbzNkKJ5/YNqSb71/TyMoWBWMpTCuBjhPeGqNA+hYXp6ueXnSJDsTboyXDxxeeGDTG/sV63peataJaGBeJNusgs1Vxm4dd2gx2IX9dBCkk3EzdxmmyrZwzcsr5lRvqgBdicCN+bJ7wDiYOp9nEtPBwbMWvBjvgtyCAbAZBGMDj2XahxLjOXIivBifTvHZ8rV1MDvV8Pcrd8q59Un08jT+r4IFe2hh4RWVUj/MBf38xdZwSvHR6/jVMuydB9+o6tcc/jO7Qq86jKCulWR1bcYKzvnUAweAdGe0ppwRZesJ+lwQAJ/H+0dRBdg==',
+))
+2018-02-17 17:33:55  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '40002',
+     'msg' => 'Invalid Arguments',
+     'sub_code' => 'isv.invalid-signature',
+     'sub_msg' => '验签出错，建议检查签名字符串或签名私钥与应用公钥是否匹配，网关生成的验签字符串为：alipay_sdk=alipay-sdk-php-20161101&amp;app_id=2016091200496342&amp;biz_content={&quot;out_trade_no&quot;:&quot;1518849495&quot;,&quot;trade_no&quot;:&quot;&quot;}&amp;charset=UTF-8&amp;format=json&amp;method=alipay.trade.query&amp;sign_type=RSA2&amp;timestamp=2018-02-17 17:33:54&amp;version=1.0',
+  )),
+   'sign' => 'yJukM3cFTM9s9JhmM+xdOiGD1/YHTWiU3dFqUGP9LkacsJVq5J40LX7eRCUMIBwQHyawsHbaQV7kAl1AZ3DUHeP0sm7hZz9+bofgW1KaIZH149jh20Tzz00zbZ4cK2zASGJNi0qJCG07n8GoKn1FBawCG66r6WYpVpA3khPgrz1OWexbeiv178tBiPlEQOjMIKhxO2aZxSgldM+RsIZgmCmrnOLJMoFxOnEhchneFCPbZXhTWmk3oDMAUTz5gUy78ez8M96U4QfanT3OEUB2ubLat/1e2Ffxa6kBzGS0kz5G1CR5VMJ3TcF6tKtXQTDo6q8cv8w5YEO+E7qwH/5Atg==',
+))
+2018-02-17 17:35:21  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '40002',
+     'msg' => 'Invalid Arguments',
+     'sub_code' => 'isv.invalid-signature',
+     'sub_msg' => '验签出错，建议检查签名字符串或签名私钥与应用公钥是否匹配，网关生成的验签字符串为：alipay_sdk=alipay-sdk-php-20161101&amp;app_id=2016091200496342&amp;biz_content={&quot;out_trade_no&quot;:&quot;1518849495&quot;,&quot;trade_no&quot;:&quot;&quot;}&amp;charset=UTF-8&amp;format=json&amp;method=alipay.trade.query&amp;sign_type=RSA2&amp;timestamp=2018-02-17 17:35:20&amp;version=1.0',
+  )),
+   'sign' => 'EdUQ4a3M9UIWxb4+X3IlXYWXKmW/x+2TLs2RcbnG0KGl4NrxxRbrNj81E9ax5G81eKmeWpyVzLbkdXbXUdPS/A+85cNdTszxsB/Wxr/iOkMY1LeC1HYcMwXP5j4ay6i1pn3i+71kxnL4rePXGWZAhmRBOY56HKQiAkxq0tQktJ0iFvg6uY6tDUkBZROIkrP1Spkh87EoLnpOWIyS/6JP0jNj3d067PonqxJIOpN/TtfqH8a2parGD8SYCCoyxI+CxbFlgH/eZMCZ/nYtO1tumhobJEZ/DinhSy/cZUCRts/Cz5xi2iPRH4P7e9lTyuppMqKdPqQLaoFSwgPKlMPASA==',
+))
+2018-02-17 17:36:11  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '40002',
+     'msg' => 'Invalid Arguments',
+     'sub_code' => 'isv.invalid-signature',
+     'sub_msg' => '验签出错，建议检查签名字符串或签名私钥与应用公钥是否匹配，网关生成的验签字符串为：alipay_sdk=alipay-sdk-php-20161101&amp;app_id=2016091200496342&amp;biz_content={&quot;out_trade_no&quot;:&quot;1518849495&quot;,&quot;trade_no&quot;:&quot;&quot;}&amp;charset=UTF-8&amp;format=json&amp;method=alipay.trade.query&amp;sign_type=RSA2&amp;timestamp=2018-02-17 17:36:11&amp;version=1.0',
+  )),
+   'sign' => 'YcFbEqGRdol7n0jJZgM8o3du6SI0fzRmDw5Ux2p9pHT+KCfvLIGqPV6y/iuSvf+K0BwjyKYT2AQLbRuGw/KmkVd8TvaliEFX5NeevCD15Ocq5xSsu7iN/WyitSNx5pP6H6sLFZdZHKPkew9lMxP86QCCZY/c0BbEX7000ofm5u+FAWfYRH4F9tMETSjvdIM4vr4ed4RczmetfdZPgxpP2hq85TyDe7YYmZuIyMm5n6KHaTHen+34X5Hlw5aZql/npDIjTdrrY5kCrcUwGT1nWGRgX4CbIe//KxHknXaj81LplDEQV+jl3CvxglI6qE6kn3qNAZOyisppWTugGoBZDQ==',
+))
+2018-02-17 17:36:52  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '40002',
+     'msg' => 'Invalid Arguments',
+     'sub_code' => 'isv.invalid-signature',
+     'sub_msg' => '验签出错，建议检查签名字符串或签名私钥与应用公钥是否匹配，网关生成的验签字符串为：alipay_sdk=alipay-sdk-php-20161101&amp;app_id=2016091200496342&amp;biz_content={&quot;out_trade_no&quot;:&quot;1518849495&quot;,&quot;trade_no&quot;:&quot;&quot;}&amp;charset=UTF-8&amp;format=json&amp;method=alipay.trade.query&amp;sign_type=RSA2&amp;timestamp=2018-02-17 17:36:51&amp;version=1.0',
+  )),
+   'sign' => 'id9znPTLtEtpEOcaVWVlsXQPsKe7klmvWUeFZW/sNB9LsIvRSGqAPq0DodeWPU1OwEWUnnCp4anpnmCzYWWPQDKC2cTylLnFteAseVGgLLKXqCzsKlXITurh8KwlVOuch7JZUt8Sl0OzBYpGV+FcMsJguNX1kbpwtcrbZM5h8ZqK2fXrf8QvFeEvRSdsphlDDS8s9miDN25vXeOO94oA1EmKR2+iuwdptQ6akI+gPDltFN4haMSZ8Cs1ojLhb8UjI8pfasW1gWYxNgFQrwNiSa3k136XoEx0YWHnXD7XJTa9BTUnEvFZYgW34V+zc5+j1NymHuGlhqhHL4FDQZQJkA==',
+))
+2018-02-17 17:38:49  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '40002',
+     'msg' => 'Invalid Arguments',
+     'sub_code' => 'isv.invalid-signature',
+     'sub_msg' => '验签出错，建议检查签名字符串或签名私钥与应用公钥是否匹配，网关生成的验签字符串为：alipay_sdk=alipay-sdk-php-20161101&amp;app_id=2016091200496342&amp;biz_content={&quot;out_trade_no&quot;:&quot;1518849495&quot;,&quot;trade_no&quot;:&quot;&quot;}&amp;charset=UTF-8&amp;format=json&amp;method=alipay.trade.query&amp;sign_type=RSA2&amp;timestamp=2018-02-17 17:38:49&amp;version=1.0',
+  )),
+   'sign' => 'TsKWFZELinM5z7BzS3okywo8AbhAFfHU2jg6ic78raFx0/zRThhUUgR8L60eHeJlplLSEUpmr3cF1vnBJ2m6t6Qz8/wnS+l2ECqmojADTr+KVTteK/ipdvk6AJrvyD1P7iZSQh/yKj1TkS9HEBX42l4LEM+0T9jAFJEgf1BqTS5b4puBYlN0PksHKD2GqfA49ydSQLMwVaAFXQtNXFk3kszt6m/iAGLHN4j35vL5mZ5vVGMXz68hcb/7Ksh5nj/IizGTyPfQDMb5z+gt7o4VQSA98E3M+yrd4xmWzquS77+tB25U77L+Yl5iBcmBMvefHhH3SCVfXI/anhuMKcoRFw==',
+))
+2018-02-17 17:42:13  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '40004',
+     'msg' => 'Business Failed',
+     'sub_code' => 'ACQ.INVALID_PARAMETER',
+     'sub_msg' => '参数无效：支付宝订单号和外部订单号不能同时为空',
+     'buyer_pay_amount' => '0.00',
+     'invoice_amount' => '0.00',
+     'point_amount' => '0.00',
+     'receipt_amount' => '0.00',
+  )),
+   'sign' => 'EsIYYU6TVbKW2dMYPYE2LOIioi4D8hoIJ9hsukc8GJyIsglX+kl2wKyQVdXVH12YiQYX0NNIO7YlDLMTN/VmMSWKb3Y/5woTBm6uSOlNAEe6KEV0G4fsyRbm6qtG7eonZ/OXdU6fc697TNFg/zXPs+PWzHth5O2wHkwoxw+BkNKHqDMmLCtF/eEeHVa0iIqxa0Wgn2QlY0niY2UBtwFmw2OypvGOrZaBkx/UiA6kdmpIlT1Ug9Eg5vqfs3xIKZGCNKQz+dpoQ7b5WmizVI68zF7ufuVnbeKV8Qg9XWalRuWQbJSW+0Lm4W/5fEIgDcov8v3CagTcl79grqTvS3Ll+g==',
+))
+2018-02-17 17:42:28  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '40004',
+     'msg' => 'Business Failed',
+     'sub_code' => 'ACQ.INVALID_PARAMETER',
+     'sub_msg' => '参数无效：支付宝订单号和外部订单号不能同时为空',
+     'buyer_pay_amount' => '0.00',
+     'invoice_amount' => '0.00',
+     'point_amount' => '0.00',
+     'receipt_amount' => '0.00',
+  )),
+   'sign' => 'EsIYYU6TVbKW2dMYPYE2LOIioi4D8hoIJ9hsukc8GJyIsglX+kl2wKyQVdXVH12YiQYX0NNIO7YlDLMTN/VmMSWKb3Y/5woTBm6uSOlNAEe6KEV0G4fsyRbm6qtG7eonZ/OXdU6fc697TNFg/zXPs+PWzHth5O2wHkwoxw+BkNKHqDMmLCtF/eEeHVa0iIqxa0Wgn2QlY0niY2UBtwFmw2OypvGOrZaBkx/UiA6kdmpIlT1Ug9Eg5vqfs3xIKZGCNKQz+dpoQ7b5WmizVI68zF7ufuVnbeKV8Qg9XWalRuWQbJSW+0Lm4W/5fEIgDcov8v3CagTcl79grqTvS3Ll+g==',
+))
+2018-02-17 17:42:37  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '10000',
+     'msg' => 'Success',
+     'buyer_logon_id' => 'eea***@sandbox.com',
+     'buyer_pay_amount' => '0.00',
+     'buyer_user_id' => '2088102175658362',
+     'buyer_user_type' => 'PRIVATE',
+     'invoice_amount' => '0.00',
+     'out_trade_no' => '1518849495',
+     'point_amount' => '0.00',
+     'receipt_amount' => '0.00',
+     'send_pay_date' => '2018-02-17 14:39:21',
+     'total_amount' => '500.00',
+     'trade_no' => '2018021721001004360200228261',
+     'trade_status' => 'TRADE_SUCCESS',
+  )),
+   'sign' => '0ZnF/MPEEjU4Lmm9uw80B3z6WgqAxUtMqzRNIH6tpjNw4EqWfK/OGp+j0tQNzcXujHEzM3XjsPjec+FkHRVV7EOcYxg0TT16Qepzpz3xVZt3gk04uCUlfEatMGmkKg4NHEfs3C6diwl3RFOVXsGjsdNWm3UAajCpZ4MvQax4waWSmI0h0p4vMkOu0uJjRFUiNAPkYnQcC8n4UrO3vd3h4TPoGVbc+Ros0TkeLhlHa2af90WZK9gIegfPavv1Bttm0xxnAEi6povEOV07GqxgNPyRAyNOw/rn8F2cBl3UNhnLS84JqoSB6I3gEtsJIVn2ebF724n2B/UVqFDoloHsLQ==',
+))
+2018-02-17 17:43:12  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '10000',
+     'msg' => 'Success',
+     'buyer_logon_id' => 'eea***@sandbox.com',
+     'buyer_pay_amount' => '0.00',
+     'buyer_user_id' => '2088102175658362',
+     'buyer_user_type' => 'PRIVATE',
+     'invoice_amount' => '0.00',
+     'out_trade_no' => '1518849495',
+     'point_amount' => '0.00',
+     'receipt_amount' => '0.00',
+     'send_pay_date' => '2018-02-17 14:39:21',
+     'total_amount' => '500.00',
+     'trade_no' => '2018021721001004360200228261',
+     'trade_status' => 'TRADE_SUCCESS',
+  )),
+   'sign' => '0ZnF/MPEEjU4Lmm9uw80B3z6WgqAxUtMqzRNIH6tpjNw4EqWfK/OGp+j0tQNzcXujHEzM3XjsPjec+FkHRVV7EOcYxg0TT16Qepzpz3xVZt3gk04uCUlfEatMGmkKg4NHEfs3C6diwl3RFOVXsGjsdNWm3UAajCpZ4MvQax4waWSmI0h0p4vMkOu0uJjRFUiNAPkYnQcC8n4UrO3vd3h4TPoGVbc+Ros0TkeLhlHa2af90WZK9gIegfPavv1Bttm0xxnAEi6povEOV07GqxgNPyRAyNOw/rn8F2cBl3UNhnLS84JqoSB6I3gEtsJIVn2ebF724n2B/UVqFDoloHsLQ==',
+))
+2018-02-17 17:43:16  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '10000',
+     'msg' => 'Success',
+     'buyer_logon_id' => 'eea***@sandbox.com',
+     'buyer_pay_amount' => '0.00',
+     'buyer_user_id' => '2088102175658362',
+     'buyer_user_type' => 'PRIVATE',
+     'invoice_amount' => '0.00',
+     'out_trade_no' => '1518849495',
+     'point_amount' => '0.00',
+     'receipt_amount' => '0.00',
+     'send_pay_date' => '2018-02-17 14:39:21',
+     'total_amount' => '500.00',
+     'trade_no' => '2018021721001004360200228261',
+     'trade_status' => 'TRADE_SUCCESS',
+  )),
+   'sign' => '0ZnF/MPEEjU4Lmm9uw80B3z6WgqAxUtMqzRNIH6tpjNw4EqWfK/OGp+j0tQNzcXujHEzM3XjsPjec+FkHRVV7EOcYxg0TT16Qepzpz3xVZt3gk04uCUlfEatMGmkKg4NHEfs3C6diwl3RFOVXsGjsdNWm3UAajCpZ4MvQax4waWSmI0h0p4vMkOu0uJjRFUiNAPkYnQcC8n4UrO3vd3h4TPoGVbc+Ros0TkeLhlHa2af90WZK9gIegfPavv1Bttm0xxnAEi6povEOV07GqxgNPyRAyNOw/rn8F2cBl3UNhnLS84JqoSB6I3gEtsJIVn2ebF724n2B/UVqFDoloHsLQ==',
+))
+2018-02-17 17:44:39  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '10000',
+     'msg' => 'Success',
+     'buyer_logon_id' => 'eea***@sandbox.com',
+     'buyer_pay_amount' => '0.00',
+     'buyer_user_id' => '2088102175658362',
+     'buyer_user_type' => 'PRIVATE',
+     'invoice_amount' => '0.00',
+     'out_trade_no' => '1518849495',
+     'point_amount' => '0.00',
+     'receipt_amount' => '0.00',
+     'send_pay_date' => '2018-02-17 14:39:21',
+     'total_amount' => '500.00',
+     'trade_no' => '2018021721001004360200228261',
+     'trade_status' => 'TRADE_SUCCESS',
+  )),
+   'sign' => '0ZnF/MPEEjU4Lmm9uw80B3z6WgqAxUtMqzRNIH6tpjNw4EqWfK/OGp+j0tQNzcXujHEzM3XjsPjec+FkHRVV7EOcYxg0TT16Qepzpz3xVZt3gk04uCUlfEatMGmkKg4NHEfs3C6diwl3RFOVXsGjsdNWm3UAajCpZ4MvQax4waWSmI0h0p4vMkOu0uJjRFUiNAPkYnQcC8n4UrO3vd3h4TPoGVbc+Ros0TkeLhlHa2af90WZK9gIegfPavv1Bttm0xxnAEi6povEOV07GqxgNPyRAyNOw/rn8F2cBl3UNhnLS84JqoSB6I3gEtsJIVn2ebF724n2B/UVqFDoloHsLQ==',
+))
+2018-02-17 17:48:42  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '40004',
+     'msg' => 'Business Failed',
+     'sub_code' => 'ACQ.INVALID_PARAMETER',
+     'sub_msg' => '参数无效：支付宝订单号和外部订单号不能同时为空',
+     'buyer_pay_amount' => '0.00',
+     'invoice_amount' => '0.00',
+     'point_amount' => '0.00',
+     'receipt_amount' => '0.00',
+  )),
+   'sign' => 'EsIYYU6TVbKW2dMYPYE2LOIioi4D8hoIJ9hsukc8GJyIsglX+kl2wKyQVdXVH12YiQYX0NNIO7YlDLMTN/VmMSWKb3Y/5woTBm6uSOlNAEe6KEV0G4fsyRbm6qtG7eonZ/OXdU6fc697TNFg/zXPs+PWzHth5O2wHkwoxw+BkNKHqDMmLCtF/eEeHVa0iIqxa0Wgn2QlY0niY2UBtwFmw2OypvGOrZaBkx/UiA6kdmpIlT1Ug9Eg5vqfs3xIKZGCNKQz+dpoQ7b5WmizVI68zF7ufuVnbeKV8Qg9XWalRuWQbJSW+0Lm4W/5fEIgDcov8v3CagTcl79grqTvS3Ll+g==',
+))
+2018-02-17 17:49:07  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '10000',
+     'msg' => 'Success',
+     'buyer_logon_id' => 'eea***@sandbox.com',
+     'buyer_pay_amount' => '0.00',
+     'buyer_user_id' => '2088102175658362',
+     'buyer_user_type' => 'PRIVATE',
+     'invoice_amount' => '0.00',
+     'out_trade_no' => '1518849495',
+     'point_amount' => '0.00',
+     'receipt_amount' => '0.00',
+     'send_pay_date' => '2018-02-17 14:39:21',
+     'total_amount' => '500.00',
+     'trade_no' => '2018021721001004360200228261',
+     'trade_status' => 'TRADE_SUCCESS',
+  )),
+   'sign' => '0ZnF/MPEEjU4Lmm9uw80B3z6WgqAxUtMqzRNIH6tpjNw4EqWfK/OGp+j0tQNzcXujHEzM3XjsPjec+FkHRVV7EOcYxg0TT16Qepzpz3xVZt3gk04uCUlfEatMGmkKg4NHEfs3C6diwl3RFOVXsGjsdNWm3UAajCpZ4MvQax4waWSmI0h0p4vMkOu0uJjRFUiNAPkYnQcC8n4UrO3vd3h4TPoGVbc+Ros0TkeLhlHa2af90WZK9gIegfPavv1Bttm0xxnAEi6povEOV07GqxgNPyRAyNOw/rn8F2cBl3UNhnLS84JqoSB6I3gEtsJIVn2ebF724n2B/UVqFDoloHsLQ==',
+))
+2018-02-17 17:51:42  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '40004',
+     'msg' => 'Business Failed',
+     'sub_code' => 'ACQ.INVALID_PARAMETER',
+     'sub_msg' => '参数无效：支付宝订单号和外部订单号不能同时为空',
+     'buyer_pay_amount' => '0.00',
+     'invoice_amount' => '0.00',
+     'point_amount' => '0.00',
+     'receipt_amount' => '0.00',
+  )),
+   'sign' => 'EsIYYU6TVbKW2dMYPYE2LOIioi4D8hoIJ9hsukc8GJyIsglX+kl2wKyQVdXVH12YiQYX0NNIO7YlDLMTN/VmMSWKb3Y/5woTBm6uSOlNAEe6KEV0G4fsyRbm6qtG7eonZ/OXdU6fc697TNFg/zXPs+PWzHth5O2wHkwoxw+BkNKHqDMmLCtF/eEeHVa0iIqxa0Wgn2QlY0niY2UBtwFmw2OypvGOrZaBkx/UiA6kdmpIlT1Ug9Eg5vqfs3xIKZGCNKQz+dpoQ7b5WmizVI68zF7ufuVnbeKV8Qg9XWalRuWQbJSW+0Lm4W/5fEIgDcov8v3CagTcl79grqTvS3Ll+g==',
+))
+2018-02-17 17:51:59  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '40004',
+     'msg' => 'Business Failed',
+     'sub_code' => 'ACQ.INVALID_PARAMETER',
+     'sub_msg' => '参数无效：支付宝订单号和外部订单号不能同时为空',
+     'buyer_pay_amount' => '0.00',
+     'invoice_amount' => '0.00',
+     'point_amount' => '0.00',
+     'receipt_amount' => '0.00',
+  )),
+   'sign' => 'EsIYYU6TVbKW2dMYPYE2LOIioi4D8hoIJ9hsukc8GJyIsglX+kl2wKyQVdXVH12YiQYX0NNIO7YlDLMTN/VmMSWKb3Y/5woTBm6uSOlNAEe6KEV0G4fsyRbm6qtG7eonZ/OXdU6fc697TNFg/zXPs+PWzHth5O2wHkwoxw+BkNKHqDMmLCtF/eEeHVa0iIqxa0Wgn2QlY0niY2UBtwFmw2OypvGOrZaBkx/UiA6kdmpIlT1Ug9Eg5vqfs3xIKZGCNKQz+dpoQ7b5WmizVI68zF7ufuVnbeKV8Qg9XWalRuWQbJSW+0Lm4W/5fEIgDcov8v3CagTcl79grqTvS3Ll+g==',
+))
+2018-02-17 17:52:24  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '40004',
+     'msg' => 'Business Failed',
+     'sub_code' => 'ACQ.INVALID_PARAMETER',
+     'sub_msg' => '参数无效：支付宝订单号和外部订单号不能同时为空',
+     'buyer_pay_amount' => '0.00',
+     'invoice_amount' => '0.00',
+     'point_amount' => '0.00',
+     'receipt_amount' => '0.00',
+  )),
+   'sign' => 'EsIYYU6TVbKW2dMYPYE2LOIioi4D8hoIJ9hsukc8GJyIsglX+kl2wKyQVdXVH12YiQYX0NNIO7YlDLMTN/VmMSWKb3Y/5woTBm6uSOlNAEe6KEV0G4fsyRbm6qtG7eonZ/OXdU6fc697TNFg/zXPs+PWzHth5O2wHkwoxw+BkNKHqDMmLCtF/eEeHVa0iIqxa0Wgn2QlY0niY2UBtwFmw2OypvGOrZaBkx/UiA6kdmpIlT1Ug9Eg5vqfs3xIKZGCNKQz+dpoQ7b5WmizVI68zF7ufuVnbeKV8Qg9XWalRuWQbJSW+0Lm4W/5fEIgDcov8v3CagTcl79grqTvS3Ll+g==',
+))
+2018-02-17 17:52:45  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '40004',
+     'msg' => 'Business Failed',
+     'sub_code' => 'ACQ.INVALID_PARAMETER',
+     'sub_msg' => '参数无效：支付宝订单号和外部订单号不能同时为空',
+     'buyer_pay_amount' => '0.00',
+     'invoice_amount' => '0.00',
+     'point_amount' => '0.00',
+     'receipt_amount' => '0.00',
+  )),
+   'sign' => 'EsIYYU6TVbKW2dMYPYE2LOIioi4D8hoIJ9hsukc8GJyIsglX+kl2wKyQVdXVH12YiQYX0NNIO7YlDLMTN/VmMSWKb3Y/5woTBm6uSOlNAEe6KEV0G4fsyRbm6qtG7eonZ/OXdU6fc697TNFg/zXPs+PWzHth5O2wHkwoxw+BkNKHqDMmLCtF/eEeHVa0iIqxa0Wgn2QlY0niY2UBtwFmw2OypvGOrZaBkx/UiA6kdmpIlT1Ug9Eg5vqfs3xIKZGCNKQz+dpoQ7b5WmizVI68zF7ufuVnbeKV8Qg9XWalRuWQbJSW+0Lm4W/5fEIgDcov8v3CagTcl79grqTvS3Ll+g==',
+))
+2018-02-17 17:54:07  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '40004',
+     'msg' => 'Business Failed',
+     'sub_code' => 'ACQ.INVALID_PARAMETER',
+     'sub_msg' => '参数无效：支付宝订单号和外部订单号不能同时为空',
+     'buyer_pay_amount' => '0.00',
+     'invoice_amount' => '0.00',
+     'point_amount' => '0.00',
+     'receipt_amount' => '0.00',
+  )),
+   'sign' => 'EsIYYU6TVbKW2dMYPYE2LOIioi4D8hoIJ9hsukc8GJyIsglX+kl2wKyQVdXVH12YiQYX0NNIO7YlDLMTN/VmMSWKb3Y/5woTBm6uSOlNAEe6KEV0G4fsyRbm6qtG7eonZ/OXdU6fc697TNFg/zXPs+PWzHth5O2wHkwoxw+BkNKHqDMmLCtF/eEeHVa0iIqxa0Wgn2QlY0niY2UBtwFmw2OypvGOrZaBkx/UiA6kdmpIlT1Ug9Eg5vqfs3xIKZGCNKQz+dpoQ7b5WmizVI68zF7ufuVnbeKV8Qg9XWalRuWQbJSW+0Lm4W/5fEIgDcov8v3CagTcl79grqTvS3Ll+g==',
+))
+2018-02-17 17:54:33  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '10000',
+     'msg' => 'Success',
+     'buyer_logon_id' => 'eea***@sandbox.com',
+     'buyer_pay_amount' => '0.00',
+     'buyer_user_id' => '2088102175658362',
+     'buyer_user_type' => 'PRIVATE',
+     'invoice_amount' => '0.00',
+     'out_trade_no' => '1518849495',
+     'point_amount' => '0.00',
+     'receipt_amount' => '0.00',
+     'send_pay_date' => '2018-02-17 14:39:21',
+     'total_amount' => '500.00',
+     'trade_no' => '2018021721001004360200228261',
+     'trade_status' => 'TRADE_SUCCESS',
+  )),
+   'sign' => '0ZnF/MPEEjU4Lmm9uw80B3z6WgqAxUtMqzRNIH6tpjNw4EqWfK/OGp+j0tQNzcXujHEzM3XjsPjec+FkHRVV7EOcYxg0TT16Qepzpz3xVZt3gk04uCUlfEatMGmkKg4NHEfs3C6diwl3RFOVXsGjsdNWm3UAajCpZ4MvQax4waWSmI0h0p4vMkOu0uJjRFUiNAPkYnQcC8n4UrO3vd3h4TPoGVbc+Ros0TkeLhlHa2af90WZK9gIegfPavv1Bttm0xxnAEi6povEOV07GqxgNPyRAyNOw/rn8F2cBl3UNhnLS84JqoSB6I3gEtsJIVn2ebF724n2B/UVqFDoloHsLQ==',
+))
+2018-02-17 17:54:52  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '10000',
+     'msg' => 'Success',
+     'buyer_logon_id' => 'eea***@sandbox.com',
+     'buyer_pay_amount' => '0.00',
+     'buyer_user_id' => '2088102175658362',
+     'buyer_user_type' => 'PRIVATE',
+     'invoice_amount' => '0.00',
+     'out_trade_no' => '1518849495',
+     'point_amount' => '0.00',
+     'receipt_amount' => '0.00',
+     'send_pay_date' => '2018-02-17 14:39:21',
+     'total_amount' => '500.00',
+     'trade_no' => '2018021721001004360200228261',
+     'trade_status' => 'TRADE_SUCCESS',
+  )),
+   'sign' => '0ZnF/MPEEjU4Lmm9uw80B3z6WgqAxUtMqzRNIH6tpjNw4EqWfK/OGp+j0tQNzcXujHEzM3XjsPjec+FkHRVV7EOcYxg0TT16Qepzpz3xVZt3gk04uCUlfEatMGmkKg4NHEfs3C6diwl3RFOVXsGjsdNWm3UAajCpZ4MvQax4waWSmI0h0p4vMkOu0uJjRFUiNAPkYnQcC8n4UrO3vd3h4TPoGVbc+Ros0TkeLhlHa2af90WZK9gIegfPavv1Bttm0xxnAEi6povEOV07GqxgNPyRAyNOw/rn8F2cBl3UNhnLS84JqoSB6I3gEtsJIVn2ebF724n2B/UVqFDoloHsLQ==',
+))
+2018-02-17 17:55:12  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '10000',
+     'msg' => 'Success',
+     'buyer_logon_id' => 'eea***@sandbox.com',
+     'buyer_pay_amount' => '0.00',
+     'buyer_user_id' => '2088102175658362',
+     'buyer_user_type' => 'PRIVATE',
+     'invoice_amount' => '0.00',
+     'out_trade_no' => '1518849495',
+     'point_amount' => '0.00',
+     'receipt_amount' => '0.00',
+     'send_pay_date' => '2018-02-17 14:39:21',
+     'total_amount' => '500.00',
+     'trade_no' => '2018021721001004360200228261',
+     'trade_status' => 'TRADE_SUCCESS',
+  )),
+   'sign' => '0ZnF/MPEEjU4Lmm9uw80B3z6WgqAxUtMqzRNIH6tpjNw4EqWfK/OGp+j0tQNzcXujHEzM3XjsPjec+FkHRVV7EOcYxg0TT16Qepzpz3xVZt3gk04uCUlfEatMGmkKg4NHEfs3C6diwl3RFOVXsGjsdNWm3UAajCpZ4MvQax4waWSmI0h0p4vMkOu0uJjRFUiNAPkYnQcC8n4UrO3vd3h4TPoGVbc+Ros0TkeLhlHa2af90WZK9gIegfPavv1Bttm0xxnAEi6povEOV07GqxgNPyRAyNOw/rn8F2cBl3UNhnLS84JqoSB6I3gEtsJIVn2ebF724n2B/UVqFDoloHsLQ==',
+))
+2018-02-17 17:55:49  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '10000',
+     'msg' => 'Success',
+     'buyer_logon_id' => 'eea***@sandbox.com',
+     'buyer_pay_amount' => '0.00',
+     'buyer_user_id' => '2088102175658362',
+     'buyer_user_type' => 'PRIVATE',
+     'invoice_amount' => '0.00',
+     'out_trade_no' => '1518849495',
+     'point_amount' => '0.00',
+     'receipt_amount' => '0.00',
+     'send_pay_date' => '2018-02-17 14:39:21',
+     'total_amount' => '500.00',
+     'trade_no' => '2018021721001004360200228261',
+     'trade_status' => 'TRADE_SUCCESS',
+  )),
+   'sign' => '0ZnF/MPEEjU4Lmm9uw80B3z6WgqAxUtMqzRNIH6tpjNw4EqWfK/OGp+j0tQNzcXujHEzM3XjsPjec+FkHRVV7EOcYxg0TT16Qepzpz3xVZt3gk04uCUlfEatMGmkKg4NHEfs3C6diwl3RFOVXsGjsdNWm3UAajCpZ4MvQax4waWSmI0h0p4vMkOu0uJjRFUiNAPkYnQcC8n4UrO3vd3h4TPoGVbc+Ros0TkeLhlHa2af90WZK9gIegfPavv1Bttm0xxnAEi6povEOV07GqxgNPyRAyNOw/rn8F2cBl3UNhnLS84JqoSB6I3gEtsJIVn2ebF724n2B/UVqFDoloHsLQ==',
+))
+2018-02-17 17:57:28  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '40004',
+     'msg' => 'Business Failed',
+     'sub_code' => 'ACQ.INVALID_PARAMETER',
+     'sub_msg' => '参数无效：支付宝订单号和外部订单号不能同时为空',
+     'buyer_pay_amount' => '0.00',
+     'invoice_amount' => '0.00',
+     'point_amount' => '0.00',
+     'receipt_amount' => '0.00',
+  )),
+   'sign' => 'EsIYYU6TVbKW2dMYPYE2LOIioi4D8hoIJ9hsukc8GJyIsglX+kl2wKyQVdXVH12YiQYX0NNIO7YlDLMTN/VmMSWKb3Y/5woTBm6uSOlNAEe6KEV0G4fsyRbm6qtG7eonZ/OXdU6fc697TNFg/zXPs+PWzHth5O2wHkwoxw+BkNKHqDMmLCtF/eEeHVa0iIqxa0Wgn2QlY0niY2UBtwFmw2OypvGOrZaBkx/UiA6kdmpIlT1Ug9Eg5vqfs3xIKZGCNKQz+dpoQ7b5WmizVI68zF7ufuVnbeKV8Qg9XWalRuWQbJSW+0Lm4W/5fEIgDcov8v3CagTcl79grqTvS3Ll+g==',
+))
+2018-02-17 17:57:37  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '40004',
+     'msg' => 'Business Failed',
+     'sub_code' => 'ACQ.INVALID_PARAMETER',
+     'sub_msg' => '参数无效：支付宝订单号和外部订单号不能同时为空',
+     'buyer_pay_amount' => '0.00',
+     'invoice_amount' => '0.00',
+     'point_amount' => '0.00',
+     'receipt_amount' => '0.00',
+  )),
+   'sign' => 'EsIYYU6TVbKW2dMYPYE2LOIioi4D8hoIJ9hsukc8GJyIsglX+kl2wKyQVdXVH12YiQYX0NNIO7YlDLMTN/VmMSWKb3Y/5woTBm6uSOlNAEe6KEV0G4fsyRbm6qtG7eonZ/OXdU6fc697TNFg/zXPs+PWzHth5O2wHkwoxw+BkNKHqDMmLCtF/eEeHVa0iIqxa0Wgn2QlY0niY2UBtwFmw2OypvGOrZaBkx/UiA6kdmpIlT1Ug9Eg5vqfs3xIKZGCNKQz+dpoQ7b5WmizVI68zF7ufuVnbeKV8Qg9XWalRuWQbJSW+0Lm4W/5fEIgDcov8v3CagTcl79grqTvS3Ll+g==',
+))
+2018-02-17 17:59:48  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '10000',
+     'msg' => 'Success',
+     'buyer_logon_id' => 'eea***@sandbox.com',
+     'buyer_pay_amount' => '0.00',
+     'buyer_user_id' => '2088102175658362',
+     'buyer_user_type' => 'PRIVATE',
+     'invoice_amount' => '0.00',
+     'out_trade_no' => '1518849495',
+     'point_amount' => '0.00',
+     'receipt_amount' => '0.00',
+     'send_pay_date' => '2018-02-17 14:39:21',
+     'total_amount' => '500.00',
+     'trade_no' => '2018021721001004360200228261',
+     'trade_status' => 'TRADE_SUCCESS',
+  )),
+   'sign' => '0ZnF/MPEEjU4Lmm9uw80B3z6WgqAxUtMqzRNIH6tpjNw4EqWfK/OGp+j0tQNzcXujHEzM3XjsPjec+FkHRVV7EOcYxg0TT16Qepzpz3xVZt3gk04uCUlfEatMGmkKg4NHEfs3C6diwl3RFOVXsGjsdNWm3UAajCpZ4MvQax4waWSmI0h0p4vMkOu0uJjRFUiNAPkYnQcC8n4UrO3vd3h4TPoGVbc+Ros0TkeLhlHa2af90WZK9gIegfPavv1Bttm0xxnAEi6povEOV07GqxgNPyRAyNOw/rn8F2cBl3UNhnLS84JqoSB6I3gEtsJIVn2ebF724n2B/UVqFDoloHsLQ==',
+))
+2018-02-17 17:59:57  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '10000',
+     'msg' => 'Success',
+     'buyer_logon_id' => 'eea***@sandbox.com',
+     'buyer_pay_amount' => '0.00',
+     'buyer_user_id' => '2088102175658362',
+     'buyer_user_type' => 'PRIVATE',
+     'invoice_amount' => '0.00',
+     'out_trade_no' => '1518849495',
+     'point_amount' => '0.00',
+     'receipt_amount' => '0.00',
+     'send_pay_date' => '2018-02-17 14:39:21',
+     'total_amount' => '500.00',
+     'trade_no' => '2018021721001004360200228261',
+     'trade_status' => 'TRADE_SUCCESS',
+  )),
+   'sign' => '0ZnF/MPEEjU4Lmm9uw80B3z6WgqAxUtMqzRNIH6tpjNw4EqWfK/OGp+j0tQNzcXujHEzM3XjsPjec+FkHRVV7EOcYxg0TT16Qepzpz3xVZt3gk04uCUlfEatMGmkKg4NHEfs3C6diwl3RFOVXsGjsdNWm3UAajCpZ4MvQax4waWSmI0h0p4vMkOu0uJjRFUiNAPkYnQcC8n4UrO3vd3h4TPoGVbc+Ros0TkeLhlHa2af90WZK9gIegfPavv1Bttm0xxnAEi6povEOV07GqxgNPyRAyNOw/rn8F2cBl3UNhnLS84JqoSB6I3gEtsJIVn2ebF724n2B/UVqFDoloHsLQ==',
+))
+2018-02-17 18:00:48  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '10000',
+     'msg' => 'Success',
+     'buyer_logon_id' => 'eea***@sandbox.com',
+     'buyer_pay_amount' => '0.00',
+     'buyer_user_id' => '2088102175658362',
+     'buyer_user_type' => 'PRIVATE',
+     'invoice_amount' => '0.00',
+     'out_trade_no' => '1518849495',
+     'point_amount' => '0.00',
+     'receipt_amount' => '0.00',
+     'send_pay_date' => '2018-02-17 14:39:21',
+     'total_amount' => '500.00',
+     'trade_no' => '2018021721001004360200228261',
+     'trade_status' => 'TRADE_SUCCESS',
+  )),
+   'sign' => '0ZnF/MPEEjU4Lmm9uw80B3z6WgqAxUtMqzRNIH6tpjNw4EqWfK/OGp+j0tQNzcXujHEzM3XjsPjec+FkHRVV7EOcYxg0TT16Qepzpz3xVZt3gk04uCUlfEatMGmkKg4NHEfs3C6diwl3RFOVXsGjsdNWm3UAajCpZ4MvQax4waWSmI0h0p4vMkOu0uJjRFUiNAPkYnQcC8n4UrO3vd3h4TPoGVbc+Ros0TkeLhlHa2af90WZK9gIegfPavv1Bttm0xxnAEi6povEOV07GqxgNPyRAyNOw/rn8F2cBl3UNhnLS84JqoSB6I3gEtsJIVn2ebF724n2B/UVqFDoloHsLQ==',
+))
+2018-02-17 18:03:21  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '40002',
+     'msg' => 'Invalid Arguments',
+     'sub_code' => 'isv.invalid-signature',
+     'sub_msg' => '验签出错，建议检查签名字符串或签名私钥与应用公钥是否匹配，网关生成的验签字符串为：alipay_sdk=alipay-sdk-php-20161101&amp;app_id=2016091200496342&amp;biz_content={&quot;out_trade_no&quot;:&quot;1518849495&quot;,&quot;trade_no&quot;:&quot;&quot;}&amp;charset=UTF-8&amp;format=json&amp;method=alipay.trade.query&amp;sign_type=RSA2&amp;timestamp=2018-02-17 18:03:20&amp;version=1.0',
+  )),
+   'sign' => '34wDrYvqiUeuox1nRsgHyPvogyZSOMn9GxMn5t9jsNxB7KC8uT+wPodNaaKlpfnvNFB+hCS3J73gagc7RKkB5cjXZKxYq6Kkt+hVxXwWkTUdGw1dwnqMFvp3FHE5htybNg8HSWoza1QucgQmHzlcJVff6H9rHgaO7jS9iZa+WaSUxpO8zq+8W/sTkMFVBaXWwJkAPoywIb1e9W9aq+mdADB0iO/2CEa8g/XHJTmKzvHcaPzD32ShKxWrqkhfBAHQgPOYtwQP9Vfo1zUyzRUz7Zau6nIIdBRbp7h2whlooudbhAfGEj/VaBC9f1Nbk8GeWg4YCiSSalTOTzUr68vYRg==',
+))
+2018-02-17 18:03:35  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '40002',
+     'msg' => 'Invalid Arguments',
+     'sub_code' => 'isv.invalid-signature',
+     'sub_msg' => '验签出错，建议检查签名字符串或签名私钥与应用公钥是否匹配，网关生成的验签字符串为：alipay_sdk=alipay-sdk-php-20161101&amp;app_id=2016091200496342&amp;biz_content={&quot;out_trade_no&quot;:&quot;1518849495&quot;,&quot;trade_no&quot;:&quot;&quot;}&amp;charset=UTF-8&amp;format=json&amp;method=alipay.trade.query&amp;sign_type=RSA2&amp;timestamp=2018-02-17 18:03:34&amp;version=1.0',
+  )),
+   'sign' => 'x4dlb/XLqbUqul6huD5qokpQF7k8Bav/sN0FaRob2uI8Q83Z1UuiKJUQ59jc0yq/uzEX8Bs8hmy/LcEK45btqdlJI3jb61gCGb2SiQzqFyLnLs/dRK+P/yg4iF1rDw4ObmnF/Zcr/YFpbmBEX2sx63zkoUNiN3P6s+MHaPFTREGgQG8Deztsjncs/8agv/+AA4N9iQDby5+Gpq9FNc9ZOOvJYZ0t5IrlXOZM9hncxLrV62MHYR6TMJ4E4wqywnVwPK5xi81aWSa3nwUpaTJ3xOqsFAMP5MiAcRgFq4V6nPH9hCGhST4gSZk3GnGw5eCGDzdH/fuBnWNROjnPi+r4Qg==',
+))
+2018-02-17 18:04:29  response: stdClass::__set_state(array(
+   'alipay_trade_query_response' => 
+  stdClass::__set_state(array(
+     'code' => '10000',
+     'msg' => 'Success',
+     'buyer_logon_id' => 'eea***@sandbox.com',
+     'buyer_pay_amount' => '0.00',
+     'buyer_user_id' => '2088102175658362',
+     'buyer_user_type' => 'PRIVATE',
+     'invoice_amount' => '0.00',
+     'out_trade_no' => '1518849495',
+     'point_amount' => '0.00',
+     'receipt_amount' => '0.00',
+     'send_pay_date' => '2018-02-17 14:39:21',
+     'total_amount' => '500.00',
+     'trade_no' => '2018021721001004360200228261',
+     'trade_status' => 'TRADE_SUCCESS',
+  )),
+   'sign' => '0ZnF/MPEEjU4Lmm9uw80B3z6WgqAxUtMqzRNIH6tpjNw4EqWfK/OGp+j0tQNzcXujHEzM3XjsPjec+FkHRVV7EOcYxg0TT16Qepzpz3xVZt3gk04uCUlfEatMGmkKg4NHEfs3C6diwl3RFOVXsGjsdNWm3UAajCpZ4MvQax4waWSmI0h0p4vMkOu0uJjRFUiNAPkYnQcC8n4UrO3vd3h4TPoGVbc+Ros0TkeLhlHa2af90WZK9gIegfPavv1Bttm0xxnAEi6povEOV07GqxgNPyRAyNOw/rn8F2cBl3UNhnLS84JqoSB6I3gEtsJIVn2ebF724n2B/UVqFDoloHsLQ==',
+))
+2018-02-18 13:54:54  {"productCode":"QUICK_WAP_PAY","body":null,"subject":"1518933294订单","out_trade_no":1518933294,"total_amount":100,"timeout_express":"1m"}
+2018-02-18 13:56:29  {"productCode":"QUICK_WAP_PAY","body":null,"subject":"1518933389订单","out_trade_no":1518933389,"total_amount":100,"timeout_express":"1m"}
+2018-02-18 13:57:43  {"productCode":"QUICK_WAP_PAY","body":null,"subject":"1518933463订单","out_trade_no":1518933463,"total_amount":100,"timeout_express":"1m"}
+2018-02-18 13:59:13  {"productCode":"QUICK_WAP_PAY","body":null,"subject":"1518933553订单","out_trade_no":1518933553,"total_amount":100,"timeout_express":"1m"}
+2018-02-18 13:59:14  response: '<form id=\'alipaysubmit\' name=\'alipaysubmit\' action=\'https://openapi.alipaydev.com/gateway.do?charset=UTF-8\' method=\'POST\'><input type=\'hidden\' name=\'biz_content\' value=\'{"productCode":"QUICK_WAP_PAY","body":null,"subject":"1518933553订单","out_trade_no":1518933553,"total_amount":100,"timeout_express":"1m"}\'/><input type=\'hidden\' name=\'app_id\' value=\'2016091200496342\'/><input type=\'hidden\' name=\'version\' value=\'1.0\'/><input type=\'hidden\' name=\'format\' value=\'json\'/><input type=\'hidden\' name=\'sign_type\' value=\'RSA2\'/><input type=\'hidden\' name=\'method\' value=\'alipay.trade.wap.pay\'/><input type=\'hidden\' name=\'timestamp\' value=\'2018-02-18 13:59:13\'/><input type=\'hidden\' name=\'alipay_sdk\' value=\'alipay-sdk-php-20161101\'/><input type=\'hidden\' name=\'notify_url\' value=\'http://www.joungpig.com/ComAlipay/alipay.trade.page.pay-PHP-UTF-8/notify_url.php\'/><input type=\'hidden\' name=\'return_url\' value=\'http://www.joungpig.com/ComAlipay/alipay.trade.page.pay-PHP-UTF-8/return_url.php\'/><input type=\'hidden\' name=\'charset\' value=\'UTF-8\'/><input type=\'hidden\' name=\'sign\' value=\'oUKbOpvrBk9LgABsfGhWm5JnyKa9L6MXPgC4LGWoiot94z/1CFsIwTB6HZ4dzUvUN/Nv9wyhS2+Uk85QlMUAuqygGKyguo2vonErWuxXFvnQ0mPy19kntte7kTkvNvhQx2qleFZRD7EwezDeMGNzPN8T+iSxnie+UzbJRayCRgPDhPeeoXFKNGChH8TGGK1Z9VUJc8DWt8SJPCLibge5BSW/pgLq9kUpa1v3Wu9bQFPAbbdRuAgWIKV2wnz1AEW64jp/QJE6N74gf475X3JfQ2zrgrL7Uh4+fjLUNM9cmcwAythY9HTM15pluyFTg4sBOQAgImj4Oo92hbN1b7/gog==\'/><input type=\'submit\' value=\'ok\' style=\'display:none;\'\'></form><script>document.forms[\'alipaysubmit\'].submit();</script>'
+2018-02-18 14:43:53  {"productCode":"QUICK_WAP_PAY","body":null,"subject":"1518936233订单","out_trade_no":1518936233,"total_amount":100,"timeout_express":"1m"}
+2018-02-18 14:43:53  response: '<form id=\'alipaysubmit\' name=\'alipaysubmit\' action=\'https://openapi.alipaydev.com/gateway.do?charset=UTF-8\' method=\'POST\'><input type=\'hidden\' name=\'biz_content\' value=\'{"productCode":"QUICK_WAP_PAY","body":null,"subject":"1518936233订单","out_trade_no":1518936233,"total_amount":100,"timeout_express":"1m"}\'/><input type=\'hidden\' name=\'app_id\' value=\'2016091200496342\'/><input type=\'hidden\' name=\'version\' value=\'1.0\'/><input type=\'hidden\' name=\'format\' value=\'json\'/><input type=\'hidden\' name=\'sign_type\' value=\'RSA2\'/><input type=\'hidden\' name=\'method\' value=\'alipay.trade.wap.pay\'/><input type=\'hidden\' name=\'timestamp\' value=\'2018-02-18 14:43:53\'/><input type=\'hidden\' name=\'alipay_sdk\' value=\'alipay-sdk-php-20161101\'/><input type=\'hidden\' name=\'notify_url\' value=\'http://www.joungpig.com/ComAlipay/alipay.trade.page.pay-PHP-UTF-8/notify_url.php\'/><input type=\'hidden\' name=\'return_url\' value=\'http://www.joungpig.com/mobile.php/index/returnUrl\'/><input type=\'hidden\' name=\'charset\' value=\'UTF-8\'/><input type=\'hidden\' name=\'sign\' value=\'JFf8v8vx2AZelzweQ3222V47JNyGl0StEsXuk5EoQwfqOOHdPUtvfufgMbqgr3oxGnMES6X/gmQPLdw4uNtkb2s3H16T78MocMI7tgG9K9n9rTuNz/IMhTfIVosjx51sn8NLvTjXbhsYoIskslpXQ4yjkJ4mdd/wIYNFJ5A5u7aayqv0dOBiGcVA+Q63t3ztNQZ/1/7Q0OQWoZERy9vukN4RndctPfh0ZJIrrWqAFjrWcI6FpeznNZW01dftBsmjVqc3lCdMQinFEnwoEW4tYRrb+VYCom7BX4AaasMjS/nS0nRcpinYCmJj4leILRX+Xely+6CZq4WNVHNuv7SiXw==\'/><input type=\'submit\' value=\'ok\' style=\'display:none;\'\'></form><script>document.forms[\'alipaysubmit\'].submit();</script>'
+2018-02-18 14:47:43  {"productCode":"QUICK_WAP_PAY","body":null,"subject":"1518936463订单","out_trade_no":1518936463,"total_amount":100,"timeout_express":"1m"}
+2018-02-18 14:47:44  response: '<form id=\'alipaysubmit\' name=\'alipaysubmit\' action=\'https://openapi.alipaydev.com/gateway.do?charset=UTF-8\' method=\'POST\'><input type=\'hidden\' name=\'biz_content\' value=\'{"productCode":"QUICK_WAP_PAY","body":null,"subject":"1518936463订单","out_trade_no":1518936463,"total_amount":100,"timeout_express":"1m"}\'/><input type=\'hidden\' name=\'app_id\' value=\'2016091200496342\'/><input type=\'hidden\' name=\'version\' value=\'1.0\'/><input type=\'hidden\' name=\'format\' value=\'json\'/><input type=\'hidden\' name=\'sign_type\' value=\'RSA2\'/><input type=\'hidden\' name=\'method\' value=\'alipay.trade.wap.pay\'/><input type=\'hidden\' name=\'timestamp\' value=\'2018-02-18 14:47:43\'/><input type=\'hidden\' name=\'alipay_sdk\' value=\'alipay-sdk-php-20161101\'/><input type=\'hidden\' name=\'notify_url\' value=\'http://www.joungpig.com/ComAlipay/alipay.trade.page.pay-PHP-UTF-8/notify_url.php\'/><input type=\'hidden\' name=\'return_url\' value=\'http://www.joungpig.com/mobile.php/index/returnUrl\'/><input type=\'hidden\' name=\'charset\' value=\'UTF-8\'/><input type=\'hidden\' name=\'sign\' value=\'Avk5SJVjBhQIv5Vm87/NWlQarX/tAo4FFuF5nYaLQEmqYHl0mOQ38x6V2BVyXWLWTv0G9iin38Js6YTq+EfHI75GDzligbREfTkT4/1R3Y8+kzN27qNdar8+/4S0puhoyQmVGTY/y/l53/GELYyrQMn/Gd19Hz6zxC+SZ3HP7Lfdz+eWLqt3ygbdhDweg+1xhROhqGcMlcMzfRILu2xCQsBvt6iUy4XduOM/4+BpJ2n3dXRKtM6XvcboSJ0pkathR3ilPVwYWMehCIGDBTb8V4dDJgEzQir8Oz5MZ5f8lYEzfB/u3gz1RiGkwAmNc8T8kH7gtKa6c7xPJLdknwXqag==\'/><input type=\'submit\' value=\'ok\' style=\'display:none;\'\'></form><script>document.forms[\'alipaysubmit\'].submit();</script>'

@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <include file="Public:metra"/>
+  <!--样式-->
+  <include file="Public:css"/>
+  <!--样式end-->
+
+  <!-- HTML5 Support for IE -->
+  <!--[if lt IE 9]>
+  <script src="js/html5shim.js"></script>
+  <![endif]-->
+
+</head>
+
+<body>
+
+<!--导航-->
+<include file="Public:nav"/>
+<!--导航end-->
+
+<!--头部-->
+<include file="Public:header"/>
+<!--头部end-->
+
+<!-- Main content starts -->
+
+<div class="content">
+
+     <!--菜单-->
+  <include file="Public:menu"/>
+  <!--菜单end-->
+
+  	<!-- Main bar -->
+  	<div class="mainbar">
+
+      <!--面包屑导航-->
+
+      <include file="Public:bread"/>
+
+      <!--面包屑导航end-->
+	    <!-- Matter -->
+	    <div class="matter">
+        <div class="container">
+          <!-- Table -->
+            <div class="row">
+              <div class="col-md-12">
+
+                <div class="widget">
+
+                  <div class="widget-head">
+                    <div class="pull-left">
+                      <a  class="btn btn-default" id="wx_update">更新微信IP</a>
+                    </div>
+                    <div class="widget-icons pull-right">
+                      <a href="#" class="wminimize"><i class="icon-chevron-up"></i></a>
+                      <a href="#" class="wclose"><i class="icon-remove"></i></a>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+
+                  <div class="widget-content">
+
+                  </div>
+
+                </div>
+
+                <div class="widget">
+
+                  <div class="widget-head">
+                    <div class="pull-left">
+                      <a  class="btn btn-default" id="menu">自定义菜单</a>
+                      <a  class="btn btn-default" id="getMenu">获取菜单</a>
+                      <a  class="btn btn-default" id="deleteMenu">删除菜单</a>
+                    </div>
+                    <div class="widget-icons pull-right">
+                      <a href="#" class="wminimize"><i class="icon-chevron-up"></i></a>
+                      <a href="#" class="wclose"><i class="icon-remove"></i></a>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+
+                  <div class="widget-content">
+
+                  </div>
+
+                </div>
+
+                <div class="widget">
+
+                  <div class="widget-head">
+                    <div class="pull-left">
+                      <a  class="btn btn-default" id="upload" onclick="upload(1)">图片上传</a>
+                      <input type="file" id="idcarda1" style="display: none;">
+                      <a  class="btn btn-default" id="get_count">获取素材数量</a>
+                    </div>
+                    <div class="widget-icons pull-right">
+                      <a href="#" class="wminimize"><i class="icon-chevron-up"></i></a>
+                      <a href="#" class="wclose"><i class="icon-remove"></i></a>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+
+                  <div class="widget-content">
+
+                  </div>
+
+                </div>
+
+                <div class="widget">
+
+                  <div class="widget-head">
+                    <div class="pull-left">
+                      <a  class="btn btn-default" id="creat_tag">新建标签</a>
+                      <a  class="btn btn-default" id="get_tag">获取标签</a>
+                      <a  class="btn btn-default" id="edit_tag">编辑标签</a>
+                      <a  class="btn btn-default" id="del_tag">删除标签</a>
+                      <a  class="btn btn-default" id="get_tag_user">获取标签下粉丝</a>
+                      <a  class="btn btn-default" id="user_tags">批量打标签</a>
+                      <a  class="btn btn-default" id="cancel_tag">批量取消标签</a>
+                      <a  class="btn btn-default" id="get_user_tag">获取粉丝标签</a>
+                    </div>
+                    <div class="widget-icons pull-right">
+                      <a href="#" class="wminimize"><i class="icon-chevron-up"></i></a>
+                      <a href="#" class="wclose"><i class="icon-remove"></i></a>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+
+                  <div class="widget-content">
+
+                  </div>
+
+                </div>
+
+                <div class="widget">
+
+                  <div class="widget-head">
+                    <div class="pull-left">
+                      <a  class="btn btn-default" id="userRemark">设置用户备注</a>
+                      <a  class="btn btn-default" id="userInfo">获取指定用户信息</a>
+                      <a  class="btn btn-default" id="userGet">获取关注者列表</a>
+                    </div>
+                    <div class="widget-icons pull-right">
+                      <a href="#" class="wminimize"><i class="icon-chevron-up"></i></a>
+                      <a href="#" class="wclose"><i class="icon-remove"></i></a>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+
+                  <div class="widget-content">
+
+                  </div>
+
+                </div>
+
+                <div class="widget">
+
+                  <div class="widget-head">
+                    <div class="pull-left">
+                      <a  class="btn btn-default" id="createQrcode">创建临时二维码</a>
+                      <a  class="btn btn-default" id="getQrcode">兑换二维码</a>
+                    </div>
+                    <div class="widget-icons pull-right">
+                      <a href="#" class="wminimize"><i class="icon-chevron-up"></i></a>
+                      <a href="#" class="wclose"><i class="icon-remove"></i></a>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+
+                  <div class="widget-content">
+
+                  </div>
+
+                </div>
+
+                <div class="widget">
+
+                <div class="widget-head">
+                  <div class="pull-left">公众号数据</div>
+                  <div class="widget-icons pull-right">
+                    <a href="#" class="wminimize"><i class="icon-chevron-up"></i></a> 
+                    <a href="#" class="wclose"><i class="icon-remove"></i></a>
+                  </div>  
+                  <div class="clearfix"></div>
+                </div>
+
+                  <div class="widget-content">
+
+                    <table class="table table-striped table-bordered table-hover">
+                      <thead>
+                        <tr>
+                          <th class="col-lg-1">永久素材数量</th>
+                          <th>音频</th>
+                          <th>视频</th>
+                          <th>图片</th>
+                          <th>图文</th>
+                          <!--<th>操作</th>-->
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>#</td>
+                          <td>
+                            {$materialcount['voice_count']}
+                          </td>
+                          <td>
+                            {$materialcount['video_count']}
+                          </td>
+                          <td>
+                            {$materialcount['image_count']}
+                        </td>
+                          <td>
+                            {$materialcount['news_count']}
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <div class="widget-foot">
+                        <ul class="pagination pull-right">
+                          {$page}
+                        </ul>
+                      <div class="clearfix"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+        </div>
+		  </div>
+		<!-- Matter ends -->
+
+      <div id="editor_panel">
+        <div id="editor_panel_body" style="margin-right: -1000px;">
+          <iframe src="" frameborder="0" id="account-iframe"></iframe>
+        </div>
+      </div>
+    </div>
+
+   <!-- Mainbar ends -->	    	
+   <div class="clearfix"></div>
+
+</div>
+<!-- Content ends -->
+
+<!--foot-->
+<include file="Public:foot"/>
+<!--foot end-->
+
+<!-- Scroll to top -->
+<span class="totop"><a href="#"><i class="icon-chevron-up"></i></a></span>
+
+<!--js-->
+<include file="Public:js"/>
+<!--js end-->
+
+<!--微信IP地址更新-->
+<script>
+  $("#wx_update").click(function(){
+    var url = "{:U('wx/getCallBackIp')}";
+    var index = layer.load(2, {
+      content: 'IP更新中',
+      shade: [0.4, '#393D49'],
+      // time: 10 * 1000,
+      success: function(layero) {
+        layero.css('padding-left', '30px');
+        layero.find('.layui-layer-content').css({
+          'padding-top': '40px',
+          'width': '70px',
+          'background-position-x': '16px'
+        });
+      }
+    })
+    $.ajax({
+      cache: false,
+      type: "GET",
+      url: url,
+      async: false,
+      success: function(msg){
+        if (msg.error) {
+          layer.msg(msg.info);
+          layer.close(index);
+        } else if (msg.success) {
+          layer.msg(msg.info);
+          layer.close(index);
+        }
+      },
+      error: function(msg){
+        layer.msg('系统异常,请稍后再试!');
+        layer.close(index);
+      }
+    });
+  });
+</script>
+<!--微信IP地址更新 END-->
+
+<!--自定义菜单-->
+<script>
+  $("#menu").click(function(){
+    var url = "{:U('wx/menu')}";
+    layer.open({
+      type: 2,
+      title: '自定义菜单',
+      closeBtn: 0, //不显示关闭按钮
+      shadeClose: true,
+      shade: [0],
+      area: ['700px', '400px'],
+      //offset: 'rb', //右下角弹出
+      //time: 2000, //2秒后自动关闭
+      anim: 2,
+      content: [url], //iframe的url，no代表不显示滚动条
+    });
+  });
+</script>
+<!--自定义菜单 END-->
+
+<!--获取自定义菜单-->
+<script>
+  $("#getMenu").click(function(){
+    var url = "{:U('wx/getMenu')}";
+    var index = layer.load(2, {
+      content: '获取中',
+      shade: [0.4, '#393D49'],
+      // time: 10 * 1000,
+      success: function(layero) {
+        layero.css('padding-left', '30px');
+        layero.find('.layui-layer-content').css({
+          'padding-top': '40px',
+          'width': '70px',
+          'background-position-x': '16px'
+        });
+      }
+    })
+    $.ajax({
+      cache: false,
+      type: "GET",
+      url: url,
+      async: false,
+      success: function(msg){
+        if (msg.error) {
+          layer.msg(msg.info);
+          layer.close(index);
+        } else if (msg.success) {
+          layer.msg(msg.info);
+          layer.close(index);
+        }
+      },
+      error: function(msg){
+        layer.msg('系统异常,请稍后再试!');
+        layer.close(index);
+      }
+    });
+  });
+</script>
+<!--获取自定义菜单 END-->
+
+<!--删除自定义菜单-->
+<script>
+  $("#deleteMenu").click(function(){
+    var url = "{:U('wx/DelMenu')}";
+    var index = layer.load(2, {
+      content: '获取中',
+      shade: [0.4, '#393D49'],
+      // time: 10 * 1000,
+      success: function(layero) {
+        layero.css('padding-left', '30px');
+        layero.find('.layui-layer-content').css({
+          'padding-top': '40px',
+          'width': '70px',
+          'background-position-x': '16px'
+        });
+      }
+    })
+    $.ajax({
+      cache: false,
+      type: "GET",
+      url: url,
+      async: false,
+      success: function(msg){
+        if (msg.error) {
+          layer.msg(msg.info);
+          layer.close(index);
+        } else if (msg.success) {
+          layer.msg(msg.info);
+          layer.close(index);
+        }
+      },
+      error: function(msg){
+        layer.msg('系统异常,请稍后再试!');
+        layer.close(index);
+      }
+    });
+  });
+</script>
+<!--删除自定义菜单 END-->
+
+<!--获取素材数量-->
+<script>
+    $("#get_count").click(function(){
+      var url = "{:U('wx/getMaterialcount')}";
+      var index = layer.load(2, {
+        content: '获取中',
+        shade: [0.4, '#393D49'],
+        // time: 10 * 1000,
+        success: function(layero) {
+          layero.css('padding-left', '30px');
+          layero.find('.layui-layer-content').css({
+            'padding-top': '40px',
+            'width': '70px',
+            'background-position-x': '16px'
+          });
+        }
+      })
+      $.ajax({
+        cache: false,
+        type: "GET",
+        url: url,
+        async: false,
+        success: function(msg){
+          if (msg.error) {
+            layer.msg(msg.info);
+            layer.close(index);
+          } else if (msg.success) {
+            layer.msg(msg.info);
+            layer.close(index);
+          }
+        },
+        error: function(msg){
+          layer.msg('系统异常,请稍后再试!');
+          layer.close(index);
+        }
+      });
+    });
+  </script>
+<!--获取素材数量 END-->
+
+<!--上传封面-->
+<script>
+  $('#idcarda1').on('click',function(){
+    var id= 1;//类型为1
+    //选择文件
+    $('#idcarda1').change(function(event) {
+      var file;
+      file=event.target.files[0];
+      html5up(file);
+      $("#idcarda1").unbind("change");//清除改变事件
+    });
+  });
+  //点击图片上传
+  function upload(id){
+    var name='#idcarda'+id;
+    return $(name).click();
+  }
+  //上传操作
+  function html5up(file){
+    var form_data=new FormData();
+    form_data.append("Filedata",file);
+    $.ajax({
+              url: '{:U("Wx/upload_img")}',
+              type: 'POST',
+              processData: false,
+              contentType: false,
+              async:false,
+              data: form_data,
+            })
+            .success(function(data) {
+              if(data.error ==1){
+                layer.msg(data['info']);
+              }else{
+                layer.msg(data['info']);
+              }
+            })
+  }
+  //添加图片到img_box
+</script>
+<!--上传封面END-->
+
+<!--标签-->
+<script>
+
+  $("#creat_tag").click(function(){
+    var url = "{:U('wx/creatTag')}";
+    layer.open({
+      type: 2,
+      title: '创建标签',
+      closeBtn: 0, //不显示关闭按钮
+      shadeClose: true,
+      shade: [0],
+      area: ['700px', '200px'],
+      //offset: 'rb', //右下角弹出
+      //time: 2000, //2秒后自动关闭
+      anim: 2,
+      content: [url,'no'], //iframe的url，no代表不显示滚动条
+    });
+  });
+
+  $("#get_tag").click(function(){
+    var url = "{:U('wx/getTag')}";
+    $.ajax({
+      cache: false,
+      type: "GET",
+      url:  url,
+      async: false,
+      success: function(msg){
+        if (msg.error) {
+          layer.msg(msg.info);
+        } else if (msg.success) {
+          layer.msg(msg.info);
+        }
+      },
+      error: function(msg){
+        layer.msg('系统异常,请稍后再试!');
+      }
+    });
+  });
+
+  $("#user_tags").click(function(){
+    var url = "{:U('wx/userTag')}";
+    $.ajax({
+      cache: false,
+      type: "GET",
+      url:  url,
+      async: false,
+      success: function(msg){
+        if (msg.error) {
+          layer.msg(msg.info);
+        } else if (msg.success) {
+          layer.msg(msg.info);
+        }
+      },
+      error: function(msg){
+        layer.msg('系统异常,请稍后再试!');
+      }
+    });
+  });
+
+  $("#get_user_tag").click(function(){
+    var url = "{:U('wx/getUserTag')}";
+    $.ajax({
+      cache: false,
+      type: "GET",
+      url:  url,
+      async: false,
+      success: function(msg){
+        if (msg.error) {
+          layer.msg(msg.info);
+        } else if (msg.success) {
+          layer.msg(msg.info);
+        }
+      },
+      error: function(msg){
+        layer.msg('系统异常,请稍后再试!');
+      }
+    });
+  });
+
+</script>
+<!--标签END-->
+
+<!--用户-->
+<script>
+  $("#userRemark").click(function(){
+    var url = "{:U('wx/userRemark')}";
+    $.ajax({
+      cache: false,
+      type: "GET",
+      url:  url,
+      async: false,
+      success: function(msg){
+        if (msg.error) {
+          layer.msg(msg.info);
+        } else if (msg.success) {
+          layer.msg(msg.info);
+        }
+      },
+      error: function(msg){
+        layer.msg('系统异常,请稍后再试!');
+      }
+    });
+  });
+
+  $("#userInfo").click(function(){
+    var url = "{:U('wx/userInfo')}";
+    $.ajax({
+      cache: false,
+      type: "GET",
+      url:  url,
+      async: false,
+      success: function(msg){
+        if (msg.error) {
+          layer.msg(msg.info);
+        } else if (msg.success) {
+          layer.msg(msg.info);
+        }
+      },
+      error: function(msg){
+        layer.msg('系统异常,请稍后再试!');
+      }
+    });
+  });
+
+  $("#userGet").click(function(){
+    var url = "{:U('wx/userGet')}";
+    $.ajax({
+      cache: false,
+      type: "GET",
+      url:  url,
+      async: false,
+      success: function(msg){
+        if (msg.error) {
+          layer.msg(msg.info);
+        } else if (msg.success) {
+          layer.msg(msg.info);
+        }
+      },
+      error: function(msg){
+        layer.msg('系统异常,请稍后再试!');
+      }
+    });
+  });
+</script>
+<!--用户 END-->
+
+<!--二维码-->
+<script>
+  $("#createQrcode").click(function(){
+    var url = "{:U('wx/createQrcode')}";
+    $.ajax({
+      cache: false,
+      type: "GET",
+      url:  url,
+      async: false,
+      success: function(msg){
+        if (msg.error) {
+          layer.msg(msg.info);
+        } else if (msg.success) {
+          layer.msg(msg.info);
+        }
+      },
+      error: function(msg){
+        layer.msg('系统异常,请稍后再试!');
+      }
+    });
+  });
+
+  $("#getQrcode").click(function(){
+    var url = "{:U('wx/showqrcode')}";
+    $.ajax({
+      cache: false,
+      type: "GET",
+      url:  url,
+      async: false,
+      success: function(msg){
+        if (msg.error) {
+          layer.msg(msg.info);
+        } else if (msg.success) {
+          layer.msg(msg.info);
+        }
+      },
+      error: function(msg){
+        layer.msg('系统异常,请稍后再试!');
+      }
+    });
+  });
+</script>
+<!--二维码 END-->
+
+<script>
+  $('.openRecord').click(function(event){
+    var index = layer.load(2, {
+      content: '数据加载中',
+      shade: [0.4, '#393D49'],
+      // time: 10 * 1000,
+      success: function(layero) {
+        layero.css('padding-left', '30px');
+        layero.find('.layui-layer-content').css({
+          'padding-top': '40px',
+          'width': '70px',
+          'background-position-x': '16px'
+        });
+      }
+    })
+    var _iframe = $('#editor_panel_body iframe');
+    //获取这个职工的id
+    accountId = $(this).parents('tr').attr('id');
+    //生成url链接
+    var url=$(this ).attr('url');
+    //替换参数
+    str1 =  url.replace("accountId",accountId);
+    openEditorPanel(_iframe, str1, event);
+    layer.close(index);
+  });
+
+  function openEditorPanel(iframe, iframeSrc, event) {
+    $('#editor_panel_body').animate({'margin-right':0});
+    $(document.body).addClass('modal-open'); // 禁止显示垂直滚动条
+    iframe.attr('src', iframeSrc);
+    event.stopPropagation();
+  }
+
+  function closeEditorPanel() {
+    $('#editor_panel_body').animate({'margin-right':-1000});
+    $(document.body).removeClass('modal-open'); // 取消禁止显示垂直滚动条
+  }
+
+  $(document).click(function(event){
+    var _con = $('#editor_panel_body iframe');   // 设置目标区域
+    if(!_con.is(event.target) && _con.has(event.target).length === 0){ // Mark 1
+      closeEditorPanel();         //淡出消失
+    }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,368 @@
+[ 2016-12-28T20:31:57+08:00 ] 127.0.0.1 /svntape/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `joung_view` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `joung_content` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-28T20:32:06+08:00 ] 127.0.0.1 /svntape/admin.php/Data/invoice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `joung_view` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `joung_content` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-28T20:32:07+08:00 ] 127.0.0.1 /svntape/admin.php/Data/style/bootstrap.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `joung_view` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `joung_content` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0150s ]
+ERR: 非法操作:style
+
+[ 2016-12-28T20:32:08+08:00 ] 127.0.0.1 /svntape/admin.php/Data/style/bootstrap-datetimepicker.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `joung_view` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `joung_content` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0000s ]
+ERR: 非法操作:style
+
+[ 2016-12-28T20:32:09+08:00 ] 127.0.0.1 /svntape/admin.php/Data/style/rateit.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `joung_view` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_user` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `joung_content` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0010s ]
+ERR: 非法操作:style
+
+[ 2016-12-28T20:32:10+08:00 ] 127.0.0.1 /svntape/admin.php/Data/style/font-awesome.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `joung_view` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `joung_content` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0000s ]
+ERR: 非法操作:style
+
+[ 2016-12-28T20:32:11+08:00 ] 127.0.0.1 /svntape/admin.php/Data/img/favicon/favicon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-28T20:32:11+08:00 ] 127.0.0.1 /svntape/admin.php/Data/style/fullcalendar.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `joung_view` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `joung_content` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0000s ]
+ERR: 非法操作:style
+
+[ 2016-12-28T20:32:12+08:00 ] 127.0.0.1 /svntape/admin.php/Data/style/prettyPhoto.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `joung_view` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `joung_content` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0000s ]
+ERR: 非法操作:style
+
+[ 2016-12-28T20:32:13+08:00 ] 127.0.0.1 /svntape/admin.php/Data/style/jquery-ui.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `joung_view` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `joung_content` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0000s ]
+ERR: 非法操作:style
+
+[ 2016-12-28T20:32:14+08:00 ] 127.0.0.1 /svntape/admin.php/Data/style/jquery.cleditor.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `joung_view` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `joung_content` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0000s ]
+ERR: 非法操作:style
+
+[ 2016-12-28T20:32:15+08:00 ] 127.0.0.1 /svntape/admin.php/Data/style/uniform.default.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `joung_view` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `joung_content` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0010s ]
+ERR: 非法操作:style
+
+[ 2016-12-28T20:32:16+08:00 ] 127.0.0.1 /svntape/admin.php/Data/js/layouts/topRight.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `joung_view` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `joung_content` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0000s ]
+ERR: 非法操作:js
+
+[ 2016-12-28T20:32:18+08:00 ] 127.0.0.1 /svntape/admin.php/Data/data.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `joung_view` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `joung_content` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-28T20:32:18+08:00 ] 127.0.0.1 /svntape/admin.php/Data/img/favicon/favicon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-12-28T20:36:04+08:00 ] 127.0.0.1 /svntape/admin.php/Data/data.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `joung_view` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `joung_content` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-28T20:36:35+08:00 ] 127.0.0.1 /svntape/admin.php/Data/data.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `joung_view` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `joung_content` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-28T20:41:09+08:00 ] 127.0.0.1 /svntape/admin.php/Data/data.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `joung_view` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `joung_content` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-28T20:41:26+08:00 ] 127.0.0.1 /svntape/admin.php/Data/data.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `joung_view` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `joung_content` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-12-28T20:41:41+08:00 ] 127.0.0.1 /svntape/admin.php/Data/data.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `joung_view` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_user` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `joung_content` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

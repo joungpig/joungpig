@@ -1,0 +1,1280 @@
+[ 2017-12-10T12:34:42+08:00 ] 61.140.115.56 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049958s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050048s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000202s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000251s ]
+
+[ 2017-12-10T12:34:49+08:00 ] 61.140.115.56 /admin.php/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `joung_user` WHERE `username` = 'joungpig' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `joung_user` SET `logintime`='2017-12-10 12:34:49',`ip`='61.140.115.56',`count`='120' WHERE `id` = 5 [ RunTime:0.0085s ]
+
+[ 2017-12-10T12:34:54+08:00 ] 61.140.115.56 /admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000176s ]
+SQL: SHOW COLUMNS FROM `joung_view` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_user` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `joung_content` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1483200000 AND 1485878399  ) LIMIT 1   [ RunTime:2.5406s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1485878400 AND 1488297599  ) LIMIT 1   [ RunTime:0.0471s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1488297600 AND 1490975999  ) LIMIT 1   [ RunTime:0.0464s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1490976000 AND 1493567999  ) LIMIT 1   [ RunTime:0.0459s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1493568000 AND 1496246399  ) LIMIT 1   [ RunTime:0.0468s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1496246400 AND 1498838399  ) LIMIT 1   [ RunTime:0.0470s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1498838400 AND 1501516799  ) LIMIT 1   [ RunTime:0.0452s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1501516800 AND 1504195199  ) LIMIT 1   [ RunTime:0.0454s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1504195200 AND 1506787199  ) LIMIT 1   [ RunTime:0.0454s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1506787200 AND 1509465599  ) LIMIT 1   [ RunTime:0.0503s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1509465600 AND 1512057599  ) LIMIT 1   [ RunTime:0.0480s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1512057600 AND 1514735999  ) LIMIT 1   [ RunTime:0.0462s ]
+SQL: SHOW COLUMNS FROM `joung_columu` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`name` FROM `joung_columu` WHERE `type` = 1  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` WHERE `columuid` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` WHERE `columuid` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` WHERE `columuid` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` WHERE `columuid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064879s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064940s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000274s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000329s ]
+
+[ 2017-12-10T12:35:00+08:00 ] 61.140.115.56 /admin.php/article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000174s ]
+SQL: SHOW COLUMNS FROM `joung_view` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_user` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `joung_content` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Home\Controller\ArticleController.class.php 第 34 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: where C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Home\Controller\ArticleController.class.php 第 38 行.
+SQL: SELECT `title`,`type`,`columuid`,`view`,`good`,`tag`,`state`,`time`,`id`,`top`,`uid` FROM `joung_content` ORDER BY top DESC,id DESC  LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `joung_type` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `joung_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `joung_columu` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `joung_columu`  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username` FROM `joung_user`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000230s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000311s ]
+NOTIC: [8] Undefined variable: bread C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 252 行.
+NOTIC: [8] Undefined index: type C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 288 行.
+NOTIC: [8] Undefined index: type C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 289 行.
+NOTIC: [8] Undefined index: type C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 289 行.
+NOTIC: [8] Undefined index: columuid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 299 行.
+NOTIC: [8] Undefined index: columuid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 300 行.
+NOTIC: [8] Undefined index: columuid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 300 行.
+NOTIC: [8] Undefined index: columuid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 300 行.
+NOTIC: [8] Undefined index: columuid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 300 行.
+NOTIC: [8] Undefined index: uid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 310 行.
+NOTIC: [8] Undefined index: uid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 311 行.
+NOTIC: [8] Undefined index: state C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 321 行.
+NOTIC: [8] Undefined index: state C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 322 行.
+NOTIC: [8] Undefined index: state C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 323 行.
+NOTIC: [8] Undefined index: search C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 338 行.
+NOTIC: [8] Undefined index: data1 C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 357 行.
+NOTIC: [8] Undefined index: data2 C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 365 行.
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `joung_tag` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('15','16') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('15','16') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('13','42') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('13','42') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('18','28') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('18','28') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('33','40') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('33','40') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','50') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','50') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('48','49') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('48','49') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('28','33') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('28','33') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','15') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','15') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','15') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','15') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('3','5') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('3','5') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('10','28') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('10','28') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('46','47') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('46','47') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','33') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','33') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','18') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','18') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','5') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','5') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('21','33') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('21','33') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('35','36') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('35','36') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','5') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','5') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','15') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','15') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','8') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','8') LIMIT 2   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079926s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079987s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000295s ]
+
+[ 2017-12-10T12:35:00+08:00 ] 61.140.115.56 /admin.php/article/img/favicon/favicon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+
+[ 2017-12-10T12:35:03+08:00 ] 61.140.115.56 /admin.php/article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `joung_view` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_user` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `joung_content` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `joung_columu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `joung_columu`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `joung_tag` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `joung_tag`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `joung_type` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `joung_type`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000251s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000327s ]
+NOTIC: [8] Undefined variable: bread C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\e530b4c402b11f9ac2347e75035233e8.php 第 256 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038253s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038323s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000260s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000320s ]
+
+[ 2017-12-10T12:37:52+08:00 ] 61.140.115.56 /admin.php/article/ajaxpicture.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+SQL: SHOW COLUMNS FROM `joung_view` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_user` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `joung_content` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2017-12-10T12:47:57+08:00 ] 61.140.115.56 /admin.php/article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000301s ]
+SQL: SHOW COLUMNS FROM `joung_view` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `joung_content` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `joung_content` (`title`,`content`,`time`,`picture`,`smpicture`,`tag`,`type`,`columuid`,`uid`,`state`,`good`,`view`) VALUES ('荒木英樹老贼新作野球部のX処理係','<p style=\"text-indent: 2em;\">荒木英樹算是里界长青树，从非常久远的THE ガッツ，男主就一个搬砖的，看过的人想必对那个凶猛肌肉女印象深刻，到现在这部野球部，其中间隔十几年时间，荒木老湿依旧奋斗在第一线，非常持久。</p><p style=\"text-indent: 2em;\">不过荒木老湿最近风格比较固定，除了世徒漫画改编那一大段系列外，什么猥褻ミサイル，什么円交少女，什么不良にハメられて受精する巨乳お母さん ，什么手垢塗れの天使，清楚で真面目な彼女が、最凶ヤリサーに勧，都是倾向那种剧情没什么深度的拔作，（手垢塗れの天使硬要说也是有点剧情，不过动画里完全没什么体现）。所以这作也不例外，野球部也是一个标准拔作。</p><p style=\"text-indent: 2em; text-align: center;\"><img src=\"/Uploads/image/20171210/1512881121876471.jpg\" title=\"1512881121876471.jpg\" alt=\"c950740chara2.jpg\"/></p><ul class=\" list-paddingleft-2\"><li><p></p><h2 class=\"chara-name\" style=\"margin: 0px 0px 5px 5px; padding: 0px; font-size: 15.576px; line-height: 1.5; color: rgb(0, 0, 0); text-align: left;\"><strong>誰もが憧れと信頼を寄せる先輩マネージャー<br/><charalist>栗宮 希実</charalist>&nbsp;（くりみや のぞみ）</strong></h2><p><br/></p></li><li><p style=\"text-align: left;\"><span style=\"font-weight: bold;\">身長：160cm　 体重：48Kg　 スリーサイズ：B90（G）/ W58/ H88<br/>誕生日：9月25日　 血液型：O型</span><br/></p><p style=\"margin-top: 6px; margin-bottom: 0px; padding: 0px; text-align: left;\">野球部のチーフマネージャー。 3年生。</p><p style=\"text-align: left;\">面倒見が良く、野球部の縁の下の力持ちとして選手たちからの信頼も厚い。<br/></p><p style=\"margin-top: 6px; margin-bottom: 0px; padding: 0px; text-align: left;\">大人びた容姿に似合わず、意外と体育会系なところがある。</p><p style=\"text-align: left;\">野球部を心の底から愛し、野球部のためなら何でもしたいと考えている。<br/></p><p style=\"margin-top: 15px; margin-bottom: 0px; padding: 0px; font-weight: bold; font-size: medium; text-align: left;\">「選手が練習を始める前に環境を整えておくのは、マネージャーの大事な仕事の一つよ」</p><p style=\"margin-top: 15px; margin-bottom: 0px; padding: 0px; font-weight: bold; font-size: medium; text-align: center;\"><img src=\"/Uploads/image/20171210/1512881171125738.jpg\" title=\"1512881171125738.jpg\" alt=\"c950740chara1.jpg\"/></p></li><li><p></p><h2 class=\"chara-name\" style=\"margin: 0px 0px 5px 5px; padding: 0px; font-size: 15.576px; line-height: 1.5; color: rgb(0, 0, 0);\"><strong>誰もが憧れと信頼を寄せる先輩マネージャー<br/><charalist>栗宮 希実</charalist>&nbsp;（くりみや のぞみ）</strong></h2><p></p></li><li><p><span style=\"font-weight: bold;\">身長：160cm　 体重：48Kg　 スリーサイズ：B90（G）/ W58/ H88<br/>誕生日：9月25日　 血液型：O型</span><br/></p><p style=\"margin-top: 6px; margin-bottom: 0px; padding: 0px;\">野球部のチーフマネージャー。 3年生。</p><p>面倒見が良く、野球部の縁の下の力持ちとして選手たちからの信頼も厚い。<br/></p><p style=\"margin-top: 6px; margin-bottom: 0px; padding: 0px;\">大人びた容姿に似合わず、意外と体育会系なところがある。</p><p>野球部を心の底から愛し、野球部のためなら何でもしたいと考えている。<br/></p><p style=\"margin-top: 15px; margin-bottom: 0px; padding: 0px; font-weight: bold; font-size: medium;\">「選手が練習を始める前に環境を整えておくのは、マネージャーの大事な仕事の一つよ」</p><p style=\"margin-top: 15px; margin-bottom: 0px; padding: 0px; font-weight: bold; font-size: medium;\"><br/></p><p style=\"margin-top: 15px; margin-bottom: 0px; padding: 0px; font-weight: bold; font-size: medium;\"></p><p style=\"margin-top: 15px; margin-bottom: 0px; padding: 0px; font-weight: bold; font-size: medium; text-align: center;\"><span style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; background-color: rgb(255, 255, 255);\">野球の全国大会への出場経験もある地元の名門校・箱峰学院。</span><br style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; background-color: rgb(255, 255, 255);\">1年生の 伊波咲 は、たまたま観戦した試合で興味を持ち、野球部のマネージャーになる。</span><br style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; background-color: rgb(255, 255, 255);\">面倒見が良く親切な先輩マネージャーの 栗宮希実 や、爽やかな野球部員たち。</span><br style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; background-color: rgb(255, 255, 255);\">これから始まるチームメイトとの青春の日々を期待し、胸を躍らせる咲だったが……</span><br style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; background-color: rgb(255, 255, 255);\">「部員が万全の状態でいられるように何でもケアするのが、マネージャーよ」</span><br style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; background-color: rgb(255, 255, 255);\">そこに待ち受けていたのは、汗と肉欲の伝統だった。</span><br style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; background-color: rgb(255, 255, 255);\">汗臭い部員たちを労るため、当たり前に行われる性処理係としての活動。</span><br style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; background-color: rgb(255, 255, 255);\">所構わず行われる性奉仕は、処女だった少女に忠誠と快楽を植えつける。</span><br style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; background-color: rgb(255, 255, 255);\">歪んだ伝統に翻弄されながら、やがて咲は心と身体、全てを部員たちに捧げていく……</span></p><p style=\"margin-top: 15px; margin-bottom: 0px; padding: 0px; font-weight: bold; font-size: medium; text-align: center;\"><span style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; background-color: rgb(255, 255, 255);\"><span style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; background-color: rgb(255, 255, 255); font-weight: bold;\">【スタッフ】</span><br style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; background-color: rgb(255, 255, 255);\">原作：『パコマネ わたし、今日から名門野球部の性処理係になります…』（Frill）</span><br style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; background-color: rgb(255, 255, 255);\">監督：荒木英樹</span><br style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; background-color: rgb(255, 255, 255);\">アニメーション制作：オフィス8番</span><br style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; background-color: rgb(255, 255, 255);\">製作：ピンクパイナップル</span><br style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; white-space: normal; background-color: rgb(255, 255, 255);\"/><br style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; background-color: rgb(255, 255, 255); font-weight: bold;\">【キャスト】</span><br style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; background-color: rgb(255, 255, 255);\">伊波 咲（いなみ さき）：鹿野まなか</span><br style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; white-space: normal; background-color: rgb(255, 255, 255);\"/><span style=\"color: rgb(34, 34, 34); font-family: &quot;Lucida Grande&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, Meiryo, &quot;MS PGothic&quot;, Osaka, Arial, sans-serif; font-size: 13.2px; background-color: rgb(255, 255, 255);\">栗宮 希実（くりみや のぞみ）：入江望愛</span></span></p></li></ul>','2017-12-10 12:47:57','2017-12-10/sm_5a2cba20128b5.jpg','2017-12-10/new_5a2cba20128b5.jpg','1,15','2','2','5','2','0','0') [ RunTime:0.0755s ]
+
+[ 2017-12-10T12:47:58+08:00 ] 61.140.115.56 /admin.php/article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000170s ]
+SQL: SHOW COLUMNS FROM `joung_view` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_user` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `joung_content` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Home\Controller\ArticleController.class.php 第 34 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Home\Controller\ArticleController.class.php 第 38 行.
+SQL: SELECT `title`,`type`,`columuid`,`view`,`good`,`tag`,`state`,`time`,`id`,`top`,`uid` FROM `joung_content` ORDER BY top DESC,id DESC  LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `joung_type` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `joung_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `joung_columu` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `joung_columu`  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`username` FROM `joung_user`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000218s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000282s ]
+NOTIC: [8] Undefined variable: bread C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 252 行.
+NOTIC: [8] Undefined index: type C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 288 行.
+NOTIC: [8] Undefined index: type C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 289 行.
+NOTIC: [8] Undefined index: type C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 289 行.
+NOTIC: [8] Undefined index: columuid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 299 行.
+NOTIC: [8] Undefined index: columuid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 300 行.
+NOTIC: [8] Undefined index: columuid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 300 行.
+NOTIC: [8] Undefined index: columuid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 300 行.
+NOTIC: [8] Undefined index: columuid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 300 行.
+NOTIC: [8] Undefined index: uid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 310 行.
+NOTIC: [8] Undefined index: uid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 311 行.
+NOTIC: [8] Undefined index: state C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 321 行.
+NOTIC: [8] Undefined index: state C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 322 行.
+NOTIC: [8] Undefined index: state C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 323 行.
+NOTIC: [8] Undefined index: search C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 338 行.
+NOTIC: [8] Undefined index: data1 C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 357 行.
+NOTIC: [8] Undefined index: data2 C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 365 行.
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `joung_tag` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('15','16') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('15','16') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','15') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','15') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('13','42') LIMIT 2   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('13','42') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('18','28') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('18','28') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('33','40') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('33','40') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','50') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','50') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('48','49') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('48','49') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('28','33') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('28','33') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','15') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','15') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','15') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','15') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('3','5') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('3','5') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('10','28') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('10','28') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('46','47') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('46','47') LIMIT 2   [ RunTime:0.0004s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','33') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','33') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','18') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','18') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','5') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','5') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('21','33') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('21','33') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('35','36') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('35','36') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','5') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','5') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','15') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','15') LIMIT 2   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064575s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064637s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000358s ]
+
+[ 2017-12-10T12:48:02+08:00 ] 61.140.115.56 /admin.php/article/put/id/101.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000194s ]
+SQL: SHOW COLUMNS FROM `joung_view` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_user` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `joung_content` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `joung_content` SET `state`='1' WHERE `id` = 101 [ RunTime:0.0070s ]
+
+[ 2017-12-10T12:48:03+08:00 ] 61.140.115.56 /admin.php/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `joung_view` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `joung_content` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Home\Controller\ArticleController.class.php 第 34 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: where C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Home\Controller\ArticleController.class.php 第 38 行.
+SQL: SELECT `title`,`type`,`columuid`,`view`,`good`,`tag`,`state`,`time`,`id`,`top`,`uid` FROM `joung_content` ORDER BY top DESC,id DESC  LIMIT 0,20   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `joung_type` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `joung_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `joung_columu` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `joung_columu`  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username` FROM `joung_user`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000225s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+NOTIC: [8] Undefined variable: bread C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 252 行.
+NOTIC: [8] Undefined index: type C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 288 行.
+NOTIC: [8] Undefined index: type C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 289 行.
+NOTIC: [8] Undefined index: type C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 289 行.
+NOTIC: [8] Undefined index: columuid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 299 行.
+NOTIC: [8] Undefined index: columuid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 300 行.
+NOTIC: [8] Undefined index: columuid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 300 行.
+NOTIC: [8] Undefined index: columuid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 300 行.
+NOTIC: [8] Undefined index: columuid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 300 行.
+NOTIC: [8] Undefined index: uid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 310 行.
+NOTIC: [8] Undefined index: uid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 311 行.
+NOTIC: [8] Undefined index: state C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 321 行.
+NOTIC: [8] Undefined index: state C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 322 行.
+NOTIC: [8] Undefined index: state C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 323 行.
+NOTIC: [8] Undefined index: search C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 338 行.
+NOTIC: [8] Undefined index: data1 C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 357 行.
+NOTIC: [8] Undefined index: data2 C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 365 行.
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `joung_tag` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('15','16') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('15','16') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','15') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','15') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('13','42') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('13','42') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('18','28') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('18','28') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('33','40') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('33','40') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','50') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','50') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('48','49') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('48','49') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('28','33') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('28','33') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','15') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','15') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','15') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','15') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('3','5') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('3','5') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('10','28') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('10','28') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('46','47') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('46','47') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','33') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','33') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','18') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','18') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','5') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','5') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('21','33') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('21','33') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('35','36') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('35','36') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','5') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','5') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','15') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','15') LIMIT 2   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066534s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066591s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000267s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000322s ]
+
+[ 2017-12-10T12:48:03+08:00 ] 61.140.115.56 /admin.php/Article/img/favicon/favicon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+
+[ 2017-12-10T12:48:45+08:00 ] 61.140.115.56 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000282s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005239s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000220s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000269s ]
+
+[ 2017-12-10T12:48:48+08:00 ] 61.140.115.56 /admin.php/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000169s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `joung_user` WHERE `username` = 'joungpig' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `joung_user` SET `logintime`='2017-12-10 12:48:48',`ip`='61.140.115.56',`count`='121' WHERE `id` = 5 [ RunTime:0.0056s ]
+
+[ 2017-12-10T12:48:49+08:00 ] 61.140.115.56 /admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000173s ]
+SQL: SHOW COLUMNS FROM `joung_view` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_user` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `joung_content` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1483200000 AND 1485878399  ) LIMIT 1   [ RunTime:0.0450s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1485878400 AND 1488297599  ) LIMIT 1   [ RunTime:0.0462s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1488297600 AND 1490975999  ) LIMIT 1   [ RunTime:0.0466s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1490976000 AND 1493567999  ) LIMIT 1   [ RunTime:0.0502s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1493568000 AND 1496246399  ) LIMIT 1   [ RunTime:0.0483s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1496246400 AND 1498838399  ) LIMIT 1   [ RunTime:0.0462s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1498838400 AND 1501516799  ) LIMIT 1   [ RunTime:0.0480s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1501516800 AND 1504195199  ) LIMIT 1   [ RunTime:0.0455s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1504195200 AND 1506787199  ) LIMIT 1   [ RunTime:0.0461s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1506787200 AND 1509465599  ) LIMIT 1   [ RunTime:0.0455s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1509465600 AND 1512057599  ) LIMIT 1   [ RunTime:0.0476s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1512057600 AND 1514735999  ) LIMIT 1   [ RunTime:0.0493s ]
+SQL: SHOW COLUMNS FROM `joung_columu` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`name` FROM `joung_columu` WHERE `type` = 1  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` WHERE `columuid` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` WHERE `columuid` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` WHERE `columuid` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` WHERE `columuid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012173s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000288s ]
+
+[ 2017-12-10T12:49:11+08:00 ] 61.140.115.56 /admin.php/article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `joung_view` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_user` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `joung_content` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Home\Controller\ArticleController.class.php 第 34 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: where C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Home\Controller\ArticleController.class.php 第 38 行.
+SQL: SELECT `title`,`type`,`columuid`,`view`,`good`,`tag`,`state`,`time`,`id`,`top`,`uid` FROM `joung_content` ORDER BY top DESC,id DESC  LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `joung_type` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `joung_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `joung_columu` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `joung_columu`  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username` FROM `joung_user`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000218s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000280s ]
+NOTIC: [8] Undefined variable: bread C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 252 行.
+NOTIC: [8] Undefined index: type C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 288 行.
+NOTIC: [8] Undefined index: type C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 289 行.
+NOTIC: [8] Undefined index: type C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 289 行.
+NOTIC: [8] Undefined index: columuid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 299 行.
+NOTIC: [8] Undefined index: columuid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 300 行.
+NOTIC: [8] Undefined index: columuid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 300 行.
+NOTIC: [8] Undefined index: columuid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 300 行.
+NOTIC: [8] Undefined index: columuid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 300 行.
+NOTIC: [8] Undefined index: uid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 310 行.
+NOTIC: [8] Undefined index: uid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 311 行.
+NOTIC: [8] Undefined index: state C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 321 行.
+NOTIC: [8] Undefined index: state C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 322 行.
+NOTIC: [8] Undefined index: state C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 323 行.
+NOTIC: [8] Undefined index: search C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 338 行.
+NOTIC: [8] Undefined index: data1 C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 357 行.
+NOTIC: [8] Undefined index: data2 C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 365 行.
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `joung_tag` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('15','16') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('15','16') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','15') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','15') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('13','42') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('13','42') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('18','28') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('18','28') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('33','40') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('33','40') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','50') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','50') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('48','49') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('48','49') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('28','33') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('28','33') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','15') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','15') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','15') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','15') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('3','5') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('3','5') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('10','28') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('10','28') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('46','47') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('46','47') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','33') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','33') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','18') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','18') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','5') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','5') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('21','33') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('21','33') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('35','36') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('35','36') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','5') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','5') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','15') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','15') LIMIT 2   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064380s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064442s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000222s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000279s ]
+
+[ 2017-12-10T12:49:13+08:00 ] 61.140.115.56 /admin.php/article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000251s ]
+SQL: SHOW COLUMNS FROM `joung_view` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `joung_content` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `joung_columu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `joung_columu`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `joung_tag` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `joung_tag`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `joung_type` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `joung_type`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000267s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000344s ]
+NOTIC: [8] Undefined variable: bread C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\e530b4c402b11f9ac2347e75035233e8.php 第 256 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022105s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000199s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000285s ]
+
+[ 2017-12-10T13:00:27+08:00 ] 61.140.115.56 /admin.php/article/ajaxpicture.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+SQL: SHOW COLUMNS FROM `joung_view` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `joung_content` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2017-12-10T13:01:30+08:00 ] 61.140.115.56 /admin.php/article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000218s ]
+SQL: SHOW COLUMNS FROM `joung_view` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `joung_content` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+ERR: SQLSTATE[08S01]: Communication link failure: 1153 Got a packet bigger than 'max_allowed_packet' bytes
+
+[ 2017-12-10T13:01:48+08:00 ] 61.140.115.56 /admin.php/article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002918s ]
+SQL: SHOW COLUMNS FROM `joung_view` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `joung_content` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Home\Controller\ArticleController.class.php 第 34 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Home\Controller\ArticleController.class.php 第 38 行.
+SQL: SELECT `title`,`type`,`columuid`,`view`,`good`,`tag`,`state`,`time`,`id`,`top`,`uid` FROM `joung_content` ORDER BY top DESC,id DESC  LIMIT 0,20   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `joung_type` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `joung_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `joung_columu` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `joung_columu`  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`username` FROM `joung_user`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000238s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+NOTIC: [8] Undefined variable: bread C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 252 行.
+NOTIC: [8] Undefined index: type C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 288 行.
+NOTIC: [8] Undefined index: type C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 289 行.
+NOTIC: [8] Undefined index: type C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 289 行.
+NOTIC: [8] Undefined index: columuid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 299 行.
+NOTIC: [8] Undefined index: columuid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 300 行.
+NOTIC: [8] Undefined index: columuid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 300 行.
+NOTIC: [8] Undefined index: columuid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 300 行.
+NOTIC: [8] Undefined index: columuid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 300 行.
+NOTIC: [8] Undefined index: uid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 310 行.
+NOTIC: [8] Undefined index: uid C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 311 行.
+NOTIC: [8] Undefined index: state C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 321 行.
+NOTIC: [8] Undefined index: state C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 322 行.
+NOTIC: [8] Undefined index: state C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 323 行.
+NOTIC: [8] Undefined index: search C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 338 行.
+NOTIC: [8] Undefined index: data1 C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 357 行.
+NOTIC: [8] Undefined index: data2 C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 365 行.
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `joung_tag` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('15','16') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('15','16') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','15') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','15') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('13','42') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('13','42') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('18','28') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('18','28') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('33','40') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('33','40') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','50') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','50') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('48','49') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('48','49') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('28','33') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('28','33') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','15') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','15') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','15') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','15') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('3','5') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('3','5') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('10','28') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('10','28') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('46','47') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('46','47') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','33') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','33') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','18') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','18') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','5') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','5') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('21','33') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('21','33') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('35','36') LIMIT 2   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('35','36') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','5') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('1','5') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 430 行.
+SQL: SELECT `name` FROM `joung_type` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant columu - assumed 'columu' C:\websoft9\wampstack-5.5.36-0\apache2\htdocs\admin\Runtime\Cache\Home\c514fd0b802fe5c5e9296333fbc67465.php 第 431 行.
+SQL: SELECT `name` FROM `joung_columu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','15') LIMIT 2   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_tag` WHERE `id` IN ('5','15') LIMIT 2   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.116840s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.116912s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.017316s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.017395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.013496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013563s ]
+

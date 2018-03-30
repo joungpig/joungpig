@@ -1,0 +1,31 @@
+request body = <TemplateSMS>
+                    <to>18824141305</to> 
+                    <appId>8a216da85610bfb80156171164750457</appId>
+                    <templateId>1</templateId>
+                    <datas><data>4312</data><data>5</data></datas>
+                  </TemplateSMS>
+request url = https://app.cloopen.com:8883/2013-12-26/Accounts/8a216da85610bfb80156171164160451/SMS/TemplateSMS?sig=F4DD3A753C92247D2A2D29AB252DF6F2
+request body = <TemplateSMS>
+                    <to>18824141305</to> 
+                    <appId>8a216da85610bfb80156171164750457</appId>
+                    <templateId>1</templateId>
+                    <datas><data>4312</data><data>5</data></datas>
+                  </TemplateSMS>
+request url = https://app.cloopen.com:8883/2013-12-26/Accounts/8a216da85610bfb80156171164160451/SMS/TemplateSMS?sig=E0D307D93D4B98114CD57845DC8022F0
+response body = <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Response><statusCode>111109</statusCode><statusMsg>【账号】请求地址Sig校验失败</statusMsg></Response>
+request body = <TemplateSMS>
+                    <to>18824141305</to> 
+                    <appId>8a216da85610bfb80156171164750457</appId>
+                    <templateId>1</templateId>
+                    <datas><data>4312</data><data>5</data></datas>
+                  </TemplateSMS>
+request url = https://app.cloopen.com:8883/2013-12-26/Accounts/8a216da85610bfb80156171164160451/SMS/TemplateSMS?sig=B706F9D4DD1EA5D280D34A07C7BEF14F
+response body = <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Response><statusCode>111109</statusCode><statusMsg>【账号】请求地址Sig校验失败</statusMsg></Response>
+request body = <TemplateSMS>
+                    <to>18824141305</to> 
+                    <appId>8a216da85610bfb80156171164750457</appId>
+                    <templateId>1</templateId>
+                    <datas><data>4312</data><data>5</data></datas>
+                  </TemplateSMS>
+request url = https://app.cloopen.com:8883/2013-12-26/Accounts/8a216da85610bfb80156171164160451/SMS/TemplateSMS?sig=E3455F0DE396D372F16CB97177B3D2C3
+response body = <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Response><statusCode>000000</statusCode><TemplateSMS><dateCreated>20160729101003</dateCreated><smsMessageSid>edd01193e9344b4fb791ea525252572e</smsMessageSid></TemplateSMS></Response>

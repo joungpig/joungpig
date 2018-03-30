@@ -1,0 +1,154 @@
+<?php if (!defined('THINK_PATH')) exit();?>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>joungpig管理后台</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FreeHTML5.co" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	
+
+  
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+	
+	<link rel="stylesheet" href="Public/Admin/login/css/bootstrap.min.css">
+	<link rel="stylesheet" href="Public/Admin/login/css/animate.css">
+	<link rel="stylesheet" href="Public/Admin/login/css/style.css">
+
+
+	<!-- Modernizr JS -->
+	<script src="Public/Admin/login/js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="Public/Admin/login/js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body class="style-2">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<ul class="menu">
+						<!--<li><a href="index.html">Style 1</a></li>-->
+						<!--<li class="active"><a href="index2.html">Style 2</a></li>-->
+						<!--<li><a href="index3.html">Style 3</a></li>-->
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					
+
+					<!-- Start Sign In Form -->
+					<form class="fh5co-form animate-box" data-animate-effect="fadeInLeft" method="post" action="<?php echo U('login/login');?>" id="form">
+						<h2>joungpig后台登陆</h2>
+						<div class="form-group">
+							<label for="username" class="sr-only">用户名</label>
+							<input type="text" class="form-control" id="username" name="username" placeholder="用户名" autocomplete="off">
+						</div>
+						<div class="form-group">
+							<label for="password" class="sr-only">密码</label>
+							<input type="password" class="form-control" id="password" name="password" placeholder="密码" autocomplete="off">
+						</div>
+						<div class="form-group">
+							<label for="remember"><input type="checkbox" id="remember" name="remember" value="1"> 记住密码</label>
+						</div>
+						<div class="form-group">
+							<!--<p>Not registered? <a href="sign-up2.html">Sign Up</a> | <a href="forgot2.html">Forgot Password?</a></p>-->
+						</div>
+						<div class="form-group">
+							<input id="submit" value="登陆" type="submit" class="btn btn-primary">
+						</div>
+					</form>
+					<!-- END Sign In Form -->
+
+				</div>
+			</div>
+			<div class="row" style="padding-top: 60px; clear: both;">
+				<div class="col-md-12 text-center"><p><small>&copy; All Rights Reserved. joungpig <a href="http://www.joungpig.com/" target="_blank" title="joungpig">joungpig</a> - Collect from <a href="http://www.joungpig.com/" title="joungpig" target="_blank">joungpig</a></small></p></div>
+			</div>
+		</div>
+	<input type="hidden" value="<?php echo U('index/index');?>" id="url">
+	<!-- jQuery -->
+	<script src="Public/Admin/login/js/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="Public/Admin/login/js/bootstrap.min.js"></script>
+	<!-- Placeholder -->
+	<script src="Public/Admin/login/js/jquery.placeholder.min.js"></script>
+	<!-- Waypoints -->
+	<script src="Public/Admin/login/js/jquery.waypoints.min.js"></script>
+	<!-- Main JS -->
+	<script src="Public/Admin/login/js/main.js"></script>
+	<!--layer-->
+	<script src="Public/common/layer/layer.js"></script>
+	<!--layer END-->
+	<!--登陆验证-->
+	<script>
+		$("#submit").click(function(){
+			if($("#username").val()=='' || $("#username").val()==null ){
+				layer.tips('用户名不能为空!', '#username', {
+					tips: [2, '#47d1d1'],
+					time: 1000
+				});
+				return false;
+			}
+			if($("#password").val()=='' || $("#password").val()==null ){
+				layer.tips('密码不能为空!', '#password', {
+					tips: [2, '#47d1d1'],
+					time: 1000
+				});
+				return false;
+			}
+			//ajax验证
+			var data =  $('#form').serialize();
+			//获取验证地址
+			var url="<?php echo U('login/login');?>";
+
+			$.ajax({
+				cache: false,
+				type: "POST",
+				url: url,
+				data: data,
+				async: false,
+				success: function(msg){
+					if (msg.error) {
+						layer.msg(msg.info);
+					}
+					else if (msg.success) {
+						layer.msg(msg.info);
+						setTimeout(function(){
+							location.href="<?php echo U('index/index');?>";
+						},500);
+					}
+				},
+				error: function(msg){
+					layer.msg('系统繁忙,请稍后再试!');
+				}
+			});
+			return false;
+		});
+	</script>
+	<!--登陆验证 END-->
+	</body>
+</html>

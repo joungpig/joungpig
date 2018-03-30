@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <include file="Public:metra"/>
+
+    <!--样式-->
+    <include file="Public:css"/>
+    <!--样式end-->
+
+  <!-- HTML5 Support for IE -->
+  <!--[if lt IE 9]>
+  <script src="__ADMIN__/js/html5shim.js"></script>
+  <![endif]-->
+</head>
+
+
+<body>
+
+
+<!--导航-->
+<include file="Public:nav"/>
+<!--导航end-->
+
+<!--头部-->
+<include file="Public:header"/>
+<!--头部end-->
+
+<!-- 文章主体 starts -->
+
+<div class="content">
+
+  <!--菜单-->
+  <include file="Public:menu"/>
+  <!--菜单end-->
+
+  	  	<!-- Main bar -->
+  	<div class="mainbar">
+
+      <!--面包屑导航-->
+      <include file="Public:bread"/>
+      <!--面包屑导航end-->
+
+	    <div class="matter">
+        <div class="container">
+          <div class="row">
+              <!-- 浏览量计算 -->
+            <div class="col-md-6">
+                  <div id="container" style="min-width:400px;height:400px"></div>
+            </div>
+              <!-- 浏览量计算 END -->
+              <!-- 文章类型 -->
+              <div class="col-md-6">
+                  <div id="type" style="min-width:400px;height:400px"></div>
+              </div>
+              <!-- 文章类型 END -->
+          </div>
+        </div>
+		  </div>
+
+    </div>
+   <!-- Mainbar ends -->
+   <div class="clearfix"></div>
+
+</div>
+<!-- Content ends -->
+
+<!--foot-->
+<include file="Public:foot"/>
+<!--foot end-->
+
+
+<!-- Footer ends -->
+
+<!-- Scroll to top -->
+<span class="totop"><a href="#"><i class="icon-chevron-up"></i></a></span>
+    <!--js-->
+    <include file="Public:js"/>
+    <!--js end-->
+<!--浏览量计算-->
+<script>
+    $(function () {
+        $('#container').highcharts({
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: "{$year}"+'月访问量'
+            },
+            subtitle: {
+                text: ''
+            },
+            xAxis: {
+                categories: [
+                    '一月',
+                    '二月',
+                    '三月',
+                    '四月',
+                    '五月',
+                    '六月',
+                    '七月',
+                    '八月',
+                    '九月',
+                    '十月',
+                    '十一月',
+                    '十二月'
+                ],
+                crosshair: true
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: '访问(次)'
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                             '<td style="padding:0"><b>{point.y:.1f} 次</b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: [{
+                name: '访问量',
+                data: [{$mview}]
+            }]
+        });
+    });
+</script>
+<!--浏览量计算END-->
+<!--文章类型比例-->
+<script>
+    $(function () {
+        $('#type').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false
+            },
+            title: {
+                text: '文章类型占比'
+            },
+            tooltip: {
+                headerFormat: '{series.name}<br>',
+                pointFormat: '{point.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: true,
+                        format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                        style: {
+                            color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                        }
+                    }
+                }
+            },
+            series: [{
+                type: 'pie',
+                name: '浏览器访问量占比',
+                data: [
+                    {$type}
+                ]
+            }]
+        });
+    });
+</script>
+<!--文章类型比例END-->
+<script src="__ADMIN__/highcharts/code/highcharts.js"></script>
+<script src="__ADMIN__/highcharts/code/modules/exporting.js"></script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <include file="Public:metra"/>
+
+  <!--样式-->
+  <include file="Public:css"/>
+  <!--样式end-->
+  
+  <!-- HTML5 Support for IE -->
+  <!--[if lt IE 9]>
+  <script src="js/html5shim.js"></script>
+  <![endif]-->
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon/favicon.png">
+</head>
+
+<body>
+
+<!--导航-->
+<include file="Public:nav"/>
+<!--导航end-->
+
+<!--头部-->
+<include file="Public:header"/>
+<!--头部end-->
+
+<!-- Main content starts -->
+
+<div class="content">
+
+     <!--菜单-->
+  <include file="Public:menu"/>
+  <!--菜单end-->
+
+  	<!-- Main bar -->
+  	<div class="mainbar">
+
+      <!--面包屑导航-->
+
+      <include file="Public:bread"/>
+
+      <!--面包屑导航end-->
+
+	    <!-- Matter -->
+
+	    <div class="matter">
+        <div class="container">
+
+          <!-- Table -->
+
+            <div class="row">
+
+              <div class="col-md-12">
+
+                <div class="widget">
+
+                  <div class="widget-head">
+                    <div class="pull-left">
+                      <a  class="btn btn-default" id="add">新增标签</a>
+                    </div>
+                    <div class="widget-icons pull-right">
+                      <a href="#" class="wminimize"><i class="icon-chevron-up"></i></a>
+                      <a href="#" class="wclose"><i class="icon-remove"></i></a>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+
+                  <div class="widget-content">
+
+                  </div>
+
+                </div>
+
+                <div class="widget">
+
+                <div class="widget-head">
+                  <div class="pull-left">文章标签（{$count}）</div>
+                  <div class="widget-icons pull-right">
+                    <a href="#" class="wminimize"><i class="icon-chevron-up"></i></a> 
+                    <a href="#" class="wclose"><i class="icon-remove"></i></a>
+                  </div>  
+                  <div class="clearfix"></div>
+                </div>
+
+                  <div class="widget-content">
+
+                    <table class="table table-striped table-bordered table-hover">
+                      <thead>
+                        <tr>
+                          <th class="col-lg-1">#</th>
+                          <th>名称</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      <volist name="list" id="vo">
+                        <tr id="{$vo.id}">
+                          <td>{$vo.id}</td>
+                          <td><a style="color:#ff9f00;" class="openRecord" url="{:U('article/tagEdit',array('id'=>'accountId'))}">{$vo.name}</a></td>
+                        </tr>
+                      </volist>
+                      </tbody>
+                    </table>
+
+                    <div class="widget-foot">
+
+                     
+                        <ul class="pagination pull-right">
+                          {$page}
+                        </ul>
+                     
+                      <div class="clearfix"></div> 
+
+                    </div>
+
+                  </div>
+                  <div class="col-md-12">
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+
+
+
+        </div>
+		  </div>
+
+		<!-- Matter ends -->
+
+    </div>
+
+   <!-- Mainbar ends -->	    	
+   <div class="clearfix"></div>
+
+</div>
+<!-- Content ends -->
+
+<!--foot-->
+<include file="Public:foot"/>
+<!--foot end-->
+
+<!-- Scroll to top -->
+<span class="totop"><a href="#"><i class="icon-chevron-up"></i></a></span>
+
+<!--js-->
+<include file="Public:js"/>
+<!--js end-->
+<div id="editor_panel">
+  <div id="editor_panel_body" style="margin-right: -1000px;">
+    <iframe src="" frameborder="0" id="account-iframe"></iframe>
+  </div>
+</div>
+</body>
+
+<script>
+  $("#add").click(function(){
+    var url = "{:U('article/tagAdd')}";
+    layer.open({
+      type: 2,
+      title: '添加栏目',
+      closeBtn: 0, //不显示关闭按钮
+      shadeClose: true,
+      shade: [0],
+      area: ['700px', '400px'],
+      //offset: 'rb', //右下角弹出
+      //time: 2000, //2秒后自动关闭
+      anim: 2,
+      content: [url,'no'], //iframe的url，no代表不显示滚动条
+    });
+  });
+</script>
+<script>
+  $('.openRecord').click(function(event){
+    var index = layer.load(2, {
+      content: '数据加载中',
+      shade: [0.4, '#393D49'],
+      // time: 10 * 1000,
+      success: function(layero) {
+        layero.css('padding-left', '30px');
+        layero.find('.layui-layer-content').css({
+          'padding-top': '40px',
+          'width': '70px',
+          'background-position-x': '16px'
+        });
+      }
+    })
+    var _iframe = $('#editor_panel_body iframe');
+    //获取这个职工的id
+    accountId = $(this).parents('tr').attr('id');
+    //生成url链接
+    var url=$(this ).attr('url');
+    //替换参数
+    str1 =  url.replace("accountId",accountId);
+    openEditorPanel(_iframe, str1, event);
+    layer.close(index);
+  });
+
+  function openEditorPanel(iframe, iframeSrc, event) {
+    $('#editor_panel_body').animate({'margin-right':0});
+    $(document.body).addClass('modal-open'); // 禁止显示垂直滚动条
+    iframe.attr('src', iframeSrc);
+    event.stopPropagation();
+  }
+
+  function closeEditorPanel() {
+    $('#editor_panel_body').animate({'margin-right':-1000});
+    $(document.body).removeClass('modal-open'); // 取消禁止显示垂直滚动条
+  }
+
+  $(document).click(function(event){
+    var _con = $('#editor_panel_body iframe');   // 设置目标区域
+    if(!_con.is(event.target) && _con.has(event.target).length === 0){ // Mark 1
+      closeEditorPanel();         //淡出消失
+    }
+  });
+</script>
+</html>

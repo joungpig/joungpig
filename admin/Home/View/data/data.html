@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <include file="Public:metra"/>
+  <!--样式-->
+  <include file="Public:css"/>
+  <!--样式end-->
+
+
+  <!-- HTML5 Support for IE -->
+  <!--[if lt IE 9]>
+  <script src="js/html5shim.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+<!--导航-->
+<include file="Public:nav"/>
+<!--导航end-->
+
+<!--头部-->
+<include file="Public:header"/>
+<!--头部end-->
+
+<!-- Main content starts -->
+
+<div class="content">
+
+  <!--菜单-->
+  <include file="Public:menu"/>
+  <!--菜单end-->
+
+  	<!-- Main bar -->
+  	<div class="mainbar">
+
+      <!--面包屑导航-->
+
+      <include file="Public:bread"/>
+
+      <!--面包屑导航end-->
+
+	    <!-- Matter -->
+
+	    <div class="matter">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+
+              <div class="widget">
+                <div class="widget-head">
+                  <div class="pull-left">访问数据</div>
+                  <div class="widget-icons pull-right">
+                    <a href="#" class="wminimize"><i class="icon-chevron-up"></i></a> 
+                    <a href="#" class="wclose"><i class="icon-remove"></i></a>
+                  </div>  
+                  <div class="clearfix"></div>
+                </div>
+                <div class="widget-content">
+                  <div class="padd statement">
+                    
+                    <div class="row">
+
+                      <div class="col-md-4">
+                        <div class="well">
+                          <h3>今日访问量:{$today}</h3>
+
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="well">
+                          <h3>历史访问量:{$count}</h3>
+
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="well">
+                          <h3>历史访问人数:{$ip}</h3>
+
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="row">
+
+                      <div class="col-md-12">
+                        <hr />
+                        <table class="table table-striped table-hover table-responsive table-bordered">
+                          <thead>
+                            <tr>
+                              <th>id</th>
+                              <th>访问用户IP</th>
+                              <th>访问时间</th>
+                              <th>来源页面</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                          <volist name="list" id="vo">
+                            <tr>
+                              <td>{$vo.id}</td>
+                              <td>{$vo.ip}</td>
+                              <td>{$vo.date|date="Y-m-d,H:i:s",###}</td>
+                              <td>{$vo.url}</td>
+                            </tr>
+                          </volist>
+                          </tbody>
+                        </table>
+
+                      </div>
+
+                    </div>
+                    <ul class="pagination">
+                      {$page}
+                    </ul>
+                  </div>
+                  <div class="widget-foot">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+		  </div>
+
+		<!-- Matter ends -->
+
+    </div>
+
+   <!-- Mainbar ends -->	    	
+   <div class="clearfix"></div>
+
+</div>
+<!-- Content ends -->
+
+<!--foot-->
+<include file="Public:foot"/>
+<!--foot end-->
+
+<!-- Scroll to top -->
+<span class="totop"><a href="#"><i class="icon-chevron-up"></i></a></span>
+
+<!--js-->
+<include file="Public:js"/>
+<!--js end-->
+
+</body>
+</html>

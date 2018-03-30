@@ -1,0 +1,76 @@
+[ 2017-10-24T15:39:18+08:00 ] 116.23.16.253 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081162s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081257s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000185s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000236s ]
+
+[ 2017-10-24T15:39:25+08:00 ] 116.23.16.253 /admin.php/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `joung_user` WHERE `username` = 'joungpig' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `joung_user` SET `logintime`='2017-10-24 15:39:25',`ip`='116.23.16.253',`count`='106' WHERE `id` = 5 [ RunTime:0.0073s ]
+
+[ 2017-10-24T15:39:28+08:00 ] 116.23.16.253 /admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000236s ]
+SQL: SHOW COLUMNS FROM `joung_view` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `joung_user` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_user` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `joung_content` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `joung_user` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1483200000 AND 1485878399  ) LIMIT 1   [ RunTime:1.3436s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1485878400 AND 1488297599  ) LIMIT 1   [ RunTime:0.0355s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1488297600 AND 1490975999  ) LIMIT 1   [ RunTime:0.0338s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1490976000 AND 1493567999  ) LIMIT 1   [ RunTime:0.0336s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1493568000 AND 1496246399  ) LIMIT 1   [ RunTime:0.0346s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1496246400 AND 1498838399  ) LIMIT 1   [ RunTime:0.0343s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1498838400 AND 1501516799  ) LIMIT 1   [ RunTime:0.0337s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1501516800 AND 1504195199  ) LIMIT 1   [ RunTime:0.0335s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1504195200 AND 1506787199  ) LIMIT 1   [ RunTime:0.0344s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1506787200 AND 1509465599  ) LIMIT 1   [ RunTime:0.0378s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1509465600 AND 1512057599  ) LIMIT 1   [ RunTime:0.0330s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_view` WHERE ( `date` BETWEEN 1512057600 AND 1514735999  ) LIMIT 1   [ RunTime:0.0341s ]
+SQL: SHOW COLUMNS FROM `joung_columu` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`name` FROM `joung_columu` WHERE `type` = 1  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` WHERE `columuid` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` WHERE `columuid` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` WHERE `columuid` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `joung_content` WHERE `columuid` = 6 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.121496s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.121556s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000135s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000189s ]
+
